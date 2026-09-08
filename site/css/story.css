@@ -1,0 +1,444 @@
+/* 播放器舞台。
+ *
+ * 幾何與樣式對照遊戲的 pages/Story.module.scss 與編譯後的 index.css
+ * （由 assets/vendor 的 sourcemap 還原）。設計基準是 2800×1600，也就是 7:4，
+ * 遊戲用 min(57vw,100vh) 當縮放單位；這裡把舞台設成 container，
+ * 原本的 vw 值一律換成 cqw，比例才會跟遊戲一致。
+ *
+ * JS 那側的常數在 js/config.js，兩邊要一起改。
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@500;700;900&display=swap');
+
+/* 單格 grid：內層 .player-frame 才是「工具列／舞台／工具列」三列。
+ * 這裡若也寫 auto 1fr auto，frame 會落在第一個 auto 列而只拿到內容高度，
+ * 舞台的高度就會被算成 0。 */
+.player {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  background: #06090b;
+  display: grid;
+  grid-template-rows: 100%;
+  color: #f6f0e8;
+}
+
+.player[hidden] {
+  display: none;
+}
+
+.player-frame {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+  min-height: 0;
+}
+
+/* ---- 上下工具列（重播器自己的介面，遊戲沒有這一層） -------------------- */
+
+.player-top,
+.player-bottom {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  background: #10151a;
+}
+
+.player-top {
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.player-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+  flex-wrap: wrap;
+}
+
+.player-title {
+  font-family: 'Noto Serif TC', Georgia, serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.player-top small {
+  color: #9da7a8;
+}
+
+.player-tools {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon-btn,
+.ctrl {
+  background: #202a31;
+  color: #dfe4e2;
+  padding: 8px 12px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.icon-btn:hover,
+.ctrl:hover {
+  background: #b83c2f;
+  color: #fff;
+}
+
+.icon-btn.is-on,
+.ctrl.is-on {
+  background: #b58b51;
+  color: #16110a;
+}
+
+.field.small {
+  height: 34px;
+  font-size: 12px;
+  background: #202a31;
+  color: #dfe4e2;
+  border-color: #2f3b43;
+}
+
+#volume {
+  width: 90px;
+  accent-color: #b58b51;
+}
+
+.progress {
+  flex: 1;
+  min-width: 120px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.progress i {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: #b83c2f;
+  transition: width 0.2s;
+}
+
+.player-bottom span {
+  font-size: 11px;
+  color: #9da7a8;
+  white-space: nowrap;
+}
+
+/* ---- 舞台外框：維持遊戲的 7:4（2800×1600） ---------------------------- */
+
+.stage-fit {
+  display: grid;
+  place-items: center;
+  min-height: 0;
+  overflow: hidden;
+  background: #000;
+  container-type: size;
+}
+
+/* 寬高取 min(容器寬, 容器高 × 1.75)，維持 7:4 且不溢出。 */
+.stage {
+  position: relative;
+  width: min(100cqw, 175cqh);
+  aspect-ratio: 7 / 4;
+  overflow: hidden;
+  cursor: pointer;
+  container-type: size;
+  background: #05070a;
+  text-align: center;
+  --transition-ms: 1000ms;
+}
+
+/* .bgBox：兩層交叉淡入。轉場只在 background 值改變時才切層，
+ * 所以連續同背景的 slide 不會重跑轉場（遊戲的 CSSTransition key 綁的是背景路徑）。 */
+.bg-layer {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  /* 遊戲的 fadein/fadeout/fadeinout-*-active 一律是 opacity 1000ms ease-out。 */
+  transition: opacity var(--transition-ms) ease-out;
+}
+
+.bg-layer.is-active {
+  opacity: 1;
+}
+
+.stage-label {
+  position: absolute;
+  top: 1.4cqw;
+  left: 2cqw;
+  z-index: 35;
+  color: #c8a66d;
+  font-size: max(10px, 1cqw);
+  letter-spacing: 0.1em;
+  text-shadow: 0 1px 3px #000;
+  pointer-events: none;
+}
+
+/* ---- 立繪站位 ------------------------------------------------------------
+ * .posBox   外層：left 由站位決定、translateX(-50%)、滿版且 overflow:hidden
+ * .actorImgBox 內層：置中，height 135%（GIF 版是 100%）
+ * .actorImg  圖：height 100%（GIF 版 202% 並另外偏移）
+ */
+
+.actors {
+  position: absolute;
+  inset: 0;
+}
+
+.pos-box {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* horizontal_shift：遊戲用 react-spring 對外層補間 left 與 zIndex。 */
+.pos-box.effect-shift {
+  transition: left var(--shift-ms, 1000ms) ease-out;
+}
+
+.actor-img-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 135%;
+}
+
+.actor-img-box.is-gif {
+  height: 100%;
+}
+
+.actor-img {
+  height: 100%;
+}
+
+.actor-img.is-gif {
+  height: 202%;
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  transform: translate(-50%, -34%);
+}
+
+/* color_filter：值取自遊戲 index.css。資料裡實際只出現 black 與 red，
+ * 其餘幾種一併帶著，之後資料若出現才不用回頭補。 */
+.filter_black {
+  filter: brightness(50%);
+}
+
+.filter_red {
+  filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%)
+    contrast(0.8);
+}
+
+.filter_blue {
+  filter: grayscale(100%) brightness(30%) sepia(100%) hue-rotate(-180deg) saturate(700%)
+    contrast(0.8);
+}
+
+.filter_green {
+  filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(50deg) saturate(1000%)
+    contrast(0.8);
+}
+
+.filter_yellow {
+  filter: grayscale(100%) brightness(120%) sepia(90%) hue-rotate(5deg) saturate(500%) contrast(0.7);
+}
+
+.filter_grey {
+  filter: grayscale(100%) brightness(110%) contrast(0.9);
+}
+
+/* fade_in（2000ms）與 swift_in（500ms）共用一組淡入，時長由 JS 帶入。 */
+.actor-img.effect-fade {
+  animation: figure-fade var(--effect-ms, 2000ms) linear forwards;
+}
+
+@keyframes figure-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* half_transparent：整張固定 opacity 0.7。 */
+.actor-img.effect-half {
+  opacity: 0.7;
+}
+
+/* motion：x 在 +10 / −10 之間來回，插值節點取自 Story.js 的
+ * [0, .25, .35, .45, .55, .65, .75, 1]（y 兩端都是 0，所以只動 x）。 */
+.actor-img.effect-motion {
+  animation: figure-motion var(--effect-ms, 800ms) linear;
+}
+
+@keyframes figure-motion {
+  0% {
+    transform: translateX(10px);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  35% {
+    transform: translateX(10px);
+  }
+  45% {
+    transform: translateX(-10px);
+  }
+  55% {
+    transform: translateX(10px);
+  }
+  65% {
+    transform: translateX(-10px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+/* ---- 對話框 --------------------------------------------------------------
+ * panelBox 貼在底部並往下推 35%，露出的上緣就是對白區。
+ * panelBar（上緣 47%）放 speaker，panelCont（top 45%）放對白。
+ */
+
+.panel-box {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 20;
+  transform: translateY(35%);
+  pointer-events: none;
+}
+
+.panel-bg {
+  width: 100%;
+  display: block;
+}
+
+.panel-bar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 47%;
+}
+
+.speaker {
+  position: absolute;
+  left: 21.4285714286%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.6428571429cqw;
+  font-weight: 900;
+  font-family: 'Noto Serif TC', serif;
+  text-align: left;
+}
+
+.panel-cont {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  height: 5.7142857143cqw;
+}
+
+.dialogue {
+  position: absolute;
+  left: 21.4285714286%;
+  right: 21.4285714286%;
+  top: -40%;
+  font-size: 1.6428571429cqw;
+  font-weight: 500;
+  text-align: left;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* dialogue_color 在遊戲裡是把整句轉成灰色，不是變亮。 */
+.dialogue.dialogue_color {
+  color: #ccc;
+}
+
+/* dialogue 是 HTML，用的是自訂標籤。遊戲對 b9 的定義就只有粗體 900。 */
+.dialogue b9 {
+  font-weight: 900;
+}
+
+/* ---- LOG 面板 ------------------------------------------------------------ */
+
+.log-panel {
+  position: absolute;
+  inset: 0;
+  z-index: 40;
+  background: rgba(0, 0, 0, 0.7);
+  overflow: hidden auto;
+  padding: 3cqw 0;
+}
+
+.log-panel[hidden] {
+  display: none;
+}
+
+.log-cont {
+  display: flex;
+  flex-direction: column;
+  margin-left: 21.4285714286%;
+  margin-right: 5%;
+}
+
+.log-item {
+  color: #fff;
+  font-weight: bold;
+  margin: 1rem 0;
+  text-align: left;
+}
+
+.log-item b {
+  display: block;
+  font-size: 1.6428571429cqw;
+  font-weight: 900;
+  font-family: 'Noto Serif TC', serif;
+}
+
+.log-item span {
+  display: block;
+  font-size: 1.6428571429cqw;
+  font-weight: 500;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* 舞台很窄時 cqw 會讓字小到看不清，給一個下限。 */
+@media (max-width: 900px) {
+  .speaker,
+  .dialogue,
+  .log-item b,
+  .log-item span {
+    font-size: max(13px, 1.6428571429cqw);
+  }
+
+  .player-top,
+  .player-bottom {
+    padding: 10px 12px;
+  }
+
+  .player-tools {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  #volume {
+    width: 64px;
+  }
+}

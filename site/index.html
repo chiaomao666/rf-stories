@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="RF Story Archive — 由官方 slides 資料組成的劇情資料館，依遊戲播放引擎規則重播。" />
+  <title>RF Story Archive｜劇情資料館</title>
+  <link rel="stylesheet" href="css/site.css" />
+  <link rel="stylesheet" href="css/story.css" />
+</head>
+<body>
+  <header class="site-header wrap">
+    <a class="brand" href="#top">
+      <span class="brand-mark">RF</span>
+      <span>STORY ARCHIVE</span>
+    </a>
+    <nav class="nav">
+      <a href="#archive">劇情索引</a>
+      <a href="#about">資料說明</a>
+      <a href="tools/rf_story_capture.js" download>抓取腳本</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <div class="eyebrow">FIELD RECORDS / STORY REPLAY</div>
+        <h1>把每一張劇情，<br><em>重新播放。</em></h1>
+        <p>
+          由官方 slides 資料整理而成的離線式劇情資料館。選擇陣營、城市與段落，
+          依遊戲本體的播放規則——五站位立繪、立繪特效、打字機、BGM 與音效——回到每一個對白出現的時刻。
+        </p>
+        <div class="hero-meta">
+          <span class="chip">純前端・可離線匯入</span>
+          <span class="chip">紅軍 / 非紅軍雙主線</span>
+          <span class="chip">玩家名已去識別化</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <section class="stats">
+        <div class="stat"><strong id="statCities">—</strong><span>可重播城市</span></div>
+        <div class="stat"><strong id="statSlides">—</strong><span>已保存 slides</span></div>
+        <div class="stat"><strong id="statDialogues">—</strong><span>含對白場景</span></div>
+        <div class="stat"><strong>2</strong><span>平行主線變體</span></div>
+      </section>
+
+      <section id="archive">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">ARCHIVE INDEX</div>
+            <h2>劇情索引</h2>
+          </div>
+          <p id="loadedNote">正在載入資料…</p>
+        </div>
+
+        <div class="toolbar">
+          <select id="variant" class="field" aria-label="陣營版本">
+            <option value="red_army">紅軍版本</option>
+            <option value="non_red_army">非紅軍版本</option>
+          </select>
+          <select id="chapter" class="field" aria-label="篇章">
+            <option value="all">所有篇章</option>
+          </select>
+          <input id="search" class="field search" placeholder="搜尋城市、篇章…" />
+          <button id="playNation" class="btn ghost">陣營劇情</button>
+          <label class="btn ghost" for="importFile">匯入 JSON</label>
+          <input id="importFile" type="file" accept="application/json" hidden />
+        </div>
+
+        <div class="notice">
+          資料來自版控中的 <code>data/&lt;variant&gt;/index.json</code> 與
+          <code>city_*.json</code>。素材優先讀本地 <code>assets/</code>，
+          缺檔才回退官方 CDN，避免把流量整包掛在對方站上。
+        </div>
+
+        <div id="storyGrid" class="story-grid"></div>
+      </section>
+
+      <section id="about">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">METHOD NOTE</div>
+            <h2>重播器做了什麼</h2>
+          </div>
+        </div>
+        <div class="notice notice-long">
+          依 <code>docs/story_slides_engine.md</code> 的實測紀錄重寫（不是移植遊戲原始碼）：
+          五個站位 <code>a</code>–<code>e</code> 的 left 與 zIndex、立繪特效
+          （fade_in / swift_in / half_transparent / motion / horizontal_shift）、
+          <code>color_filter</code>、背景轉場 key 綁 <code>background</code> 而非索引、
+          <code>music</code> 未填等於停止音樂、<code>duration</code> 自動翻頁、
+          「第一下補完打字第二下才翻頁」、以及對白裡的自訂標籤
+          （<code>&lt;b9&gt;</code>）樣式。
+        </div>
+      </section>
+
+      <footer>
+        <span>RF Story Archive · data preserved for personal replay</span>
+        <span class="mono">github.com/chiaomao666/rf-stories</span>
+      </footer>
+    </div>
+  </main>
+
+  <div id="player" class="player" hidden>
+    <div class="player-frame">
+      <div class="player-top">
+        <div>
+          <div id="playerTitle" class="player-title">—</div>
+          <small id="playerMeta">—</small>
+        </div>
+        <div class="player-tools">
+          <select id="phase" class="field small" aria-label="段落">
+            <option value="all">全部段落</option>
+            <option value="before">戰鬥前</option>
+            <option value="after">戰鬥後</option>
+          </select>
+          <button id="soundToggle" class="icon-btn" title="音效">🔇 音效關</button>
+          <input id="volume" type="range" min="0" max="1" step="0.05" value="0.6"
+                 aria-label="音量" />
+          <button id="logToggle" class="icon-btn" title="對白紀錄">☷ LOG</button>
+          <button id="closePlayer" class="icon-btn" title="關閉">✕</button>
+        </div>
+      </div>
+
+      <div class="stage-fit">
+        <div class="stage" id="stage">
+          <div class="bg-layer is-active" data-layer="0"></div>
+          <div class="bg-layer" data-layer="1"></div>
+          <div class="actors" id="actors"></div>
+          <div class="stage-label" id="stageLabel"></div>
+
+          <div class="panel-box">
+            <img class="panel-bg" src="assets/ui/bgStoryPanel.png" alt="" />
+            <div class="panel-bar">
+              <div class="speaker" id="speaker"></div>
+            </div>
+            <div class="panel-cont">
+              <div class="dialogue" id="dialogue"></div>
+            </div>
+          </div>
+
+          <aside class="log-panel" id="logPanel" hidden>
+            <div class="log-cont" id="logCont"></div>
+          </aside>
+        </div>
+      </div>
+
+      <div class="player-bottom">
+        <button id="prevSlide" class="ctrl">← 上一張</button>
+        <button id="nextSlide" class="ctrl">下一張 →</button>
+        <button id="autoPlay" class="ctrl">▶ 自動播放</button>
+        <select id="typeSpeed" class="field small" aria-label="打字速度">
+          <option value="instant">打字：瞬間（遊戲原設定）</option>
+          <option value="normal" selected>打字：一般</option>
+          <option value="slow">打字：慢</option>
+        </select>
+        <div class="progress"><i id="bar"></i></div>
+        <span id="counter">0 / 0</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
