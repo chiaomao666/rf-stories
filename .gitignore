@@ -44,3 +44,7 @@ site/assets/**
 
 # 參考用的遊戲端原始碼（含 .map），第三方程式碼不進版控
 assets/vendor/
+
+# macOS 的中繼檔（素材包解壓後會夾帶）
+.DS_Store
+._*
