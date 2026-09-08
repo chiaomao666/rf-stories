@@ -54,6 +54,14 @@ def write_json(path: Path, data: object) -> None:
     tmp.replace(path)
 
 
+def _city_order(row: dict) -> tuple:
+    """index.json 的排序鍵。position 缺席時才退回章節，才不會整份順序亂掉。"""
+    pos = row.get("position")
+    if pos is None:
+        return (1, 0, str(row.get("chapter_name") or ""), row.get("chapter_serial") or 0)
+    return (0, pos, "", 0)
+
+
 def chapter_of(city: dict) -> dict:
     ch = city.get("chapter")
     return ch if isinstance(ch, dict) else {}
@@ -93,7 +101,12 @@ async def main() -> int:
     ap.add_argument("--all", action="store_true", help="不過濾 status，打全部城市")
     ap.add_argument("--delay", type=float, default=0.3, help="每次請求間隔秒數")
     ap.add_argument("--force", action="store_true", help="即使目錄屬於其他帳號也覆寫")
-    ap.add_argument("--player-name", help="要替換掉的玩家暱稱（預設取登入回傳的暱稱）")
+    ap.add_argument("--player-name", help="要替換掉的玩家暱稱（預設取登入或 profile 的暱稱）")
+    ap.add_argument(
+        "--allow-unanonymized",
+        action="store_true",
+        help="暱稱取不到時仍然寫檔（預設是中止；寫出的資料會帶帳號暱稱，不可公開）",
+    )
     args = ap.parse_args()
 
     email = os.environ.get("RF_EMAIL")
@@ -127,11 +140,23 @@ async def main() -> int:
         print(f"陣營: {nation.get('name') or '(未知)'} → variant={variant}")
 
         # 劇情文本會把抓取帳號的暱稱寫進 speaker 與 dialogue，落地前先換掉。
-        player_name = args.player_name or rf.nickname
+        # 登入回應不一定帶 nickname（實測有回空的情形），profile 一定有
+        # （遊戲自己讀的就是 DCContext.userProfile.nickname）。
+        player_name = args.player_name or rf.nickname or profile.get("nickname")
         if player_name:
             print(f"玩家暱稱「{player_name}」將替換為佔位符")
+        elif args.allow_unanonymized:
+            print("⚠️ 取不到玩家暱稱，且已指定 --allow-unanonymized，本次不做替換")
         else:
-            print("⚠️ 取不到玩家暱稱，未做替換——公開前請用 scripts/scrub_data.py 補做")
+            # 這裡以前只印警告就繼續寫檔，結果是整批帶著暱稱的文本落地、
+            # 還蓋掉了先前已去識別化的資料。寧可停手。
+            print(
+                "取不到玩家暱稱，中止。帶暱稱的文本等同散佈帳號身分，不能就這樣落地。\n"
+                "請用 --player-name <暱稱> 指定後重跑；"
+                "確定要寫入未去識別化的資料才加 --allow-unanonymized",
+                file=sys.stderr,
+            )
+            return 2
 
         out = Path(args.out) if args.out else ROOT / "data" / variant
         story_dir = out / "main_story"
@@ -203,6 +228,10 @@ async def main() -> int:
                 {
                     "city_id": cid,
                     "city_name": c.get("name"),
+                    # 遊戲的城鎮順序鍵：Attackmap 的左右鍵就是依 position 由小到大跳轉，
+                    # 探險與特別篇因此會穿插在主線篇章之間。chapter 物件本身沒有排序鍵，
+                    # 只靠 chapter_name 排會得到跟遊戲完全不同的順序。
+                    "position": c.get("position"),
                     "chapter_name": ch.get("name"),
                     "chapter_number": ch.get("number"),
                     "chapter_serial": ch.get("serial"),
@@ -254,13 +283,9 @@ async def main() -> int:
                 "cities_with_story": len(index),
                 "cities_empty": empty,
                 "nation_slides": len(n_slides),
-                "cities": sorted(
-                    index,
-                    key=lambda r: (
-                        str(r.get("chapter_name") or ""),
-                        r.get("chapter_serial") or 0,
-                    ),
-                ),
+                # 依 position 排，也就是遊戲本身的順序（position >= 10000 是隱藏城，
+                # 只能由 UW Access 進入，排在最後）。取不到 position 的退回章節排序。
+                "cities": sorted(index, key=_city_order),
             },
         )
         write_json(out / "assets.json", sorted(assets))

@@ -14,222 +14,6 @@
   "nation_slides": 26,
   "cities": [
     {
-      "city_id": 473,
-      "city_name": "澎湖",
-      "chapter_name": "探險",
-      "chapter_number": "",
-      "chapter_serial": 1,
-      "file": "main_story/city_473.json",
-      "total": 30,
-      "before_attack": 29,
-      "after_attack": 1,
-      "with_dialogue": 25
-    },
-    {
-      "city_id": 474,
-      "city_name": "東沙",
-      "chapter_name": "探險",
-      "chapter_number": "",
-      "chapter_serial": 2,
-      "file": "main_story/city_474.json",
-      "total": 28,
-      "before_attack": 27,
-      "after_attack": 1,
-      "with_dialogue": 23
-    },
-    {
-      "city_id": 50,
-      "city_name": "屯門",
-      "chapter_name": "探險",
-      "chapter_number": "",
-      "chapter_serial": 3,
-      "file": "main_story/city_50.json",
-      "total": 33,
-      "before_attack": 32,
-      "after_attack": 1,
-      "with_dialogue": 28
-    },
-    {
-      "city_id": 39,
-      "city_name": "李世民監獄特區",
-      "chapter_name": "探險",
-      "chapter_number": "",
-      "chapter_serial": 4,
-      "file": "main_story/city_39.json",
-      "total": 33,
-      "before_attack": 30,
-      "after_attack": 3,
-      "with_dialogue": 27
-    },
-    {
-      "city_id": 54,
-      "city_name": "赤鱲角",
-      "chapter_name": "探險",
-      "chapter_number": "",
-      "chapter_serial": 5,
-      "file": "main_story/city_54.json",
-      "total": 32,
-      "before_attack": 31,
-      "after_attack": 1,
-      "with_dialogue": 27
-    },
-    {
-      "city_id": 23,
-      "city_name": "胡志明市",
-      "chapter_name": "東南亞篇",
-      "chapter_number": "III",
-      "chapter_serial": 1,
-      "file": "main_story/city_23.json",
-      "total": 149,
-      "before_attack": 81,
-      "after_attack": 68,
-      "with_dialogue": 133
-    },
-    {
-      "city_id": 22,
-      "city_name": "河內",
-      "chapter_name": "東南亞篇",
-      "chapter_number": "III",
-      "chapter_serial": 2,
-      "file": "main_story/city_22.json",
-      "total": 144,
-      "before_attack": 83,
-      "after_attack": 61,
-      "with_dialogue": 130
-    },
-    {
-      "city_id": 29,
-      "city_name": "孟賽",
-      "chapter_name": "東南亞篇",
-      "chapter_number": "III",
-      "chapter_serial": 3,
-      "file": "main_story/city_29.json",
-      "total": 136,
-      "before_attack": 56,
-      "after_attack": 80,
-      "with_dialogue": 123
-    },
-    {
-      "city_id": 28,
-      "city_name": "美斯樂",
-      "chapter_name": "東南亞篇",
-      "chapter_number": "III",
-      "chapter_serial": 4,
-      "file": "main_story/city_28.json",
-      "total": 269,
-      "before_attack": 168,
-      "after_attack": 101,
-      "with_dialogue": 260
-    },
-    {
-      "city_id": 35,
-      "city_name": "賀猛",
-      "chapter_name": "東南亞篇",
-      "chapter_number": "III",
-      "chapter_serial": 5,
-      "file": "main_story/city_35.json",
-      "total": 255,
-      "before_attack": 92,
-      "after_attack": 163,
-      "with_dialogue": 242
-    },
-    {
-      "city_id": 30,
-      "city_name": "邦康",
-      "chapter_name": "東南亞篇",
-      "chapter_number": "III",
-      "chapter_serial": 6,
-      "file": "main_story/city_30.json",
-      "total": 273,
-      "before_attack": 169,
-      "after_attack": 104,
-      "with_dialogue": 249
-    },
-    {
-      "city_id": 306,
-      "city_name": "西雙版納",
-      "chapter_name": "東南亞篇",
-      "chapter_number": "III",
-      "chapter_serial": 7,
-      "file": "main_story/city_306.json",
-      "total": 176,
-      "before_attack": 79,
-      "after_attack": 97,
-      "with_dialogue": 165
-    },
-    {
-      "city_id": 305,
-      "city_name": "德宏",
-      "chapter_name": "東南亞篇",
-      "chapter_number": "III",
-      "chapter_serial": 8,
-      "file": "main_story/city_305.json",
-      "total": 248,
-      "before_attack": 200,
-      "after_attack": 48,
-      "with_dialogue": 231
-    },
-    {
-      "city_id": 31,
-      "city_name": "老街",
-      "chapter_name": "東南亞篇",
-      "chapter_number": "III",
-      "chapter_serial": 9,
-      "file": "main_story/city_31.json",
-      "total": 191,
-      "before_attack": 92,
-      "after_attack": 99,
-      "with_dialogue": 182
-    },
-    {
-      "city_id": 32,
-      "city_name": "密支那",
-      "chapter_name": "東南亞篇",
-      "chapter_number": "III",
-      "chapter_serial": 10,
-      "file": "main_story/city_32.json",
-      "total": 244,
-      "before_attack": 128,
-      "after_attack": 116,
-      "with_dialogue": 230
-    },
-    {
-      "city_id": 33,
-      "city_name": "達杭丹",
-      "chapter_name": "東南亞篇",
-      "chapter_number": "III",
-      "chapter_serial": 11,
-      "file": "main_story/city_33.json",
-      "total": 321,
-      "before_attack": 255,
-      "after_attack": 66,
-      "with_dialogue": 307
-    },
-    {
-      "city_id": 36,
-      "city_name": "仰光",
-      "chapter_name": "東南亞篇",
-      "chapter_number": "III",
-      "chapter_serial": 12,
-      "file": "main_story/city_36.json",
-      "total": 310,
-      "before_attack": 263,
-      "after_attack": 47,
-      "with_dialogue": 289
-    },
-    {
-      "city_id": 55,
-      "city_name": "澳門首家善意賭場",
-      "chapter_name": "澳門特別篇",
-      "chapter_number": "",
-      "chapter_serial": 1,
-      "file": "main_story/city_55.json",
-      "total": 238,
-      "before_attack": 158,
-      "after_attack": 80,
-      "with_dialogue": 221
-    },
-    {
       "city_id": 2,
       "city_name": "馬祖",
       "chapter_name": "臺灣篇",
@@ -239,7 +23,8 @@
       "total": 151,
       "before_attack": 96,
       "after_attack": 55,
-      "with_dialogue": 129
+      "with_dialogue": 129,
+      "position": 10
     },
     {
       "city_id": 3,
@@ -251,7 +36,8 @@
       "total": 133,
       "before_attack": 42,
       "after_attack": 91,
-      "with_dialogue": 110
+      "with_dialogue": 110,
+      "position": 20
     },
     {
       "city_id": 4,
@@ -263,7 +49,8 @@
       "total": 133,
       "before_attack": 49,
       "after_attack": 84,
-      "with_dialogue": 106
+      "with_dialogue": 106,
+      "position": 30
     },
     {
       "city_id": 307,
@@ -275,7 +62,8 @@
       "total": 129,
       "before_attack": 81,
       "after_attack": 48,
-      "with_dialogue": 110
+      "with_dialogue": 110,
+      "position": 40
     },
     {
       "city_id": 308,
@@ -287,7 +75,8 @@
       "total": 211,
       "before_attack": 189,
       "after_attack": 22,
-      "with_dialogue": 190
+      "with_dialogue": 190,
+      "position": 50
     },
     {
       "city_id": 5,
@@ -299,7 +88,8 @@
       "total": 136,
       "before_attack": 86,
       "after_attack": 50,
-      "with_dialogue": 114
+      "with_dialogue": 114,
+      "position": 60
     },
     {
       "city_id": 6,
@@ -311,7 +101,8 @@
       "total": 166,
       "before_attack": 124,
       "after_attack": 42,
-      "with_dialogue": 152
+      "with_dialogue": 152,
+      "position": 70
     },
     {
       "city_id": 7,
@@ -323,7 +114,8 @@
       "total": 143,
       "before_attack": 120,
       "after_attack": 23,
-      "with_dialogue": 123
+      "with_dialogue": 123,
+      "position": 80
     },
     {
       "city_id": 8,
@@ -335,7 +127,8 @@
       "total": 115,
       "before_attack": 99,
       "after_attack": 16,
-      "with_dialogue": 104
+      "with_dialogue": 104,
+      "position": 90
     },
     {
       "city_id": 10,
@@ -347,7 +140,8 @@
       "total": 162,
       "before_attack": 118,
       "after_attack": 44,
-      "with_dialogue": 148
+      "with_dialogue": 148,
+      "position": 100
     },
     {
       "city_id": 11,
@@ -359,7 +153,8 @@
       "total": 142,
       "before_attack": 63,
       "after_attack": 79,
-      "with_dialogue": 121
+      "with_dialogue": 121,
+      "position": 110
     },
     {
       "city_id": 12,
@@ -371,7 +166,8 @@
       "total": 152,
       "before_attack": 54,
       "after_attack": 98,
-      "with_dialogue": 125
+      "with_dialogue": 125,
+      "position": 120
     },
     {
       "city_id": 13,
@@ -383,7 +179,21 @@
       "total": 123,
       "before_attack": 47,
       "after_attack": 76,
-      "with_dialogue": 108
+      "with_dialogue": 108,
+      "position": 130
+    },
+    {
+      "city_id": 473,
+      "city_name": "澎湖",
+      "chapter_name": "探險",
+      "chapter_number": "",
+      "chapter_serial": 1,
+      "file": "main_story/city_473.json",
+      "total": 30,
+      "before_attack": 29,
+      "after_attack": 1,
+      "with_dialogue": 25,
+      "position": 135
     },
     {
       "city_id": 1,
@@ -395,7 +205,8 @@
       "total": 117,
       "before_attack": 35,
       "after_attack": 82,
-      "with_dialogue": 105
+      "with_dialogue": 105,
+      "position": 140
     },
     {
       "city_id": 15,
@@ -407,7 +218,8 @@
       "total": 110,
       "before_attack": 96,
       "after_attack": 14,
-      "with_dialogue": 92
+      "with_dialogue": 92,
+      "position": 150
     },
     {
       "city_id": 16,
@@ -419,7 +231,8 @@
       "total": 150,
       "before_attack": 138,
       "after_attack": 12,
-      "with_dialogue": 137
+      "with_dialogue": 137,
+      "position": 160
     },
     {
       "city_id": 17,
@@ -431,7 +244,8 @@
       "total": 98,
       "before_attack": 23,
       "after_attack": 75,
-      "with_dialogue": 87
+      "with_dialogue": 87,
+      "position": 170
     },
     {
       "city_id": 19,
@@ -443,7 +257,21 @@
       "total": 130,
       "before_attack": 79,
       "after_attack": 51,
-      "with_dialogue": 112
+      "with_dialogue": 112,
+      "position": 180
+    },
+    {
+      "city_id": 474,
+      "city_name": "東沙",
+      "chapter_name": "探險",
+      "chapter_number": "",
+      "chapter_serial": 2,
+      "file": "main_story/city_474.json",
+      "total": 28,
+      "before_attack": 27,
+      "after_attack": 1,
+      "with_dialogue": 23,
+      "position": 185
     },
     {
       "city_id": 21,
@@ -455,7 +283,8 @@
       "total": 290,
       "before_attack": 231,
       "after_attack": 59,
-      "with_dialogue": 258
+      "with_dialogue": 258,
+      "position": 190
     },
     {
       "city_id": 20,
@@ -467,7 +296,8 @@
       "total": 149,
       "before_attack": 77,
       "after_attack": 72,
-      "with_dialogue": 131
+      "with_dialogue": 131,
+      "position": 200
     },
     {
       "city_id": 44,
@@ -479,7 +309,8 @@
       "total": 107,
       "before_attack": 88,
       "after_attack": 19,
-      "with_dialogue": 96
+      "with_dialogue": 96,
+      "position": 210
     },
     {
       "city_id": 43,
@@ -491,7 +322,8 @@
       "total": 176,
       "before_attack": 101,
       "after_attack": 75,
-      "with_dialogue": 144
+      "with_dialogue": 144,
+      "position": 220
     },
     {
       "city_id": 42,
@@ -503,7 +335,8 @@
       "total": 172,
       "before_attack": 134,
       "after_attack": 38,
-      "with_dialogue": 149
+      "with_dialogue": 149,
+      "position": 230
     },
     {
       "city_id": 41,
@@ -515,7 +348,8 @@
       "total": 125,
       "before_attack": 78,
       "after_attack": 47,
-      "with_dialogue": 108
+      "with_dialogue": 108,
+      "position": 240
     },
     {
       "city_id": 40,
@@ -527,7 +361,8 @@
       "total": 164,
       "before_attack": 127,
       "after_attack": 37,
-      "with_dialogue": 152
+      "with_dialogue": 152,
+      "position": 250
     },
     {
       "city_id": 45,
@@ -539,7 +374,8 @@
       "total": 148,
       "before_attack": 105,
       "after_attack": 43,
-      "with_dialogue": 137
+      "with_dialogue": 137,
+      "position": 260
     },
     {
       "city_id": 46,
@@ -551,7 +387,8 @@
       "total": 193,
       "before_attack": 154,
       "after_attack": 39,
-      "with_dialogue": 169
+      "with_dialogue": 169,
+      "position": 270
     },
     {
       "city_id": 48,
@@ -563,7 +400,8 @@
       "total": 229,
       "before_attack": 182,
       "after_attack": 47,
-      "with_dialogue": 208
+      "with_dialogue": 208,
+      "position": 280
     },
     {
       "city_id": 49,
@@ -575,7 +413,21 @@
       "total": 157,
       "before_attack": 122,
       "after_attack": 35,
-      "with_dialogue": 137
+      "with_dialogue": 137,
+      "position": 290
+    },
+    {
+      "city_id": 50,
+      "city_name": "屯門",
+      "chapter_name": "探險",
+      "chapter_number": "",
+      "chapter_serial": 3,
+      "file": "main_story/city_50.json",
+      "total": 33,
+      "before_attack": 32,
+      "after_attack": 1,
+      "with_dialogue": 28,
+      "position": 295
     },
     {
       "city_id": 51,
@@ -587,7 +439,8 @@
       "total": 205,
       "before_attack": 111,
       "after_attack": 94,
-      "with_dialogue": 189
+      "with_dialogue": 189,
+      "position": 300
     },
     {
       "city_id": 52,
@@ -599,7 +452,8 @@
       "total": 176,
       "before_attack": 108,
       "after_attack": 68,
-      "with_dialogue": 155
+      "with_dialogue": 155,
+      "position": 310
     },
     {
       "city_id": 37,
@@ -611,7 +465,8 @@
       "total": 104,
       "before_attack": 68,
       "after_attack": 36,
-      "with_dialogue": 94
+      "with_dialogue": 94,
+      "position": 320
     },
     {
       "city_id": 38,
@@ -623,7 +478,204 @@
       "total": 283,
       "before_attack": 139,
       "after_attack": 144,
-      "with_dialogue": 250
+      "with_dialogue": 250,
+      "position": 330
+    },
+    {
+      "city_id": 39,
+      "city_name": "李世民監獄特區",
+      "chapter_name": "探險",
+      "chapter_number": "",
+      "chapter_serial": 4,
+      "file": "main_story/city_39.json",
+      "total": 33,
+      "before_attack": 30,
+      "after_attack": 3,
+      "with_dialogue": 27,
+      "position": 335
+    },
+    {
+      "city_id": 54,
+      "city_name": "赤鱲角",
+      "chapter_name": "探險",
+      "chapter_number": "",
+      "chapter_serial": 5,
+      "file": "main_story/city_54.json",
+      "total": 32,
+      "before_attack": 31,
+      "after_attack": 1,
+      "with_dialogue": 27,
+      "position": 336
+    },
+    {
+      "city_id": 55,
+      "city_name": "澳門首家善意賭場",
+      "chapter_name": "澳門特別篇",
+      "chapter_number": "",
+      "chapter_serial": 1,
+      "file": "main_story/city_55.json",
+      "total": 238,
+      "before_attack": 158,
+      "after_attack": 80,
+      "with_dialogue": 221,
+      "position": 340
+    },
+    {
+      "city_id": 23,
+      "city_name": "胡志明市",
+      "chapter_name": "東南亞篇",
+      "chapter_number": "III",
+      "chapter_serial": 1,
+      "file": "main_story/city_23.json",
+      "total": 149,
+      "before_attack": 81,
+      "after_attack": 68,
+      "with_dialogue": 133,
+      "position": 350
+    },
+    {
+      "city_id": 22,
+      "city_name": "河內",
+      "chapter_name": "東南亞篇",
+      "chapter_number": "III",
+      "chapter_serial": 2,
+      "file": "main_story/city_22.json",
+      "total": 144,
+      "before_attack": 83,
+      "after_attack": 61,
+      "with_dialogue": 130,
+      "position": 360
+    },
+    {
+      "city_id": 29,
+      "city_name": "孟賽",
+      "chapter_name": "東南亞篇",
+      "chapter_number": "III",
+      "chapter_serial": 3,
+      "file": "main_story/city_29.json",
+      "total": 136,
+      "before_attack": 56,
+      "after_attack": 80,
+      "with_dialogue": 123,
+      "position": 370
+    },
+    {
+      "city_id": 28,
+      "city_name": "美斯樂",
+      "chapter_name": "東南亞篇",
+      "chapter_number": "III",
+      "chapter_serial": 4,
+      "file": "main_story/city_28.json",
+      "total": 269,
+      "before_attack": 168,
+      "after_attack": 101,
+      "with_dialogue": 260,
+      "position": 380
+    },
+    {
+      "city_id": 35,
+      "city_name": "賀猛",
+      "chapter_name": "東南亞篇",
+      "chapter_number": "III",
+      "chapter_serial": 5,
+      "file": "main_story/city_35.json",
+      "total": 255,
+      "before_attack": 92,
+      "after_attack": 163,
+      "with_dialogue": 242,
+      "position": 390
+    },
+    {
+      "city_id": 30,
+      "city_name": "邦康",
+      "chapter_name": "東南亞篇",
+      "chapter_number": "III",
+      "chapter_serial": 6,
+      "file": "main_story/city_30.json",
+      "total": 273,
+      "before_attack": 169,
+      "after_attack": 104,
+      "with_dialogue": 249,
+      "position": 400
+    },
+    {
+      "city_id": 306,
+      "city_name": "西雙版納",
+      "chapter_name": "東南亞篇",
+      "chapter_number": "III",
+      "chapter_serial": 7,
+      "file": "main_story/city_306.json",
+      "total": 176,
+      "before_attack": 79,
+      "after_attack": 97,
+      "with_dialogue": 165,
+      "position": 410
+    },
+    {
+      "city_id": 305,
+      "city_name": "德宏",
+      "chapter_name": "東南亞篇",
+      "chapter_number": "III",
+      "chapter_serial": 8,
+      "file": "main_story/city_305.json",
+      "total": 248,
+      "before_attack": 200,
+      "after_attack": 48,
+      "with_dialogue": 231,
+      "position": 420
+    },
+    {
+      "city_id": 31,
+      "city_name": "老街",
+      "chapter_name": "東南亞篇",
+      "chapter_number": "III",
+      "chapter_serial": 9,
+      "file": "main_story/city_31.json",
+      "total": 191,
+      "before_attack": 92,
+      "after_attack": 99,
+      "with_dialogue": 182,
+      "position": 430
+    },
+    {
+      "city_id": 32,
+      "city_name": "密支那",
+      "chapter_name": "東南亞篇",
+      "chapter_number": "III",
+      "chapter_serial": 10,
+      "file": "main_story/city_32.json",
+      "total": 244,
+      "before_attack": 128,
+      "after_attack": 116,
+      "with_dialogue": 230,
+      "position": 440
+    },
+    {
+      "city_id": 33,
+      "city_name": "達杭丹",
+      "chapter_name": "東南亞篇",
+      "chapter_number": "III",
+      "chapter_serial": 11,
+      "file": "main_story/city_33.json",
+      "total": 321,
+      "before_attack": 255,
+      "after_attack": 66,
+      "with_dialogue": 307,
+      "position": 450
+    },
+    {
+      "city_id": 36,
+      "city_name": "仰光",
+      "chapter_name": "東南亞篇",
+      "chapter_number": "III",
+      "chapter_serial": 12,
+      "file": "main_story/city_36.json",
+      "total": 310,
+      "before_attack": 263,
+      "after_attack": 47,
+      "with_dialogue": 289,
+      "position": 460
     }
-  ]
+  ],
+  "city_order_from": "data/non_red_army"
 }

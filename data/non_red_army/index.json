@@ -1,7 +1,8 @@
 {
-  "fetched_at": "2026-09-08T07:41:21+00:00",
+  "fetched_at": "2026-09-08T10:47:26+00:00",
   "source": "api.komisureiya.com",
   "user_id": 742896,
+  "anonymized": true,
   "variant": "non_red_army",
   "nation": {
     "id": 8,
@@ -14,224 +15,9 @@
   "nation_slides": 22,
   "cities": [
     {
-      "city_id": 473,
-      "city_name": "澎湖",
-      "chapter_name": "探險",
-      "chapter_number": "",
-      "chapter_serial": 1,
-      "file": "main_story/city_473.json",
-      "total": 30,
-      "before_attack": 29,
-      "after_attack": 1,
-      "with_dialogue": 25
-    },
-    {
-      "city_id": 474,
-      "city_name": "東沙",
-      "chapter_name": "探險",
-      "chapter_number": "",
-      "chapter_serial": 2,
-      "file": "main_story/city_474.json",
-      "total": 28,
-      "before_attack": 27,
-      "after_attack": 1,
-      "with_dialogue": 23
-    },
-    {
-      "city_id": 50,
-      "city_name": "屯門",
-      "chapter_name": "探險",
-      "chapter_number": "",
-      "chapter_serial": 3,
-      "file": "main_story/city_50.json",
-      "total": 35,
-      "before_attack": 34,
-      "after_attack": 1,
-      "with_dialogue": 30
-    },
-    {
-      "city_id": 39,
-      "city_name": "李世民監獄特區",
-      "chapter_name": "探險",
-      "chapter_number": "",
-      "chapter_serial": 4,
-      "file": "main_story/city_39.json",
-      "total": 43,
-      "before_attack": 40,
-      "after_attack": 3,
-      "with_dialogue": 37
-    },
-    {
-      "city_id": 54,
-      "city_name": "赤鱲角",
-      "chapter_name": "探險",
-      "chapter_number": "",
-      "chapter_serial": 5,
-      "file": "main_story/city_54.json",
-      "total": 24,
-      "before_attack": 23,
-      "after_attack": 1,
-      "with_dialogue": 19
-    },
-    {
-      "city_id": 23,
-      "city_name": "胡志明市",
-      "chapter_name": "東南亞篇",
-      "chapter_number": "III",
-      "chapter_serial": 1,
-      "file": "main_story/city_23.json",
-      "total": 219,
-      "before_attack": 100,
-      "after_attack": 119,
-      "with_dialogue": 204
-    },
-    {
-      "city_id": 22,
-      "city_name": "河內",
-      "chapter_name": "東南亞篇",
-      "chapter_number": "III",
-      "chapter_serial": 2,
-      "file": "main_story/city_22.json",
-      "total": 114,
-      "before_attack": 78,
-      "after_attack": 36,
-      "with_dialogue": 101
-    },
-    {
-      "city_id": 29,
-      "city_name": "孟賽",
-      "chapter_name": "東南亞篇",
-      "chapter_number": "III",
-      "chapter_serial": 3,
-      "file": "main_story/city_29.json",
-      "total": 229,
-      "before_attack": 97,
-      "after_attack": 132,
-      "with_dialogue": 208
-    },
-    {
-      "city_id": 28,
-      "city_name": "美斯樂",
-      "chapter_name": "東南亞篇",
-      "chapter_number": "III",
-      "chapter_serial": 4,
-      "file": "main_story/city_28.json",
-      "total": 294,
-      "before_attack": 176,
-      "after_attack": 118,
-      "with_dialogue": 271
-    },
-    {
-      "city_id": 35,
-      "city_name": "賀猛",
-      "chapter_name": "東南亞篇",
-      "chapter_number": "III",
-      "chapter_serial": 5,
-      "file": "main_story/city_35.json",
-      "total": 237,
-      "before_attack": 153,
-      "after_attack": 84,
-      "with_dialogue": 218
-    },
-    {
-      "city_id": 30,
-      "city_name": "邦康",
-      "chapter_name": "東南亞篇",
-      "chapter_number": "III",
-      "chapter_serial": 6,
-      "file": "main_story/city_30.json",
-      "total": 273,
-      "before_attack": 247,
-      "after_attack": 26,
-      "with_dialogue": 244
-    },
-    {
-      "city_id": 306,
-      "city_name": "西雙版納",
-      "chapter_name": "東南亞篇",
-      "chapter_number": "III",
-      "chapter_serial": 7,
-      "file": "main_story/city_306.json",
-      "total": 256,
-      "before_attack": 176,
-      "after_attack": 80,
-      "with_dialogue": 238
-    },
-    {
-      "city_id": 305,
-      "city_name": "德宏",
-      "chapter_name": "東南亞篇",
-      "chapter_number": "III",
-      "chapter_serial": 8,
-      "file": "main_story/city_305.json",
-      "total": 299,
-      "before_attack": 191,
-      "after_attack": 108,
-      "with_dialogue": 264
-    },
-    {
-      "city_id": 31,
-      "city_name": "老街",
-      "chapter_name": "東南亞篇",
-      "chapter_number": "III",
-      "chapter_serial": 9,
-      "file": "main_story/city_31.json",
-      "total": 326,
-      "before_attack": 271,
-      "after_attack": 55,
-      "with_dialogue": 303
-    },
-    {
-      "city_id": 32,
-      "city_name": "密支那",
-      "chapter_name": "東南亞篇",
-      "chapter_number": "III",
-      "chapter_serial": 10,
-      "file": "main_story/city_32.json",
-      "total": 291,
-      "before_attack": 188,
-      "after_attack": 103,
-      "with_dialogue": 271
-    },
-    {
-      "city_id": 33,
-      "city_name": "達杭丹",
-      "chapter_name": "東南亞篇",
-      "chapter_number": "III",
-      "chapter_serial": 11,
-      "file": "main_story/city_33.json",
-      "total": 243,
-      "before_attack": 162,
-      "after_attack": 81,
-      "with_dialogue": 214
-    },
-    {
-      "city_id": 36,
-      "city_name": "仰光",
-      "chapter_name": "東南亞篇",
-      "chapter_number": "III",
-      "chapter_serial": 12,
-      "file": "main_story/city_36.json",
-      "total": 423,
-      "before_attack": 158,
-      "after_attack": 265,
-      "with_dialogue": 380
-    },
-    {
-      "city_id": 55,
-      "city_name": "澳門首家善意賭場",
-      "chapter_name": "澳門特別篇",
-      "chapter_number": "",
-      "chapter_serial": 1,
-      "file": "main_story/city_55.json",
-      "total": 192,
-      "before_attack": 86,
-      "after_attack": 106,
-      "with_dialogue": 178
-    },
-    {
       "city_id": 2,
       "city_name": "馬祖",
+      "position": 10,
       "chapter_name": "臺灣篇",
       "chapter_number": "I",
       "chapter_serial": 1,
@@ -244,6 +30,7 @@
     {
       "city_id": 3,
       "city_name": "基隆",
+      "position": 20,
       "chapter_name": "臺灣篇",
       "chapter_number": "I",
       "chapter_serial": 2,
@@ -256,6 +43,7 @@
     {
       "city_id": 4,
       "city_name": "新北",
+      "position": 30,
       "chapter_name": "臺灣篇",
       "chapter_number": "I",
       "chapter_serial": 3,
@@ -268,6 +56,7 @@
     {
       "city_id": 307,
       "city_name": "桃園",
+      "position": 40,
       "chapter_name": "臺灣篇",
       "chapter_number": "I",
       "chapter_serial": 4,
@@ -280,6 +69,7 @@
     {
       "city_id": 308,
       "city_name": "新竹",
+      "position": 50,
       "chapter_name": "臺灣篇",
       "chapter_number": "I",
       "chapter_serial": 5,
@@ -292,6 +82,7 @@
     {
       "city_id": 5,
       "city_name": "苗栗",
+      "position": 60,
       "chapter_name": "臺灣篇",
       "chapter_number": "I",
       "chapter_serial": 6,
@@ -304,6 +95,7 @@
     {
       "city_id": 6,
       "city_name": "臺中",
+      "position": 70,
       "chapter_name": "臺灣篇",
       "chapter_number": "I",
       "chapter_serial": 7,
@@ -316,6 +108,7 @@
     {
       "city_id": 7,
       "city_name": "南投",
+      "position": 80,
       "chapter_name": "臺灣篇",
       "chapter_number": "I",
       "chapter_serial": 8,
@@ -328,6 +121,7 @@
     {
       "city_id": 8,
       "city_name": "彰化",
+      "position": 90,
       "chapter_name": "臺灣篇",
       "chapter_number": "I",
       "chapter_serial": 9,
@@ -340,6 +134,7 @@
     {
       "city_id": 10,
       "city_name": "雲林",
+      "position": 100,
       "chapter_name": "臺灣篇",
       "chapter_number": "I",
       "chapter_serial": 10,
@@ -352,6 +147,7 @@
     {
       "city_id": 11,
       "city_name": "嘉義",
+      "position": 110,
       "chapter_name": "臺灣篇",
       "chapter_number": "I",
       "chapter_serial": 11,
@@ -364,6 +160,7 @@
     {
       "city_id": 12,
       "city_name": "臺南",
+      "position": 120,
       "chapter_name": "臺灣篇",
       "chapter_number": "I",
       "chapter_serial": 12,
@@ -376,6 +173,7 @@
     {
       "city_id": 13,
       "city_name": "高雄",
+      "position": 130,
       "chapter_name": "臺灣篇",
       "chapter_number": "I",
       "chapter_serial": 13,
@@ -386,8 +184,22 @@
       "with_dialogue": 152
     },
     {
+      "city_id": 473,
+      "city_name": "澎湖",
+      "position": 135,
+      "chapter_name": "探險",
+      "chapter_number": "",
+      "chapter_serial": 1,
+      "file": "main_story/city_473.json",
+      "total": 30,
+      "before_attack": 29,
+      "after_attack": 1,
+      "with_dialogue": 25
+    },
+    {
       "city_id": 1,
       "city_name": "臺北",
+      "position": 140,
       "chapter_name": "臺灣篇",
       "chapter_number": "I",
       "chapter_serial": 14,
@@ -400,6 +212,7 @@
     {
       "city_id": 15,
       "city_name": "宜蘭",
+      "position": 150,
       "chapter_name": "臺灣篇",
       "chapter_number": "I",
       "chapter_serial": 15,
@@ -412,6 +225,7 @@
     {
       "city_id": 16,
       "city_name": "花蓮",
+      "position": 160,
       "chapter_name": "臺灣篇",
       "chapter_number": "I",
       "chapter_serial": 16,
@@ -424,6 +238,7 @@
     {
       "city_id": 17,
       "city_name": "臺東",
+      "position": 170,
       "chapter_name": "臺灣篇",
       "chapter_number": "I",
       "chapter_serial": 17,
@@ -436,6 +251,7 @@
     {
       "city_id": 19,
       "city_name": "屏東",
+      "position": 180,
       "chapter_name": "臺灣篇",
       "chapter_number": "I",
       "chapter_serial": 18,
@@ -446,8 +262,22 @@
       "with_dialogue": 137
     },
     {
+      "city_id": 474,
+      "city_name": "東沙",
+      "position": 185,
+      "chapter_name": "探險",
+      "chapter_number": "",
+      "chapter_serial": 2,
+      "file": "main_story/city_474.json",
+      "total": 28,
+      "before_attack": 27,
+      "after_attack": 1,
+      "with_dialogue": 23
+    },
+    {
       "city_id": 21,
       "city_name": "佬沃",
+      "position": 190,
       "chapter_name": "菲律賓特別篇",
       "chapter_number": "",
       "chapter_serial": 1,
@@ -460,6 +290,7 @@
     {
       "city_id": 20,
       "city_name": "馬尼拉",
+      "position": 200,
       "chapter_name": "菲律賓特別篇",
       "chapter_number": "",
       "chapter_serial": 2,
@@ -472,6 +303,7 @@
     {
       "city_id": 44,
       "city_name": "觀塘",
+      "position": 210,
       "chapter_name": "香港篇",
       "chapter_number": "II",
       "chapter_serial": 1,
@@ -484,6 +316,7 @@
     {
       "city_id": 43,
       "city_name": "黃大仙",
+      "position": 220,
       "chapter_name": "香港篇",
       "chapter_number": "II",
       "chapter_serial": 2,
@@ -496,6 +329,7 @@
     {
       "city_id": 42,
       "city_name": "深水埗",
+      "position": 230,
       "chapter_name": "香港篇",
       "chapter_number": "II",
       "chapter_serial": 3,
@@ -508,6 +342,7 @@
     {
       "city_id": 41,
       "city_name": "油尖旺",
+      "position": 240,
       "chapter_name": "香港篇",
       "chapter_number": "II",
       "chapter_serial": 4,
@@ -520,6 +355,7 @@
     {
       "city_id": 40,
       "city_name": "香港乞丐特區",
+      "position": 250,
       "chapter_name": "香港篇",
       "chapter_number": "II",
       "chapter_serial": 5,
@@ -532,6 +368,7 @@
     {
       "city_id": 45,
       "city_name": "西貢",
+      "position": 260,
       "chapter_name": "香港篇",
       "chapter_number": "II",
       "chapter_serial": 6,
@@ -544,6 +381,7 @@
     {
       "city_id": 46,
       "city_name": "沙田",
+      "position": 270,
       "chapter_name": "香港篇",
       "chapter_number": "II",
       "chapter_serial": 7,
@@ -556,6 +394,7 @@
     {
       "city_id": 48,
       "city_name": "大埔",
+      "position": 280,
       "chapter_name": "香港篇",
       "chapter_number": "II",
       "chapter_serial": 8,
@@ -568,6 +407,7 @@
     {
       "city_id": 49,
       "city_name": "元朗",
+      "position": 290,
       "chapter_name": "香港篇",
       "chapter_number": "II",
       "chapter_serial": 9,
@@ -578,8 +418,22 @@
       "with_dialogue": 158
     },
     {
+      "city_id": 50,
+      "city_name": "屯門",
+      "position": 295,
+      "chapter_name": "探險",
+      "chapter_number": "",
+      "chapter_serial": 3,
+      "file": "main_story/city_50.json",
+      "total": 35,
+      "before_attack": 34,
+      "after_attack": 1,
+      "with_dialogue": 30
+    },
+    {
       "city_id": 51,
       "city_name": "荃灣",
+      "position": 300,
       "chapter_name": "香港篇",
       "chapter_number": "II",
       "chapter_serial": 10,
@@ -592,6 +446,7 @@
     {
       "city_id": 52,
       "city_name": "葵青",
+      "position": 310,
       "chapter_name": "香港篇",
       "chapter_number": "II",
       "chapter_serial": 11,
@@ -604,6 +459,7 @@
     {
       "city_id": 37,
       "city_name": "維多利亞城",
+      "position": 320,
       "chapter_name": "香港篇",
       "chapter_number": "II",
       "chapter_serial": 12,
@@ -616,6 +472,7 @@
     {
       "city_id": 38,
       "city_name": "士多兵團墳場",
+      "position": 330,
       "chapter_name": "香港篇",
       "chapter_number": "II",
       "chapter_serial": 13,
@@ -624,6 +481,202 @@
       "before_attack": 130,
       "after_attack": 210,
       "with_dialogue": 269
+    },
+    {
+      "city_id": 39,
+      "city_name": "李世民監獄特區",
+      "position": 335,
+      "chapter_name": "探險",
+      "chapter_number": "",
+      "chapter_serial": 4,
+      "file": "main_story/city_39.json",
+      "total": 43,
+      "before_attack": 40,
+      "after_attack": 3,
+      "with_dialogue": 37
+    },
+    {
+      "city_id": 54,
+      "city_name": "赤鱲角",
+      "position": 336,
+      "chapter_name": "探險",
+      "chapter_number": "",
+      "chapter_serial": 5,
+      "file": "main_story/city_54.json",
+      "total": 24,
+      "before_attack": 23,
+      "after_attack": 1,
+      "with_dialogue": 19
+    },
+    {
+      "city_id": 55,
+      "city_name": "澳門首家善意賭場",
+      "position": 340,
+      "chapter_name": "澳門特別篇",
+      "chapter_number": "",
+      "chapter_serial": 1,
+      "file": "main_story/city_55.json",
+      "total": 192,
+      "before_attack": 86,
+      "after_attack": 106,
+      "with_dialogue": 178
+    },
+    {
+      "city_id": 23,
+      "city_name": "胡志明市",
+      "position": 350,
+      "chapter_name": "東南亞篇",
+      "chapter_number": "III",
+      "chapter_serial": 1,
+      "file": "main_story/city_23.json",
+      "total": 219,
+      "before_attack": 100,
+      "after_attack": 119,
+      "with_dialogue": 204
+    },
+    {
+      "city_id": 22,
+      "city_name": "河內",
+      "position": 360,
+      "chapter_name": "東南亞篇",
+      "chapter_number": "III",
+      "chapter_serial": 2,
+      "file": "main_story/city_22.json",
+      "total": 114,
+      "before_attack": 78,
+      "after_attack": 36,
+      "with_dialogue": 101
+    },
+    {
+      "city_id": 29,
+      "city_name": "孟賽",
+      "position": 370,
+      "chapter_name": "東南亞篇",
+      "chapter_number": "III",
+      "chapter_serial": 3,
+      "file": "main_story/city_29.json",
+      "total": 229,
+      "before_attack": 97,
+      "after_attack": 132,
+      "with_dialogue": 208
+    },
+    {
+      "city_id": 28,
+      "city_name": "美斯樂",
+      "position": 380,
+      "chapter_name": "東南亞篇",
+      "chapter_number": "III",
+      "chapter_serial": 4,
+      "file": "main_story/city_28.json",
+      "total": 294,
+      "before_attack": 176,
+      "after_attack": 118,
+      "with_dialogue": 271
+    },
+    {
+      "city_id": 35,
+      "city_name": "賀猛",
+      "position": 390,
+      "chapter_name": "東南亞篇",
+      "chapter_number": "III",
+      "chapter_serial": 5,
+      "file": "main_story/city_35.json",
+      "total": 237,
+      "before_attack": 153,
+      "after_attack": 84,
+      "with_dialogue": 218
+    },
+    {
+      "city_id": 30,
+      "city_name": "邦康",
+      "position": 400,
+      "chapter_name": "東南亞篇",
+      "chapter_number": "III",
+      "chapter_serial": 6,
+      "file": "main_story/city_30.json",
+      "total": 273,
+      "before_attack": 247,
+      "after_attack": 26,
+      "with_dialogue": 244
+    },
+    {
+      "city_id": 306,
+      "city_name": "西雙版納",
+      "position": 410,
+      "chapter_name": "東南亞篇",
+      "chapter_number": "III",
+      "chapter_serial": 7,
+      "file": "main_story/city_306.json",
+      "total": 256,
+      "before_attack": 176,
+      "after_attack": 80,
+      "with_dialogue": 238
+    },
+    {
+      "city_id": 305,
+      "city_name": "德宏",
+      "position": 420,
+      "chapter_name": "東南亞篇",
+      "chapter_number": "III",
+      "chapter_serial": 8,
+      "file": "main_story/city_305.json",
+      "total": 299,
+      "before_attack": 191,
+      "after_attack": 108,
+      "with_dialogue": 264
+    },
+    {
+      "city_id": 31,
+      "city_name": "老街",
+      "position": 430,
+      "chapter_name": "東南亞篇",
+      "chapter_number": "III",
+      "chapter_serial": 9,
+      "file": "main_story/city_31.json",
+      "total": 326,
+      "before_attack": 271,
+      "after_attack": 55,
+      "with_dialogue": 303
+    },
+    {
+      "city_id": 32,
+      "city_name": "密支那",
+      "position": 440,
+      "chapter_name": "東南亞篇",
+      "chapter_number": "III",
+      "chapter_serial": 10,
+      "file": "main_story/city_32.json",
+      "total": 291,
+      "before_attack": 188,
+      "after_attack": 103,
+      "with_dialogue": 271
+    },
+    {
+      "city_id": 33,
+      "city_name": "達杭丹",
+      "position": 450,
+      "chapter_name": "東南亞篇",
+      "chapter_number": "III",
+      "chapter_serial": 11,
+      "file": "main_story/city_33.json",
+      "total": 243,
+      "before_attack": 162,
+      "after_attack": 81,
+      "with_dialogue": 214
+    },
+    {
+      "city_id": 36,
+      "city_name": "仰光",
+      "position": 460,
+      "chapter_name": "東南亞篇",
+      "chapter_number": "III",
+      "chapter_serial": 12,
+      "file": "main_story/city_36.json",
+      "total": 423,
+      "before_attack": 158,
+      "after_attack": 265,
+      "with_dialogue": 380
     }
-  ]
+  ],
+  "anonymized_by": "scripts/scrub_data.py"
 }
