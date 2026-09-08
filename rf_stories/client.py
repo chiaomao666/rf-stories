@@ -203,19 +203,33 @@ class RFClient:
         inner = pl.get("profile")
         return inner if isinstance(inner, dict) else pl
 
-    async def nation_of(self, profile: dict[str, Any] | None = None) -> dict[str, Any]:
-        """取出帳號所屬陣營。不同陣營的主線與陣營劇情內容不同，抓取時要分開存。
+    async def nation_of(
+        self,
+        profile: dict[str, Any] | None = None,
+        cities: list[dict[str, Any]] | None = None,
+    ) -> dict[str, Any]:
+        """取出帳號所屬陣營 {id, name}。
 
-        profile 的陣營欄位在不同版本間出現過幾種形狀，這裡逐一嘗試而不假設單一路徑。
+        `profile.nation` 通常只有 `id`，沒有 `name`——客戶端是拿 id 去 `nations`
+        清單查名字的（`DCContext` 的 myNation）。這裡改用 cities 裡每座城的
+        `control_nation: {id, name}` 建對照表，省一次請求。
+
+        查不到名字時 `name` 為 None，由呼叫端決定要不要當成錯誤處理，
+        絕不要在這裡猜——猜錯會把兩個陣營的資料寫進同一個目錄。
         """
         p = profile if profile is not None else await self.profile()
-        for key in ("nation", "user_nation", "country"):
-            v = p.get(key)
-            if isinstance(v, dict) and (v.get("name") or v.get("id")):
-                return {"id": v.get("id"), "name": v.get("name")}
-            if isinstance(v, str) and v:
-                return {"id": None, "name": v}
-        return {"id": p.get("nation_id"), "name": p.get("nation_name")}
+        nation = p.get("nation")
+        nid = nation.get("id") if isinstance(nation, dict) else p.get("nation_id")
+        name = nation.get("name") if isinstance(nation, dict) else None
+
+        if not name and nid is not None:
+            source = cities if cities is not None else await self.cities()
+            for c in source:
+                cn = c.get("control_nation")
+                if isinstance(cn, dict) and cn.get("id") == nid and cn.get("name"):
+                    name = cn["name"]
+                    break
+        return {"id": nid, "name": name}
 
     async def slides(self, city_id: int) -> dict[str, Any]:
         """攻城劇情。未實作劇情的城市會回 status ok 但 slides 為空陣列。"""

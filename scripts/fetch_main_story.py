@@ -91,6 +91,7 @@ async def main() -> int:
     )
     ap.add_argument("--all", action="store_true", help="不過濾 status，打全部城市")
     ap.add_argument("--delay", type=float, default=0.3, help="每次請求間隔秒數")
+    ap.add_argument("--force", action="store_true", help="即使目錄屬於其他帳號也覆寫")
     args = ap.parse_args()
 
     email = os.environ.get("RF_EMAIL")
@@ -102,20 +103,45 @@ async def main() -> int:
     async with RFClient(email, password) as rf:
         print(f"login ok (user_id={rf.user_id})")
 
-        # 主線劇情分紅軍與非紅軍兩版，先判定這個帳號屬於哪一版再決定輸出位置，
-        # 免得兩份資料互相覆蓋。
+        cities = await rf.cities()
+        print(f"cities: {len(cities)}")
+
+        # 主線劇情分紅軍與非紅軍兩版，先判定這個帳號屬於哪一版再決定輸出位置。
         profile = await rf.profile()
-        nation = await rf.nation_of(profile)
-        variant = args.variant or variant_of(nation)
-        print(f"陣營: {nation.get('name') or '（取不到）'} → variant={variant}")
-        if not args.variant and not nation.get("name"):
-            print("⚠️ 取不到陣營名稱，已當作非紅軍處理；如有疑慮請用 --variant 指定")
+        nation = await rf.nation_of(profile, cities)
+        if args.variant:
+            variant = args.variant
+        elif nation.get("name"):
+            variant = variant_of(nation)
+        else:
+            # 判不出來就停手。先前這裡預設非紅軍，結果紅軍帳號也寫進
+            # non_red_army/，兩份資料互相覆蓋——寧可什麼都不做。
+            print(
+                f"無法判定陣營（nation={nation}），請用 --variant "
+                f"{{{RED},{NON_RED}}} 明確指定後重跑",
+                file=sys.stderr,
+            )
+            return 2
+        print(f"陣營: {nation.get('name') or '(未知)'} → variant={variant}")
 
         out = Path(args.out) if args.out else ROOT / "data" / variant
         story_dir = out / "main_story"
 
-        cities = await rf.cities()
-        print(f"cities: {len(cities)}")
+        # 不同帳號寫進同一個目錄會逐城混雜，事後分不出哪座城是誰的資料。
+        existing = out / "index.json"
+        if existing.exists() and not args.force:
+            try:
+                prev = json.loads(existing.read_text(encoding="utf-8"))
+            except Exception:
+                prev = {}
+            prev_uid = prev.get("user_id")
+            if prev_uid is not None and prev_uid != rf.user_id:
+                print(
+                    f"{out} 已有 user_id={prev_uid} 的資料，本次是 {rf.user_id}。"
+                    f"請換 --out，或確認要覆蓋後加 --force",
+                    file=sys.stderr,
+                )
+                return 2
 
         targets = cities if args.all else [
             c for c in cities if c.get("status") != SKIP_STATUS
@@ -179,9 +205,9 @@ async def main() -> int:
             )
             await asyncio.sleep(args.delay)
 
-        # 陣營劇情
-        nation = await rf.nation_slides()
-        n_slides = nation.get("slides") or []
+        # 陣營劇情（別覆蓋上面的 nation：那是帳號陣營，要寫進 index）
+        nation_pl = await rf.nation_slides()
+        n_slides = nation_pl.get("slides") or []
         if n_slides:
             scan_assets(n_slides, assets)
             write_json(
@@ -194,7 +220,7 @@ async def main() -> int:
                         "total": len(n_slides),
                         "with_dialogue": sum(1 for s in n_slides if s.get("dialogue")),
                     },
-                    "preloads": nation.get("preloads") or [],
+                    "preloads": nation_pl.get("preloads") or [],
                     "slides": n_slides,
                 },
             )
@@ -205,6 +231,7 @@ async def main() -> int:
             {
                 "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                 "source": "api.komisureiya.com",
+                "user_id": rf.user_id,
                 "variant": variant,
                 "nation": nation,
                 "cities_total": len(cities),
