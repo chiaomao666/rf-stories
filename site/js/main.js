@@ -149,6 +149,21 @@ $('#search').addEventListener('input', (e) => {
   archive.renderCards($('#storyGrid'));
 });
 
+$('#uwSearch').addEventListener('input', (e) => {
+  archive.state.uwKeyword = e.target.value;
+  renderUwFilterResults();
+});
+
+$('#uwLevel').addEventListener('change', (e) => {
+  archive.state.uwLevel = e.target.value;
+  renderUwFilterResults();
+});
+
+$('#uwCity').addEventListener('change', (e) => {
+  archive.state.uwCity = e.target.value;
+  renderUwFilterResults();
+});
+
 $('#storyGrid').addEventListener('click', async (e) => {
   const btn = e.target.closest('.play-link');
   if (!btn) return;
@@ -204,12 +219,27 @@ async function fillUwPlots() {
   const note = $('#uwLoadedNote');
   try {
     const idx = await archive.loadUwIndex();
-    note.textContent = `${idx.plots_total ?? idx.plots?.length ?? 0} 段 · ${idx.slides_total ?? 0} 張 slides · 更新於 ${String(idx.exported_at || '').slice(0, 10)}`;
+    const levelSelect = $('#uwLevel');
+    levelSelect.innerHTML = '<option value="all">所有等級</option>' + archive.uwLevels()
+      .map((level) => `<option value="${archive.escapeHtml(level)}">Level ${archive.escapeHtml(level)}</option>`)
+      .join('');
+    const citySelect = $('#uwCity');
+    citySelect.innerHTML = '<option value="all">所有城市</option>' + archive.uwCities()
+      .map((city) => `<option value="${archive.escapeHtml(city)}">CITY ${archive.escapeHtml(city)}</option>`)
+      .join('');
     archive.renderUwCards($('#uwGrid'));
+    note.textContent = `${idx.plots_total ?? idx.plots?.length ?? 0} 段 · ${idx.slides_total ?? 0} 張 slides · 更新於 ${String(idx.exported_at || '').slice(0, 10)}`;
   } catch (err) {
     note.textContent = '尚未載入 UW 資料';
     $('#uwGrid').innerHTML = `<div class="empty">${archive.escapeHtml(err.message || err)}</div>`;
   }
+}
+
+function renderUwFilterResults() {
+  archive.renderUwCards($('#uwGrid'));
+  const total = archive.state.uwIndex?.plots?.length || 0;
+  const shown = archive.filteredUw().length;
+  $('#uwLoadedNote').textContent = `顯示 ${shown} / ${total} 段 UW 劇情`;
 }
 
 $('#nationStory').addEventListener('change', async (e) => {

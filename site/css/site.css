@@ -351,6 +351,14 @@ code {
   border-left-color: var(--blue);
 }
 
+.uw-toolbar {
+  margin-bottom: 18px;
+}
+
+.uw-toolbar .field:not(.search) {
+  min-width: 150px;
+}
+
 .uw-card {
   min-height: 176px;
   background: #f8f4ec;

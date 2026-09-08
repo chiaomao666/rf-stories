@@ -8,6 +8,9 @@ export const state = {
   index: null,
   stories: [],
   uwIndex: null,
+  uwKeyword: '',
+  uwLevel: 'all',
+  uwCity: 'all',
   chapter: 'all',
   keyword: '',
 };
@@ -79,6 +82,30 @@ export function loadUwPlot(file) {
   return loadJson(`uw_plots/${file}`);
 }
 
+export function uwLevels() {
+  return [...new Set((state.uwIndex?.plots || []).map((p) => String(p.level)).filter(Boolean))].sort(
+    (a, b) => Number(a) - Number(b),
+  );
+}
+
+export function uwCities() {
+  return [...new Set((state.uwIndex?.plots || []).map((p) => String(p.city_id)).filter(Boolean))].sort(
+    (a, b) => Number(a) - Number(b),
+  );
+}
+
+export function filteredUw() {
+  const keyword = state.uwKeyword.trim().toLowerCase();
+  return (state.uwIndex?.plots || []).filter((plot) => {
+    if (state.uwLevel !== 'all' && String(plot.level) !== state.uwLevel) return false;
+    if (state.uwCity !== 'all' && String(plot.city_id) !== state.uwCity) return false;
+    if (!keyword) return true;
+    return [plot.site_name, plot.site_id, plot.site_plot_id, plot.city_id, plot.level, plot.file]
+      .filter((value) => value !== null && value !== undefined)
+      .some((value) => String(value).toLowerCase().includes(keyword));
+  });
+}
+
 export function chapters() {
   const names = state.stories.map((s) => s.chapter_name).filter(Boolean);
   return [...new Set(names)];
@@ -141,9 +168,9 @@ export function renderCards(container) {
 }
 
 export function renderUwCards(container) {
-  const rows = state.uwIndex?.plots || [];
+  const rows = filteredUw();
   if (!rows.length) {
-    container.innerHTML = '<div class="empty">目前沒有已匯入的 UW 劇情。</div>';
+    container.innerHTML = '<div class="empty">找不到符合條件的 UW 劇情。</div>';
     return;
   }
   container.innerHTML = rows

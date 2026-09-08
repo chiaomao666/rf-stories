@@ -37,6 +37,42 @@ def plot_filename(record: dict) -> str:
     return f"site_{record.get('site_id')}_plot_{record.get('site_plot_id')}.json"
 
 
+def rebuild_index(out: Path) -> dict:
+    plots = []
+    for path in sorted(out.glob("site_*_plot_*.json")):
+        record = json.loads(path.read_text(encoding="utf-8"))
+        slides = record.get("slides") or []
+        counts = record.get("counts") or {}
+        plots.append(
+            {
+                "site_id": record.get("site_id"),
+                "site_name": record.get("site_name"),
+                "site_plot_id": record.get("site_plot_id"),
+                "level": record.get("level"),
+                "city_id": record.get("city_id"),
+                "file": path.name,
+                "total": counts.get("total", len(slides)),
+                "with_dialogue": counts.get(
+                    "with_dialogue", sum(bool(s.get("dialogue")) for s in slides)
+                ),
+                "fetched_at": record.get("fetched_at"),
+            }
+        )
+    index = {
+        "source": "rf_uw_capture.js",
+        "anonymized": all(
+            json.loads(p.read_text(encoding="utf-8")).get("anonymized", False)
+            for p in sorted(out.glob("site_*_plot_*.json"))
+        ),
+        "plots_total": len(plots),
+        "slides_total": sum(p["total"] for p in plots),
+        "with_dialogue_total": sum(p["with_dialogue"] for p in plots),
+        "plots": plots,
+    }
+    write_json(out / "index.json", index)
+    return index
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("dump", help="rf_uw_capture.js 匯出的 JSON")
@@ -109,11 +145,12 @@ def main() -> int:
 
     for path, rec in to_write:
         write_json(path, rec)
+    index = rebuild_index(out)
     if to_write:
         print(f"-> {out}")
 
     existing = sorted(out.glob("site_*_plot_*.json")) if out.is_dir() else []
-    print(f"目前 data/uw_plots/ 共 {len(existing)} 段")
+    print(f"目前 data/uw_plots/ 共 {len(existing)} 段，索引同步為 {index['plots_total']} 段")
     return 0
 
 

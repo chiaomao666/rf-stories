@@ -86,6 +86,16 @@
         <div class="notice uw-notice">
           UW 劇情依地點與劇情段落收錄。它不使用主線的戰前／戰後切分，會以完整段落直接重播。
         </div>
+        <div class="toolbar uw-toolbar">
+          <input id="uwSearch" class="field search" placeholder="搜尋 UW 地點、site ID、劇情段落…"
+                 aria-label="搜尋 UW 地點、site ID 或劇情段落" />
+          <select id="uwLevel" class="field" aria-label="篩選 UW 等級">
+            <option value="all">所有等級</option>
+          </select>
+          <select id="uwCity" class="field" aria-label="篩選 UW 城市">
+            <option value="all">所有城市</option>
+          </select>
+        </div>
         <div id="uwGrid" class="story-grid uw-grid"></div>
       </section>
 
