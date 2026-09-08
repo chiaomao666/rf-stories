@@ -87,21 +87,24 @@ UW 的限制比主線多得多，動手前先讀文件的「UW 的多段結構�
 
 因此 UW 只能**累積式蒐集**：在平常遊玩的流程裡持續 dump，以 `site_plot_id` 去重。
 
-## ⚠️ 玩家名
+## ⚠️ 玩家身分
 
-伺服器會把登入帳號的暱稱直接代入 `speaker` 與 `dialogue`，**主線與 UW 都會**
-（全量抓取實測：非紅軍 1,929 處、紅軍 3,253 處）。
+伺服器會把登入帳號的**暱稱**與**組織名**直接代入 `speaker` 與 `dialogue`，
+**主線與 UW 都會**（全量抓取實測：非紅軍暱稱 1,929 處＋組織名 35 處、紅軍暱稱 3,253 處）。
+兩者的來源都是 profile，遊戲自己讀的是 `userProfile.nickname` 與 `userProfile.organization`。
 
-抓取腳本會在寫檔前自動替換成「主角」，既有資料可用 `scripts/scrub_data.py` 補做：
+抓取腳本會在寫檔前自動替換成「主角」與「組織」，既有資料可用 `scripts/scrub_data.py` 補做：
 
 ```bash
-python scripts/scrub_data.py data/non_red_army --player-name <暱稱> --check  # 先檢查
-python scripts/scrub_data.py data/non_red_army --player-name <暱稱>          # 再替換
+python scripts/scrub_data.py data/non_red_army --player-name <暱稱> --organization <組織> --check
+python scripts/scrub_data.py data/non_red_army --player-name <暱稱> --organization <組織>
 ```
 
-暱稱可能是任意字串（例如某測試帳號的暱稱就是單一底線 `_`），所以一定要用帳號的
-實際暱稱替換，不要靠樣式猜測。**公開任何資料前請再確認一次**——
-帶著玩家名的文本等同散佈帳號身分。
+暱稱與組織名可能是任意字串（某測試帳號兩者都是單一底線 `_`），所以一定要用帳號的
+實際值替換，不要靠樣式猜測；而且**替換前務必先用 `--check` 看清楚命中的是什麼**——
+盲目替換單字元會毀掉正常文本（實測 `city_32.json` 裡就有顏文字 `(ಥ _ ಥ)`）。
+
+**公開任何資料前請再確認一次**——帶著玩家身分的文本等同散佈帳號身分。
 
 ## 資料與版控
 

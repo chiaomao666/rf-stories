@@ -102,6 +102,7 @@ async def main() -> int:
     ap.add_argument("--delay", type=float, default=0.3, help="每次請求間隔秒數")
     ap.add_argument("--force", action="store_true", help="即使目錄屬於其他帳號也覆寫")
     ap.add_argument("--player-name", help="要替換掉的玩家暱稱（預設取登入或 profile 的暱稱）")
+    ap.add_argument("--organization", help="要替換掉的組織名（預設取 profile 的組織名）")
     ap.add_argument(
         "--allow-unanonymized",
         action="store_true",
@@ -139,10 +140,13 @@ async def main() -> int:
             return 2
         print(f"陣營: {nation.get('name') or '(未知)'} → variant={variant}")
 
-        # 劇情文本會把抓取帳號的暱稱寫進 speaker 與 dialogue，落地前先換掉。
+        # 劇情文本會把抓取帳號的暱稱**與組織名**寫進 speaker 與 dialogue，落地前先換掉。
         # 登入回應不一定帶 nickname（實測有回空的情形），profile 一定有
-        # （遊戲自己讀的就是 DCContext.userProfile.nickname）。
+        # （遊戲自己讀的就是 DCContext.userProfile.nickname / .organization）。
         player_name = args.player_name or rf.nickname or profile.get("nickname")
+        organization = args.organization or profile.get("organization")
+        if organization:
+            print(f"組織名「{organization}」將替換為佔位符")
         if player_name:
             print(f"玩家暱稱「{player_name}」將替換為佔位符")
         elif args.allow_unanonymized:
@@ -201,8 +205,8 @@ async def main() -> int:
                 await asyncio.sleep(args.delay)
                 continue
 
-            if player_name:
-                slides, _ = scrub_slides(slides, player_name)
+            if player_name or organization:
+                slides, _ = scrub_slides(slides, player_name, organization=organization)
 
             ch = chapter_of(c)
             phases = split_by_phase(slides)
@@ -250,8 +254,8 @@ async def main() -> int:
         nation_pl = await rf.nation_slides()
         n_slides = nation_pl.get("slides") or []
         if n_slides:
-            if player_name:
-                n_slides, _ = scrub_slides(n_slides, player_name)
+            if player_name or organization:
+                n_slides, _ = scrub_slides(n_slides, player_name, organization=organization)
             scan_assets(n_slides, assets)
             write_json(
                 out / "nation_story.json",
@@ -275,7 +279,7 @@ async def main() -> int:
                 "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                 "source": "api.komisureiya.com",
                 "user_id": rf.user_id,
-                "anonymized": bool(player_name),
+                "anonymized": bool(player_name or organization),
                 "variant": variant,
                 "nation": nation,
                 "cities_total": len(cities),

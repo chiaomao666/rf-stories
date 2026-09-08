@@ -159,15 +159,20 @@ async def dispatch(rf: RFClient, args: argparse.Namespace, out: Path) -> int:
         f"level={pl.get('level')} site_name={pl.get('site_name')}"
     )
 
-    # 玩家名清理——UW 文本會帶抓取者身分，入庫前一定要過這關
-    player_name = rf.nickname or args.player_name
-    hits = count_occurrences(slides, player_name) if player_name else None
-    if player_name:
-        cleaned, changed = scrub_slides(slides, player_name)
-        print(f"玩家名「{player_name}」出現：{hits}，已替換 {changed} 處")
+    # 身分清理——UW 文本會帶抓取者的暱稱與組織名，入庫前一定要過這關
+    profile = await rf.profile()
+    player_name = args.player_name or rf.nickname or profile.get("nickname")
+    organization = args.organization or profile.get("organization")
+    if player_name or organization:
+        hits = count_occurrences(slides, player_name, organization)
+        cleaned, changed = scrub_slides(slides, player_name, organization=organization)
+        print(
+            f"玩家身分（暱稱「{player_name}」／組織「{organization}」）出現：{hits}，"
+            f"已替換 {changed} 處"
+        )
     else:
         cleaned, changed = slides, 0
-        print("⚠️ 取不到玩家名，未做替換——請用 --player-name 指定後重跑清理")
+        print("⚠️ 取不到玩家身分，未做替換——請用 --player-name / --organization 指定後重跑清理")
 
     record = {
         "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -176,7 +181,7 @@ async def dispatch(rf: RFClient, args: argparse.Namespace, out: Path) -> int:
         "site_plot_id": site_plot_id,
         "level": pl.get("level"),
         "city_id": pl.get("city_id"),
-        "anonymized": bool(player_name),
+        "anonymized": bool(player_name or organization),
         "counts": {
             "total": len(cleaned),
             "with_dialogue": sum(1 for s in cleaned if s.get("dialogue")),
@@ -219,6 +224,7 @@ async def main() -> int:
     ap.add_argument("--dispatch", type=int, metavar="SITE_ID", help="實際派遣（扣能量）")
     ap.add_argument("--team", type=int, help="派遣用的 team_id")
     ap.add_argument("--player-name", help="取不到暱稱時，手動指定要清理的玩家名")
+    ap.add_argument("--organization", help="取不到組織名時，手動指定要清理的組織名")
     ap.add_argument("--yes", action="store_true", help="確認執行 --dispatch")
     args = ap.parse_args()
 
