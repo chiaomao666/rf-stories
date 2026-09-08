@@ -198,6 +198,25 @@ class RFClient:
     async def cities(self) -> list[dict[str, Any]]:
         return (await self.player("cities")).require("cities").get("cities") or []
 
+    async def profile(self) -> dict[str, Any]:
+        pl = (await self.player("profile", {"user_id": self.user_id})).require("profile")
+        inner = pl.get("profile")
+        return inner if isinstance(inner, dict) else pl
+
+    async def nation_of(self, profile: dict[str, Any] | None = None) -> dict[str, Any]:
+        """取出帳號所屬陣營。不同陣營的主線與陣營劇情內容不同，抓取時要分開存。
+
+        profile 的陣營欄位在不同版本間出現過幾種形狀，這裡逐一嘗試而不假設單一路徑。
+        """
+        p = profile if profile is not None else await self.profile()
+        for key in ("nation", "user_nation", "country"):
+            v = p.get(key)
+            if isinstance(v, dict) and (v.get("name") or v.get("id")):
+                return {"id": v.get("id"), "name": v.get("name")}
+            if isinstance(v, str) and v:
+                return {"id": None, "name": v}
+        return {"id": p.get("nation_id"), "name": p.get("nation_name")}
+
     async def slides(self, city_id: int) -> dict[str, Any]:
         """攻城劇情。未實作劇情的城市會回 status ok 但 slides 為空陣列。"""
         return (await self.player("slides", {"city_id": city_id})).require("slides")

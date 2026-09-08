@@ -34,23 +34,31 @@ export RF_PASSWORD=...
 
 ### 主線劇情
 
+主線劇情有**兩種版本：紅軍與非紅軍**（不是九個陣營各一套）。
+腳本依登入帳號的陣營自動判定並分開存放，所以要收齊全部內容，
+需要用一個紅軍帳號與一個非紅軍帳號**各跑一次**：
+
 ```bash
-python scripts/fetch_main_story.py
+RF_EMAIL=<非紅軍帳號> RF_PASSWORD=... python scripts/fetch_main_story.py
+RF_EMAIL=<紅軍帳號>   RF_PASSWORD=... python scripts/fetch_main_story.py
 ```
 
 `slides` 是純查詢事件——不扣資源、不改變遊戲狀態，可以隨時重跑。
 預設只打 `status != "no_entry"` 的城市（其餘尚未實作劇情，一律回空陣列），
 官方更新主線後重跑一次即可補上新內容。
 
-輸出：
+輸出（`red_army` / `non_red_army` 由陣營自動判定，可用 `--variant` 覆寫）：
 
 ```
 data/
-├── index.json              # 城市清單、章節、各段張數
-├── assets.json             # 用到的所有圖／音路徑
-├── nation_story.json       # 陣營劇情
-└── main_story/
-    └── city_<id>.json      # 單城完整 slides
+├── red_army/
+│   ├── index.json          # 變體、陣營、城市清單、章節、各段張數
+│   ├── assets.json         # 用到的所有圖／音路徑
+│   ├── nation_story.json   # 陣營劇情
+│   └── main_story/
+│       └── city_<id>.json  # 單城完整 slides
+└── non_red_army/
+    └── ...                 # 同上
 ```
 
 ### UW 副本劇情

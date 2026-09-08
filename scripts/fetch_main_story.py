@@ -4,10 +4,15 @@
 `slides` 是純查詢事件：不扣資源、不改變遊戲狀態，同一個 city_id 送幾次回幾次，
 所以這支腳本可以隨時重跑（官方更新劇情後就該重跑一次）。
 
+主線劇情只有**紅軍**與**非紅軍**兩種版本（不是九個陣營各一套），腳本依登入帳號的
+陣營自動判定，分別寫進 data/red_army/ 與 data/non_red_army/，兩者不會互相覆蓋。
+所以要收齊全部內容，需要用一個紅軍帳號與一個非紅軍帳號各跑一次。
+
 用法：
     set RF_EMAIL=...  /  export RF_EMAIL=...
     set RF_PASSWORD=...
-    python scripts/fetch_main_story.py                # 抓到 data/
+    python scripts/fetch_main_story.py                    # 自動判定變體
+    python scripts/fetch_main_story.py --variant red_army # 覆寫判定
     python scripts/fetch_main_story.py --out somewhere --all
 
 預設只打 status != "no_entry" 的城市（其餘尚未實作劇情，一律回空陣列）；
@@ -29,6 +34,15 @@ sys.path.insert(0, str(ROOT))
 from rf_stories.client import RFClient, RFError  # noqa: E402
 
 SKIP_STATUS = "no_entry"
+
+# 主線劇情只有兩種版本：紅軍與非紅軍。九個陣營不各有一套。
+RED = "red_army"
+NON_RED = "non_red_army"
+RED_NATION_NAME = "紅軍"
+
+
+def variant_of(nation: dict) -> str:
+    return RED if (nation.get("name") or "") == RED_NATION_NAME else NON_RED
 
 
 def write_json(path: Path, data: object) -> None:
@@ -65,7 +79,16 @@ def scan_assets(slides: list[dict], into: set[str]) -> None:
 
 async def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--out", default=str(ROOT / "data"), help="輸出目錄")
+    ap.add_argument(
+        "--out",
+        default=None,
+        help="輸出目錄。預設為 data/<variant>/，variant 由帳號陣營自動判定",
+    )
+    ap.add_argument(
+        "--variant",
+        choices=(RED, NON_RED),
+        help="覆寫變體判定（主線劇情只分紅軍與非紅軍兩種）",
+    )
     ap.add_argument("--all", action="store_true", help="不過濾 status，打全部城市")
     ap.add_argument("--delay", type=float, default=0.3, help="每次請求間隔秒數")
     args = ap.parse_args()
@@ -76,11 +99,20 @@ async def main() -> int:
         print("需要環境變數 RF_EMAIL 與 RF_PASSWORD", file=sys.stderr)
         return 2
 
-    out = Path(args.out)
-    story_dir = out / "main_story"
-
     async with RFClient(email, password) as rf:
         print(f"login ok (user_id={rf.user_id})")
+
+        # 主線劇情分紅軍與非紅軍兩版，先判定這個帳號屬於哪一版再決定輸出位置，
+        # 免得兩份資料互相覆蓋。
+        profile = await rf.profile()
+        nation = await rf.nation_of(profile)
+        variant = args.variant or variant_of(nation)
+        print(f"陣營: {nation.get('name') or '（取不到）'} → variant={variant}")
+        if not args.variant and not nation.get("name"):
+            print("⚠️ 取不到陣營名稱，已當作非紅軍處理；如有疑慮請用 --variant 指定")
+
+        out = Path(args.out) if args.out else ROOT / "data" / variant
+        story_dir = out / "main_story"
 
         cities = await rf.cities()
         print(f"cities: {len(cities)}")
@@ -156,6 +188,8 @@ async def main() -> int:
                 out / "nation_story.json",
                 {
                     "mode": "story_nation",
+                    "variant": variant,
+                    "nation": nation,
                     "counts": {
                         "total": len(n_slides),
                         "with_dialogue": sum(1 for s in n_slides if s.get("dialogue")),
@@ -171,6 +205,8 @@ async def main() -> int:
             {
                 "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                 "source": "api.komisureiya.com",
+                "variant": variant,
+                "nation": nation,
                 "cities_total": len(cities),
                 "cities_probed": len(targets),
                 "cities_with_story": len(index),
