@@ -17,7 +17,8 @@
     <nav class="nav">
       <a href="#archive">劇情索引</a>
       <a href="#about">資料說明</a>
-      <a href="tools/rf_story_capture.js" download>抓取腳本</a>
+      <a href="tools/rf_uw_capture.js" download>UW 側錄</a>
+      <a href="tools/rf_story_capture.js" download>Log 側錄</a>
     </nav>
   </header>
 
@@ -64,7 +65,9 @@
             <option value="all">所有篇章</option>
           </select>
           <input id="search" class="field search" placeholder="搜尋城市、篇章…" />
-          <button id="playNation" class="btn ghost">陣營劇情</button>
+          <select id="nationStory" class="field" aria-label="陣營劇情">
+            <option value="">陣營劇情…</option>
+          </select>
           <label class="btn ghost" for="importFile">匯入 JSON</label>
           <input id="importFile" type="file" accept="application/json" hidden />
         </div>

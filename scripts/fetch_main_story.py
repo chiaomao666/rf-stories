@@ -33,6 +33,7 @@ sys.path.insert(0, str(ROOT))
 
 from rf_stories.anonymize import count_occurrences, scrub_slides  # noqa: E402
 from rf_stories.client import RFClient, RFError  # noqa: E402
+from rf_stories.nation_story import save_nation_story  # noqa: E402
 
 SKIP_STATUS = "no_entry"
 
@@ -262,28 +263,26 @@ async def main() -> int:
             )
             await asyncio.sleep(args.delay)
 
-        # 陣營劇情（別覆蓋上面的 nation：那是帳號陣營，要寫進 index）
+        # 陣營劇情是**陣營的屬性**，不是主線變體的屬性，所以寫進 data/nation_story/
+        # 底下以陣營 id 為主鍵（別覆蓋上面的 nation：那是帳號陣營，要寫進 index）。
+        # 只想補其他陣營的劇情時用 scripts/fetch_nation_story.py，不必重抓主線。
         nation_pl = await rf.nation_slides()
         n_slides = nation_pl.get("slides") or []
         if n_slides:
             if player_name or organization:
                 n_slides, _ = scrub_slides(n_slides, player_name, organization=organization)
             scan_assets(n_slides, assets)
-            write_json(
-                out / "nation_story.json",
-                {
-                    "mode": "story_nation",
-                    "variant": variant,
-                    "nation": nation,
-                    "counts": {
-                        "total": len(n_slides),
-                        "with_dialogue": sum(1 for s in n_slides if s.get("dialogue")),
-                    },
-                    "preloads": nation_pl.get("preloads") or [],
-                    "slides": n_slides,
-                },
+            nation_path = save_nation_story(
+                out.parent,
+                nation,
+                nation_pl,
+                n_slides,
+                user_id=rf.user_id,
+                anonymized=bool(player_name or organization),
             )
-        print(f"\nnation_slides: {len(n_slides)} 張")
+            print(f"\nnation_slides: {len(n_slides)} 張 -> {nation_path}")
+        else:
+            print("\nnation_slides: 0 張")
 
         write_json(
             out / "index.json",

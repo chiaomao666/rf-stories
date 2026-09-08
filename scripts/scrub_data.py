@@ -34,8 +34,11 @@ from rf_stories.anonymize import (  # noqa: E402
 
 
 def iter_story_files(root: Path):
+    """支援三種目錄：主線變體、陣營劇情（data/nation_story/）、UW dump。"""
     yield from sorted((root / "main_story").glob("city_*.json"))
-    nation = root / "nation_story.json"
+    # 陣營劇情自成一個目錄，以陣營 id 為主鍵；index.json 沒有 slides，跳過
+    yield from sorted(root.glob("nation_*.json"))
+    nation = root / "nation_story.json"  # 舊版位置，保留相容
     if nation.exists():
         yield nation
     uw = root / "uw_plots"

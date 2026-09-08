@@ -11,9 +11,14 @@ UI 字串與文件維持正體中文。
 | `docs/story_slides_engine.md` | **先讀這份**：劇情播放引擎的完整拆解——slide 格式、渲染順序、四種觸發模式、UW 副本鏈路、素材網址解析，含多次實測紀錄 |
 | `rf_stories/client.py` | 最小 Phoenix 客戶端（登入 → WebSocket → player channel → 查詢事件） |
 | `rf_stories/anonymize.py` | 把劇情文本裡的玩家名換成佔位符 |
-| `scripts/fetch_main_story.py` | 抓全部主線攻城劇情 + 陣營劇情 |
+| `scripts/fetch_main_story.py` | 抓全部主線攻城劇情（順帶抓登入帳號的陣營劇情） |
+| `scripts/fetch_nation_story.py` | 只抓陣營劇情——補其他陣營時用這支，不必重抓主線 |
 | `scripts/uw_probe.py` | UW 站點偵查；`--dispatch` 可實際派遣抓取（會扣能量） |
-| `scripts/scrub_data.py` | 替既有資料補做玩家名去識別化 |
+| `site/tools/rf_uw_capture.js` | **邊玩邊側錄 UW 劇情**，貼進遊戲 Console 即可 |
+| `scripts/import_uw_capture.py` | 把上面匯出的檔案併進 `data/uw_plots/` |
+| `scripts/scrub_data.py` | 替既有資料補做玩家身分去識別化 |
+| `scripts/share_city_order.py` | 把一個變體的城鎮順序套用到另一個 |
+| `scripts/backfill_city_titles.py` | 從 cities dump 補上每座城的篇章標題 |
 | `data/` | 抓下來的劇情 JSON（已去識別化，見下方說明）——版控裡只有這一份 |
 | `site/` | GitHub Pages 靜態重播站（見下方「重播站」） |
 
@@ -66,12 +71,47 @@ data/
     └── ...                 # 同上
 ```
 
+### 陣營劇情
+
+陣營劇情是**陣營的屬性**，九個陣營各一套，與主線的紅軍／非紅軍版本無關。
+要收齊必須用九個不同陣營的帳號各跑一次：
+
+```bash
+RF_EMAIL=<該陣營的帳號> RF_PASSWORD=... python scripts/fetch_nation_story.py
+python scripts/fetch_nation_story.py --check   # 看目前收了哪些陣營
+```
+
+只送 `nation_slides` 一個純查詢事件，不碰主線，所以換帳號重跑很便宜，
+也不會被主線目錄的 user_id 防呆擋下。輸出只動自己那一個陣營：
+
+```
+data/nation_story/
+├── index.json        # 陣營清單與各自張數
+├── nation_1.json     # 紅軍
+└── nation_8.json     # 蒙古
+```
+
 ### UW 副本劇情
 
 ```bash
 python scripts/uw_probe.py                # 唯讀：掃九陣營 HQ 的站點
 python scripts/uw_probe.py --city 110     # 只看一座城
 ```
+
+UW 劇情不分陣營，而且**只能累積式蒐集**——每次派遣扣能量、角色必須當下就在該座
+城市、後端還會隨機抽選要播哪一段。所以實務上最省事的做法是邊玩邊側錄：
+
+1. 在遊戲頁面的 Console 貼上 `site/tools/rf_uw_capture.js`，右下角會出現面板
+2. 照常玩，每派遣一次 UW 就自動收一筆（以 `site_plot_id` 去重）
+3. 按「下載 JSON」，再匯入：
+
+```bash
+python scripts/import_uw_capture.py <下載的檔案> --check   # 先看會寫入什麼
+python scripts/import_uw_capture.py <下載的檔案>
+```
+
+側錄工具在**匯出時**才做去識別化，辨識不出身分會擋下匯出；匯入腳本還會再檢查一次，
+文本裡只要還找得到暱稱或組織名就中止。
 
 實際派遣（**會扣能量、可能推進進度，不可逆**）：
 

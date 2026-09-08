@@ -18,6 +18,10 @@ pip install -r requirements.txt          # Python 3.11+，只需 requests + webs
 
 export RF_EMAIL=... RF_PASSWORD=...      # 憑證只走環境變數，絕不落檔
 
+python scripts/fetch_nation_story.py                    # 只抓陣營劇情（補其他陣營用）
+python scripts/fetch_nation_story.py --check            # 看已收錄哪些陣營
+python scripts/import_uw_capture.py <匯出檔> --check     # 匯入 UW 側錄結果
+
 python scripts/fetch_main_story.py                      # 抓主線＋陣營劇情（自動判定變體）
 python scripts/fetch_main_story.py --variant red_army   # 覆寫變體判定
 python scripts/fetch_main_story.py --all                # 不過濾 status，打全部 271 座城
@@ -66,6 +70,25 @@ reader task 也是在 join 之前就啟動，同樣是為了這個競態。`max_
    `fetch_main_story.py` 取不到暱稱時會直接中止，不會默默寫出帶身分的資料。
 
 3. **寫檔一律先 `.tmp` 再 `replace()`**（三支腳本各有一份 `write_json`），中斷不留半個檔。
+
+## 三種劇情的存放單位不同
+
+搞混這件事會讓資料互相覆蓋，是這個 repo 踩過最多次的坑：
+
+| 劇情 | 單位 | 位置 |
+|---|---|---|
+| 主線攻城 | 紅軍／非紅軍**兩種版本** | `data/<variant>/main_story/city_<id>.json` |
+| 陣營劇情 | **九個陣營各一套** | `data/nation_story/nation_<陣營 id>.json` |
+| UW 副本 | 不分陣營 | `data/uw_plots/site_<id>_plot_<plot_id>.json` |
+
+陣營劇情曾被誤放在 `data/<variant>/nation_story.json`——非紅軍那份其實是「蒙古」的
+故事，換一個非紅軍陣營的帳號來抓就會互相覆蓋。現在改以陣營 id 為主鍵，
+`rf_stories/nation_story.py` 的 `save_nation_story()` 只動自己那一個陣營，
+index.json 用合併的方式更新。
+
+UW 只能**累積式蒐集**：每次派遣扣能量、角色必須當下就在該城、後端隨機抽段。
+實務上用 `site/tools/rf_uw_capture.js` 邊玩邊側錄（掛 WebSocket，看到帶
+`site_plot_id` 的回覆就收，以此去重），再用 `import_uw_capture.py` 合併進來。
 
 ## 城鎮順序
 

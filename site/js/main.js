@@ -168,11 +168,29 @@ $('#storyGrid').addEventListener('click', async (e) => {
   }
 });
 
-$('#playNation').addEventListener('click', async () => {
+// 陣營劇情與主線變體無關，九個陣營各一套，清單直接讀 nation_story/index.json。
+async function fillNations() {
+  const select = $('#nationStory');
   try {
-    const doc = await archive.loadNationStory(archive.state.variant);
+    const idx = await archive.loadNationIndex();
+    const options = (idx.nations || []).map(
+      (n) =>
+        `<option value="${n.id}">${archive.escapeHtml(n.name || `陣營 ${n.id}`)}（${n.total} 張）</option>`,
+    );
+    select.innerHTML = `<option value="">陣營劇情…（${options.length}/9）</option>` + options.join('');
+  } catch {
+    select.innerHTML = '<option value="">陣營劇情（讀取失敗）</option>';
+  }
+}
+
+$('#nationStory').addEventListener('change', async (e) => {
+  const id = e.target.value;
+  e.target.selectedIndex = 0;
+  if (!id) return;
+  try {
+    const doc = await archive.loadNationStory(id);
     openPlayer({
-      title: `陣營劇情｜${doc.nation?.name || archive.variantLabel(archive.state.variant)}`,
+      title: `陣營劇情｜${doc.nation?.name || `陣營 ${id}`}`,
       meta: `story_nation · ${doc.counts?.total ?? doc.slides.length} 張`,
       slides: doc.slides || [],
       mode: 'story_nation',
@@ -264,4 +282,5 @@ document.addEventListener('keydown', (e) => {
 
 setVolume(Number($('#volume').value));
 renderSoundButton();
+fillNations();
 switchVariant($('#variant').value);

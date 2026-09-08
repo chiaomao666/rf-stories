@@ -56,8 +56,16 @@ export function loadCity(variant, file) {
   return loadJson(`${variant}/${file}`);
 }
 
-export function loadNationStory(variant) {
-  return loadJson(`${variant}/nation_story.json`);
+/**
+ * 陣營劇情是**陣營的屬性**，九個陣營各一套，與主線的紅軍／非紅軍版本無關，
+ * 所以獨立放在 data/nation_story/ 底下以陣營 id 為主鍵。
+ */
+export function loadNationIndex() {
+  return loadJson('nation_story/index.json');
+}
+
+export function loadNationStory(nationId) {
+  return loadJson(`nation_story/nation_${nationId}.json`);
 }
 
 export function chapters() {
