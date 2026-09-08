@@ -70,7 +70,7 @@ export function filtered() {
   return state.stories.filter((s) => {
     if (state.chapter !== 'all' && s.chapter_name !== state.chapter) return false;
     if (!kw) return true;
-    return [s.city_name, s.chapter_name, String(s.city_id)]
+    return [s.city_name, s.title, s.chapter_name, String(s.city_id)]
       .filter(Boolean)
       .some((v) => String(v).toLowerCase().includes(kw));
   });
@@ -98,11 +98,14 @@ export function renderCards(container) {
       const chapter = [s.chapter_name, s.chapter_number, s.chapter_serial]
         .filter((v) => v !== null && v !== undefined && v !== '')
         .join(' ');
+      // title 是這一章的標題（例如「集會遊行法」），跟城市名是兩回事。
+      const title = s.title ? `<p class="story-title">${escapeHtml(s.title)}</p>` : '';
       return `
         <article class="story-card">
           <div>
             <div class="eyebrow">CITY ${escapeHtml(s.city_id)}</div>
             <h3>${escapeHtml(s.city_name || '未命名城市')}</h3>
+            ${title}
             <p>${escapeHtml(chapter || '（無章節資訊）')}</p>
           </div>
           <div class="card-foot">

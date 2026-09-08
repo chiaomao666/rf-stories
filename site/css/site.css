@@ -357,6 +357,14 @@ code {
   line-height: 1.6;
 }
 
+/* 篇章標題（例如「集會遊行法」），比城市名次一級但比章節資訊顯眼。 */
+.story-card .story-title {
+  font-size: 14px;
+  color: var(--blue);
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+
 .card-foot {
   display: flex;
   justify-content: space-between;

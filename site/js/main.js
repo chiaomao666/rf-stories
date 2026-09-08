@@ -155,7 +155,9 @@ $('#storyGrid').addEventListener('click', async (e) => {
   try {
     const doc = await archive.loadCity(archive.state.variant, btn.dataset.file);
     openPlayer({
-      title: `${doc.city_name || btn.dataset.city}（city ${doc.city_id}）`,
+      title: doc.title
+        ? `${doc.title}｜${doc.city_name || btn.dataset.city}`
+        : `${doc.city_name || btn.dataset.city}（city ${doc.city_id}）`,
       meta: `${archive.variantLabel(archive.state.variant)}版本 · ${doc.counts?.total ?? doc.slides.length} 張`,
       slides: doc.slides || [],
       mode: 'before_attack',

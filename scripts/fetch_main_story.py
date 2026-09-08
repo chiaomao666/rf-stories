@@ -62,6 +62,15 @@ def _city_order(row: dict) -> tuple:
     return (0, pos, "", 0)
 
 
+# 後端用 "-" 表示沒有標題。
+EMPTY_TITLES = {"", "-"}
+
+
+def title_of(city: dict) -> str | None:
+    title = (city.get("title") or "").strip()
+    return None if title in EMPTY_TITLES else title
+
+
 def chapter_of(city: dict) -> dict:
     ch = city.get("chapter")
     return ch if isinstance(ch, dict) else {}
@@ -215,6 +224,8 @@ async def main() -> int:
             record = {
                 "city_id": cid,
                 "city_name": c.get("name"),
+                # 篇章標題，例如「集會遊行法」。後端用 "-" 表示沒有標題。
+                "title": title_of(c),
                 "chapter": ch,
                 "city_status": c.get("status"),
                 "counts": {
@@ -236,6 +247,7 @@ async def main() -> int:
                     # 探險與特別篇因此會穿插在主線篇章之間。chapter 物件本身沒有排序鍵，
                     # 只靠 chapter_name 排會得到跟遊戲完全不同的順序。
                     "position": c.get("position"),
+                    "title": title_of(c),
                     "chapter_name": ch.get("name"),
                     "chapter_number": ch.get("number"),
                     "chapter_serial": ch.get("serial"),

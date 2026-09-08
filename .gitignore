@@ -48,3 +48,7 @@ assets/vendor/
 # macOS 的中繼檔（素材包解壓後會夾帶）
 .DS_Store
 ._*
+
+# cities 回應的原始 dump：control_name 是其他玩家的工會名，不要進版控。
+# 需要的 title 用 scripts/backfill_city_titles.py 抽出來即可。
+/cities.json
