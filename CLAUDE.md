@@ -97,6 +97,10 @@ UW 只能**累積式蒐集**：每次派遣扣能量、角色必須當下就在�
 **沒有跨章節的排序鍵**——只靠 chapter_name 排會得到跟遊戲完全不同的順序。
 `position >= 10000` 是隱藏城（卡加布列島 10060），座標刻意放在地圖外，只能由 UW Access 進入。
 
+城鎮的 `title`（篇章標題，例如「扮花臉」）則**隨陣營而異**：51 座城實測 45 座紅軍與
+非紅軍不同，不像 `position` 可以兩邊共用。`backfill_city_titles.py` 因此強制要求
+`--dataset`，一份 dump 只能套回抓它的那個帳號所屬變體。
+
 `fetch_main_story.py` 會把 `position` 寫進 index.json 並依它排序；站台 (`site/js/archive.js`)
 同樣以 position 為主鍵，缺席時才退回章節排序並在頁面上標示。
 

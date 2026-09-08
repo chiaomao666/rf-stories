@@ -18,7 +18,7 @@ UI 字串與文件維持正體中文。
 | `scripts/import_uw_capture.py` | 把上面匯出的檔案併進 `data/uw_plots/` |
 | `scripts/scrub_data.py` | 替既有資料補做玩家身分去識別化 |
 | `scripts/share_city_order.py` | 把一個變體的城鎮順序套用到另一個 |
-| `scripts/backfill_city_titles.py` | 從 cities dump 補上每座城的篇章標題 |
+| `scripts/backfill_city_titles.py` | 從 cities dump 補上每座城的篇章標題（標題隨陣營而異，須指定 `--dataset`）|
 | `data/` | 抓下來的劇情 JSON（已去識別化，見下方說明）——版控裡只有這一份 |
 | `site/` | GitHub Pages 靜態重播站（見下方「重播站」） |
 

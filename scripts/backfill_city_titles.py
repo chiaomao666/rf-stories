@@ -1,16 +1,17 @@
 #!/usr/bin/env python3
 """從 cities 回應的 dump 補上每座城的 `title`（篇章標題，例如「集會遊行法」）。
 
-`title` 與 `position` 一樣是**世界地圖的屬性、不是陣營的屬性**，紅軍與非紅軍看到的
-完全相同，所以一份 dump 可以同時套用到兩個變體。
+⚠️ `title` 跟 `position` 不一樣：**position 是世界地圖的屬性、兩個變體共用，
+title 卻是隨陣營而異的**（51 座城實測有 45 座紅軍與非紅軍不同，例如 city 2
+非紅軍是「來客」、紅軍是「扮花臉」）。所以一份 dump 只能套用到抓它的那個帳號
+所屬的變體，`--dataset` 必須明確指定，腳本不會替你猜。
 
 ⚠️ 原始的 cities dump **不要進版控**：裡面的 `control_name` 是其他玩家的工會名，
 把整份存進來等於散佈別人的資料。這支腳本只取 `id` → `title` 這一組對應。
 
 用法：
-    python scripts/backfill_city_titles.py cities.json --check
-    python scripts/backfill_city_titles.py cities.json
-    python scripts/backfill_city_titles.py cities.json --dataset data/red_army
+    python scripts/backfill_city_titles.py cities_red.json --dataset data/red_army --check
+    python scripts/backfill_city_titles.py cities_red.json --dataset data/red_army
 """
 from __future__ import annotations
 
@@ -18,8 +19,6 @@ import argparse
 import json
 import sys
 from pathlib import Path
-
-ROOT = Path(__file__).resolve().parents[1]
 
 # 後端用 "-" 表示沒有標題。
 EMPTY_TITLES = {"", "-"}
@@ -89,7 +88,9 @@ def main() -> int:
     ap.add_argument(
         "--dataset",
         action="append",
-        help="要套用的資料目錄，可重複指定。預設兩個變體都套",
+        required=True,
+        help="要套用的資料目錄，例如 data/red_army。title 隨陣營而異，"
+        "只能指定這份 dump 所屬變體，不可一次套兩個",
     )
     ap.add_argument("--check", action="store_true", help="只回報，不寫檔")
     args = ap.parse_args()
@@ -102,10 +103,7 @@ def main() -> int:
     titles = load_titles(dump)
     print(f"{dump}：取得 {len(titles)} 座城的 title")
 
-    roots = [Path(d) for d in args.dataset] if args.dataset else [
-        ROOT / "data" / "red_army",
-        ROOT / "data" / "non_red_army",
-    ]
+    roots = [Path(d) for d in args.dataset]
     total_missing = 0
     for root in roots:
         changed, missing = apply_to(root, titles, args.check)

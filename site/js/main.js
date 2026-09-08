@@ -201,31 +201,6 @@ $('#nationStory').addEventListener('change', async (e) => {
   }
 });
 
-$('#importFile').addEventListener('change', (e) => {
-  const file = e.target.files?.[0];
-  if (!file) return;
-  const reader = new FileReader();
-  reader.onload = () => {
-    try {
-      const doc = JSON.parse(reader.result);
-      const slides = doc.slides || (Array.isArray(doc) ? doc : []);
-      if (!slides.length) throw new Error('這個檔案裡沒有 slides');
-      openPlayer({
-        title: doc.city_name || doc.site_name || file.name,
-        meta: `匯入檔案 · ${slides.length} 張`,
-        slides,
-        // UW 劇情的 before_attack 是無意義的殘值，一律從 0 開始、不切段。
-        mode: doc.site_plot_id ? 'uw_plot' : 'before_attack',
-        defaultPhase: 'all',
-      });
-    } catch (err) {
-      toast(`匯入失敗：${err.message}`);
-    }
-  };
-  reader.readAsText(file, 'utf-8');
-  e.target.value = '';
-});
-
 $('#phase').addEventListener('change', applyPhase);
 $('#closePlayer').addEventListener('click', closePlayer);
 $('#prevSlide').addEventListener('click', () => player.prev());
