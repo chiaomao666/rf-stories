@@ -1,0 +1,14 @@
+# 抓下來的劇情資料：含原始文本與素材路徑，可能殘留帳號資訊
+data/
+*.tmp
+
+# 憑證絕不進版控
+.env
+*_config.json
+
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
