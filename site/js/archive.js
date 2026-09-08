@@ -83,9 +83,7 @@ export function loadUwPlot(file) {
 }
 
 export function uwLevels() {
-  return [...new Set((state.uwIndex?.plots || []).map((p) => String(p.level)).filter(Boolean))].sort(
-    (a, b) => Number(a) - Number(b),
-  );
+  return ['1', '2', '3', '4', '5'];
 }
 
 export function uwCities() {
@@ -94,13 +92,32 @@ export function uwCities() {
   );
 }
 
+export function groupedUwPlots() {
+  const groups = new Map();
+  for (const plot of state.uwIndex?.plots || []) {
+    const key = `${plot.site_id}:${plot.site_name || ''}:${plot.city_id}`;
+    if (!groups.has(key)) {
+      groups.set(key, {
+        site_id: plot.site_id,
+        site_name: plot.site_name,
+        city_id: plot.city_id,
+        plots: [],
+      });
+    }
+    groups.get(key).plots.push(plot);
+  }
+  return [...groups.values()].sort((a, b) => Number(a.site_id) - Number(b.site_id));
+}
+
 export function filteredUw() {
   const keyword = state.uwKeyword.trim().toLowerCase();
-  return (state.uwIndex?.plots || []).filter((plot) => {
-    if (state.uwLevel !== 'all' && String(plot.level) !== state.uwLevel) return false;
-    if (state.uwCity !== 'all' && String(plot.city_id) !== state.uwCity) return false;
+  return groupedUwPlots().filter((group) => {
+    if (state.uwLevel !== 'all' && !group.plots.some((plot) => String(plot.level) === state.uwLevel)) return false;
+    if (state.uwCity !== 'all' && String(group.city_id) !== state.uwCity) return false;
     if (!keyword) return true;
-    return [plot.site_name, plot.site_id, plot.site_plot_id, plot.city_id, plot.level, plot.file]
+    const values = [group.site_name, group.site_id, group.city_id];
+    for (const plot of group.plots) values.push(plot.site_plot_id, plot.level, plot.file);
+    return values
       .filter((value) => value !== null && value !== undefined)
       .some((value) => String(value).toLowerCase().includes(keyword));
   });
@@ -170,24 +187,37 @@ export function renderCards(container) {
 export function renderUwCards(container) {
   const rows = filteredUw();
   if (!rows.length) {
-    container.innerHTML = '<div class="empty">找不到符合條件的 UW 劇情。</div>';
+    container.innerHTML = '<div class="empty">找不到符合條件的 UW 地點。</div>';
     return;
   }
   container.innerHTML = rows
-    .map(
-      (s) => `
+    .map((group) => {
+      const byLevel = new Map(group.plots.map((plot) => [String(plot.level), plot]));
+      const plotIds = group.plots.map((plot) => plot.site_plot_id).sort((a, b) => Number(a) - Number(b));
+      const total = group.plots.reduce((sum, plot) => sum + Number(plot.total || 0), 0);
+      const dialogue = group.plots.reduce((sum, plot) => sum + Number(plot.with_dialogue || 0), 0);
+      const levels = [1, 2, 3, 4, 5]
+        .map((level) => {
+          const plot = byLevel.get(String(level));
+          const attrs = plot
+            ? `data-file="${escapeHtml(plot.file)}" data-level="${level}"`
+            : 'disabled aria-disabled="true"';
+          return `<button class="level-btn uw-play-link${plot ? '' : ' is-unavailable'}" ${attrs}>Level ${level}</button>`;
+        })
+        .join('');
+      return `
         <article class="story-card uw-card">
           <div>
-            <div class="eyebrow">UW · SITE ${escapeHtml(s.site_id)} · LV.${escapeHtml(s.level)}</div>
-            <h3>${escapeHtml(s.site_name || '未命名地點')}</h3>
-            <p>劇情段落 ${escapeHtml(s.site_plot_id)} · CITY ${escapeHtml(s.city_id)}</p>
+            <div class="eyebrow">UW · SITE ${escapeHtml(group.site_id)}</div>
+            <h3>${escapeHtml(group.site_name || '未命名地點')}</h3>
+            <p>劇情段落 ${plotIds.map(escapeHtml).join(' / ')} · CITY ${escapeHtml(group.city_id)}</p>
           </div>
+          <div class="uw-levels" aria-label="${escapeHtml(group.site_name || '')} 劇情等級">${levels}</div>
           <div class="card-foot">
-            <span class="count">${escapeHtml(s.total)} 張 · 對白 ${escapeHtml(s.with_dialogue)}</span>
-            <button class="play-link uw-play-link" data-file="${escapeHtml(s.file)}"
-                    data-site="${escapeHtml(s.site_name || '')}">播放 →</button>
+            <span class="count">${total} 張 · 對白 ${dialogue} · ${group.plots.length} 個等級</span>
+            <span class="uw-level-hint">選擇等級後播放</span>
           </div>
-        </article>`,
-    )
+        </article>`;
+    })
     .join('');
 }

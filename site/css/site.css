@@ -368,6 +368,48 @@ code {
   color: var(--blue);
 }
 
+.uw-levels {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 6px;
+  margin-top: 20px;
+}
+
+.level-btn {
+  min-height: 34px;
+  border: 1px solid var(--line);
+  background: #fffaf2;
+  color: var(--blue);
+  font-size: 11px;
+  font-weight: 800;
+  transition: background 0.16s, border-color 0.16s, transform 0.16s;
+}
+
+.level-btn:not(:disabled):hover {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: #fff;
+}
+
+.level-btn:not(:disabled):active {
+  transform: scale(0.97);
+}
+
+.level-btn.is-unavailable,
+.level-btn:disabled {
+  cursor: not-allowed;
+  color: #aaa59b;
+  background: #eee9df;
+  border-color: #e1dbd0;
+  text-decoration: line-through;
+}
+
+.uw-level-hint {
+  color: var(--blue);
+  font-size: 11px;
+  white-space: nowrap;
+}
+
 .uw-grid {
   margin-bottom: 12px;
 }

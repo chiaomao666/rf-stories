@@ -187,10 +187,11 @@ $('#uwGrid').addEventListener('click', async (e) => {
   const btn = e.target.closest('.uw-play-link');
   if (!btn) return;
   try {
+    if (btn.disabled) return;
     const doc = await archive.loadUwPlot(btn.dataset.file);
     openPlayer({
-      title: `UW｜${doc.site_name || btn.dataset.site || '未命名地點'}`,
-      meta: `劇情段落 ${doc.site_plot_id ?? '—'} · Level ${doc.level ?? '—'} · ${doc.counts?.total ?? doc.slides?.length ?? 0} 張`,
+      title: `UW｜${doc.site_name || '未命名地點'} · Level ${doc.level ?? btn.dataset.level ?? '—'}`,
+      meta: `劇情段落 ${doc.site_plot_id ?? '—'} · CITY ${doc.city_id ?? '—'} · ${doc.counts?.total ?? doc.slides?.length ?? 0} 張`,
       slides: doc.slides || [],
       mode: 'uw_plot',
       defaultPhase: 'all',
@@ -228,7 +229,7 @@ async function fillUwPlots() {
       .map((city) => `<option value="${archive.escapeHtml(city)}">CITY ${archive.escapeHtml(city)}</option>`)
       .join('');
     archive.renderUwCards($('#uwGrid'));
-    note.textContent = `${idx.plots_total ?? idx.plots?.length ?? 0} 段 · ${idx.slides_total ?? 0} 張 slides · 更新於 ${String(idx.exported_at || '').slice(0, 10)}`;
+    note.textContent = `${archive.groupedUwPlots().length} 個地點 · ${idx.plots_total ?? idx.plots?.length ?? 0} 段 · ${idx.slides_total ?? 0} 張 slides · 更新於 ${String(idx.exported_at || '').slice(0, 10)}`;
   } catch (err) {
     note.textContent = '尚未載入 UW 資料';
     $('#uwGrid').innerHTML = `<div class="empty">${archive.escapeHtml(err.message || err)}</div>`;
@@ -237,9 +238,9 @@ async function fillUwPlots() {
 
 function renderUwFilterResults() {
   archive.renderUwCards($('#uwGrid'));
-  const total = archive.state.uwIndex?.plots?.length || 0;
+  const total = archive.groupedUwPlots().length;
   const shown = archive.filteredUw().length;
-  $('#uwLoadedNote').textContent = `顯示 ${shown} / ${total} 段 UW 劇情`;
+  $('#uwLoadedNote').textContent = `顯示 ${shown} / ${total} 個 UW 地點`;
 }
 
 $('#nationStory').addEventListener('change', async (e) => {
