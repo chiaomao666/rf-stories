@@ -1,6 +1,6 @@
 {
   "source": "api.komisureiya.com",
-  "updated_at": "2026-09-08T12:12:37+00:00",
+  "updated_at": "2026-09-08T12:44:36+00:00",
   "nations": [
     {
       "id": 1,
@@ -12,6 +12,60 @@
       "with_dialogue": 26
     },
     {
+      "id": 2,
+      "name": "臺灣",
+      "file": "nation_2.json",
+      "fetched_at": "2026-09-08T12:42:46+00:00",
+      "anonymized": true,
+      "total": 27,
+      "with_dialogue": 27
+    },
+    {
+      "id": 3,
+      "name": "香港",
+      "file": "nation_3.json",
+      "fetched_at": "2026-09-08T12:43:35+00:00",
+      "anonymized": true,
+      "total": 28,
+      "with_dialogue": 28
+    },
+    {
+      "id": 4,
+      "name": "藏國",
+      "file": "nation_4.json",
+      "fetched_at": "2026-09-08T12:44:24+00:00",
+      "anonymized": true,
+      "total": 25,
+      "with_dialogue": 25
+    },
+    {
+      "id": 5,
+      "name": "維吾爾",
+      "file": "nation_5.json",
+      "fetched_at": "2026-09-08T12:43:56+00:00",
+      "anonymized": true,
+      "total": 22,
+      "with_dialogue": 22
+    },
+    {
+      "id": 6,
+      "name": "哈薩克",
+      "file": "nation_6.json",
+      "fetched_at": "2026-09-08T12:43:12+00:00",
+      "anonymized": true,
+      "total": 23,
+      "with_dialogue": 23
+    },
+    {
+      "id": 7,
+      "name": "滿洲",
+      "file": "nation_7.json",
+      "fetched_at": "2026-09-08T12:44:10+00:00",
+      "anonymized": true,
+      "total": 24,
+      "with_dialogue": 24
+    },
+    {
       "id": 8,
       "name": "蒙古",
       "file": "nation_8.json",
@@ -19,6 +73,15 @@
       "anonymized": true,
       "total": 22,
       "with_dialogue": 22
+    },
+    {
+      "id": 10,
+      "name": "反賊聯盟",
+      "file": "nation_10.json",
+      "fetched_at": "2026-09-08T12:44:36+00:00",
+      "anonymized": true,
+      "total": 27,
+      "with_dialogue": 27
     }
   ]
 }
