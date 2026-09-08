@@ -1,0 +1,4633 @@
+{
+  "city_id": 17,
+  "city_name": "臺東",
+  "chapter": {
+    "name": "臺灣篇",
+    "number": "I",
+    "serial": 17
+  },
+  "city_status": "locked",
+  "counts": {
+    "total": 98,
+    "before_attack": 23,
+    "after_attack": 75,
+    "with_dialogue": 87
+  },
+  "preloads": [
+    "/images/slide/background/T0069a.png",
+    "/images/slide/actor/TW0402.png",
+    "/images/slide/background/BG0100.png",
+    "/images/slide/background/T0015a.png",
+    "/images/slide/actor/CM0102.png"
+  ],
+  "slides": [
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": true,
+      "dialogue": null,
+      "dialogue_color": false,
+      "duration": 1.4,
+      "fade_in": true,
+      "fade_out": false,
+      "fast_paging": true,
+      "id": 166795,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 1,
+      "sound_effect": "/audio/sound_effect/SE22.mp3",
+      "speaker": null
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166796,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 2,
+      "sound_effect": "/audio/sound_effect/SE173.mp3",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": true,
+      "dialogue": "約好的6個小時過去了。樹維還沒過來，也沒半點消息。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166797,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 3,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": true,
+      "dialogue": "渤上校不知道在忙什麼，死活聯絡不上。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166798,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 4,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166799,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 5,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯我該趕回臺北了，估計潘俐月正著急。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166800,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 6,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": true,
+      "dialogue": "說來奇怪⋯⋯這種時候她倒沒給我來電話，靜悄悄的。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166801,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 7,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": true,
+      "dialogue": "<i>砰——砰砰——</i>",
+      "dialogue_color": true,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166802,
+      "music": "/audio/music/BGM13.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 8,
+      "sound_effect": "/audio/sound_effect/SE164.mp3",
+      "speaker": null
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": true,
+      "dialogue": "！！⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166803,
+      "music": "/audio/music/BGM13.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 9,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": true,
+      "dialogue": "什麼情況！",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166804,
+      "music": "/audio/music/BGM13.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 10,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": true,
+      "dialogue": null,
+      "dialogue_color": false,
+      "duration": 1.0,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": true,
+      "id": 166805,
+      "music": "/audio/music/BGM13.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": "swift_in",
+          "figure": "/images/slide/actor/TW0402.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 11,
+      "sound_effect": "/audio/sound_effect/SE111.mp3",
+      "speaker": null
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": true,
+      "dialogue": "幹！狗娘養的共匪給我死出來啊！",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166806,
+      "music": "/audio/music/BGM13.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TW0402.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 12,
+      "sound_effect": "",
+      "speaker": "瓦旦"
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": true,
+      "dialogue": "躲在山上沒臉見人是不是？畜生！",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166807,
+      "music": "/audio/music/BGM13.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TW0402.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 13,
+      "sound_effect": "",
+      "speaker": "瓦旦"
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯瓦旦？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166808,
+      "music": "/audio/music/BGM13.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TW0402.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 14,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": true,
+      "dialogue": "瓦旦帶人來了⋯⋯他們怎麼知道我們在這？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166809,
+      "music": "/audio/music/BGM13.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TW0402.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 15,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": true,
+      "dialogue": "難道，樹維失手⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166810,
+      "music": "/audio/music/BGM13.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TW0402.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 16,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯把我們供出來了？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166811,
+      "music": "/audio/music/BGM13.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TW0402.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 17,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166812,
+      "music": "/audio/music/BGM13.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TW0402.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 18,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯冷靜。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166813,
+      "music": "/audio/music/BGM13.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TW0402.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 19,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": true,
+      "dialogue": "雪山小隊，草地小隊，從側翼繞過去包抄他們。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166814,
+      "music": "/audio/music/BGM13.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TW0402.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 20,
+      "sound_effect": "/audio/sound_effect/SE83.mp3",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": true,
+      "dialogue": "剩下的人⋯⋯隨我上。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166815,
+      "music": "/audio/music/BGM13.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TW0402.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 21,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": true,
+      "dialogue": null,
+      "dialogue_color": false,
+      "duration": 0.3,
+      "fade_in": false,
+      "fade_out": true,
+      "fast_paging": true,
+      "id": 166816,
+      "music": "/audio/music/BGM13.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": "half_transparent",
+          "figure": "/images/slide/actor/TW0402.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 22,
+      "sound_effect": "",
+      "speaker": null
+    },
+    {
+      "background": "/images/slide/background/BG0100.png",
+      "before_attack": true,
+      "dialogue": null,
+      "dialogue_color": false,
+      "duration": 1.0,
+      "fade_in": true,
+      "fade_out": false,
+      "fast_paging": true,
+      "id": 166817,
+      "music": "",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 23,
+      "sound_effect": "",
+      "speaker": null
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": false,
+      "dialogue": null,
+      "dialogue_color": false,
+      "duration": 1.4,
+      "fade_in": true,
+      "fade_out": false,
+      "fast_paging": true,
+      "id": 166818,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 1,
+      "sound_effect": "/audio/sound_effect/SE22.mp3",
+      "speaker": null
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": false,
+      "dialogue": "⋯⋯高山族果然可怕。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166819,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 2,
+      "sound_effect": "/audio/sound_effect/SE173.mp3",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": false,
+      "dialogue": "都被反包圍了，居然還能突圍脫身。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166820,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 3,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": false,
+      "dialogue": "所幸我們曾在西藏高原上受過特訓...",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166821,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 4,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": false,
+      "dialogue": "老一輩有剿平康巴叛匪的經歷，把這些山地戰經驗傳承了下來。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166822,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 5,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": false,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166823,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 6,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": false,
+      "dialogue": "⋯⋯戰友們，委屈你們了。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166824,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 6,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": false,
+      "dialogue": "堅持過這一晚，明天我們繼續往恆春行進。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166825,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 7,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": false,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166826,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 8,
+      "sound_effect": "/audio/sound_effect/SE57.mp3",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": false,
+      "dialogue": "渤上校？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": true,
+      "fast_paging": false,
+      "id": 166827,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 9,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": false,
+      "dialogue": "主角⋯⋯你們⋯⋯狀況⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166828,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 10,
+      "sound_effect": "/audio/sound_effect/SE159.mp3",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": false,
+      "dialogue": "⋯⋯深山野嶺信號不好，我換個地方說話。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166829,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 11,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0069a.png",
+      "before_attack": false,
+      "dialogue": null,
+      "dialogue_color": false,
+      "duration": 0.3,
+      "fade_in": false,
+      "fade_out": true,
+      "fast_paging": true,
+      "id": 166830,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 12,
+      "sound_effect": "/audio/sound_effect/SE22.mp3",
+      "speaker": null
+    },
+    {
+      "background": "/images/slide/background/BG0100.png",
+      "before_attack": false,
+      "dialogue": null,
+      "dialogue_color": false,
+      "duration": 1.0,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": true,
+      "id": 166831,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 13,
+      "sound_effect": "",
+      "speaker": null
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": null,
+      "dialogue_color": false,
+      "duration": 2.5,
+      "fade_in": true,
+      "fade_out": false,
+      "fast_paging": true,
+      "id": 166832,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 14,
+      "sound_effect": "",
+      "speaker": null
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "⋯⋯領導，現在聽得清楚？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166833,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 15,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "我在山上找到了一座廢棄的鐵皮屋，我在裡面架設了衛星信號接收器。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166834,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 16,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": null,
+      "dialogue_color": false,
+      "duration": 1.4,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": true,
+      "id": 166835,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": "swift_in",
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 17,
+      "sound_effect": "",
+      "speaker": null
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "可以。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166836,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 18,
+      "sound_effect": "/audio/sound_effect/SE38.mp3",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "同志們狀況如何？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166837,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 19,
+      "sound_effect": "",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "不必擔心我們。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166838,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 20,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "已經對傷員做了基本處理，我們能堅持到恆春。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166839,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 21,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "我不想麻煩國家，但請領導務必派人到恆春接應我們⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166840,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 22,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "都安排好了。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166841,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 23,
+      "sound_effect": "",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "我不會放棄你們任何一個人，你們是人民的英雄。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166842,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 24,
+      "sound_effect": "",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166843,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 25,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "⋯⋯我沒趕回潘俐月身邊，怕是要暴露了。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166844,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 26,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "我沒臉面對領導⋯⋯這「扮花臉」的任務還能不能繼續⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166845,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 27,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "那都不要緊。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166846,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 28,
+      "sound_effect": "",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "我要和你說一件事。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166847,
+      "music": "",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 29,
+      "sound_effect": "",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166848,
+      "music": "",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 30,
+      "sound_effect": "",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "樹維，已經走了。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166849,
+      "music": "",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 31,
+      "sound_effect": "",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166850,
+      "music": "",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 32,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "⋯⋯⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166851,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 33,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "這樣啊⋯⋯樹維走哪去，他可還平安？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166852,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 34,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166853,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 35,
+      "sound_effect": "",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "樹維已經犧牲了。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166854,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 36,
+      "sound_effect": "",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166855,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 37,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "樹維沒成功，但他沒把你們供出來。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166856,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 38,
+      "sound_effect": "",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "卑南溪口的藏匿點暴露，是因為當地目擊者通報給瓦旦。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166857,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 39,
+      "sound_effect": "",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "樹維沒背叛我們。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166858,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 40,
+      "sound_effect": "",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166859,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 41,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "樹維是怎麼犧牲的⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166860,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 42,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166861,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 43,
+      "sound_effect": "",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "樹維在任務中，被趕來的敵人狙擊，受了重傷⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166862,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 44,
+      "sound_effect": "",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "子彈沒打中要害，如果及時送醫治療，是能得救的。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166863,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 45,
+      "sound_effect": "",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "但是⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166864,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 46,
+      "sound_effect": "",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "潘俐月非常生氣，堅持要「百岳」的人在現場逼樹維說出幕後指使者。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166865,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 47,
+      "sound_effect": "",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "她不信任臺灣的警察與司法，所以不肯把樹維交給臺灣警方或醫院。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166866,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 48,
+      "sound_effect": "",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "樹維沒能及時得到救治，最後失血過多，走了。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166867,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 49,
+      "sound_effect": "",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166868,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 50,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "潘俐月⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166869,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 51,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166870,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 52,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "要是⋯⋯我們能把敵人拖住。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166871,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 53,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "那怕是再給樹維多爭取半小時⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166872,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 54,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "別說了。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166873,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 55,
+      "sound_effect": "",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "這是我和上甘嶺同志的責任，我們負責。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166874,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 56,
+      "sound_effect": "",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "國家會照料樹維母親的後半生，確保她生活無慮。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166875,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 57,
+      "sound_effect": "",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "我們會盡力隱藏樹維的身分，不讓他母親背負社會壓力。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166876,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 58,
+      "sound_effect": "",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "你們是戰鬥員，能做的你們全做了。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166877,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 59,
+      "sound_effect": "",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166878,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 60,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "領導，等我們到恆春以後。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166879,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 61,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "請允許我<b9>回臺北一趟</b9>。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166880,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 62,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "⋯⋯你想<b9>做什麼</b9>？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166881,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 63,
+      "sound_effect": "",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166882,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 64,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166883,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 65,
+      "sound_effect": "",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "⋯⋯不行。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166884,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 66,
+      "sound_effect": "",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "我在恆春機場安排了小型飛機，明天就會起飛。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166885,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 67,
+      "sound_effect": "",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "國家安排你們到菲律賓的佬沃避一陣子，順便辦些事情。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166886,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 68,
+      "sound_effect": "",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "臺灣當局還在搜捕你們，這件事不能延誤。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166887,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 69,
+      "sound_effect": "",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "這不只是為了你們安全，也是為了替國家守住祕密。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166888,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 70,
+      "sound_effect": "",
+      "speaker": "渤雍"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166889,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 71,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": "明白了，服從。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 166890,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 72,
+      "sound_effect": "",
+      "speaker": "主角"
+    },
+    {
+      "background": "/images/slide/background/T0015a.png",
+      "before_attack": false,
+      "dialogue": null,
+      "dialogue_color": false,
+      "duration": 0.3,
+      "fade_in": false,
+      "fade_out": true,
+      "fast_paging": true,
+      "id": 166891,
+      "music": "/audio/music/BGM14.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": "half_transparent",
+          "figure": "/images/slide/actor/CM0102.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 73,
+      "sound_effect": "",
+      "speaker": null
+    },
+    {
+      "background": "/images/slide/background/BG0100.png",
+      "before_attack": false,
+      "dialogue": null,
+      "dialogue_color": false,
+      "duration": 1.0,
+      "fade_in": true,
+      "fade_out": false,
+      "fast_paging": true,
+      "id": 166892,
+      "music": "",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 74,
+      "sound_effect": "",
+      "speaker": null
+    }
+  ],
+  "anonymized": true,
+  "anonymized_placeholder": "主角"
+}

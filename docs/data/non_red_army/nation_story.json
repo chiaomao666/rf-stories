@@ -1,0 +1,878 @@
+{
+  "mode": "story_nation",
+  "variant": "non_red_army",
+  "nation": {
+    "id": 8,
+    "name": "蒙古"
+  },
+  "counts": {
+    "total": 22,
+    "with_dialogue": 22
+  },
+  "preloads": [
+    "/images/site/street/sv_mongolia.png",
+    "/images/actor/gif/tachieMG01.gif"
+  ],
+  "slides": [
+    {
+      "background": "/images/site/street/sv_mongolia.png",
+      "dialogue": "今日名為蒙古的大地上，三千年前就有蒙古、突厥與滿洲人的遠祖繁衍生息。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 55,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieMG01.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 10,
+      "sound_effect": null,
+      "speaker": "都固爾蘇隆"
+    },
+    {
+      "background": "/images/site/street/sv_mongolia.png",
+      "dialogue": "為了生存，信奉長生天（騰格里）的先民們牧馬南下，與占據農耕地的華夏諸國交戰。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 56,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieMG01.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 20,
+      "sound_effect": null,
+      "speaker": "都固爾蘇隆"
+    },
+    {
+      "background": "/images/site/street/sv_mongolia.png",
+      "dialogue": "先民漸漸意識到：我們人數雖少，但只要能團結起來，就足以戰勝百倍於我們的敵人。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 57,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieMG01.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 30,
+      "sound_effect": null,
+      "speaker": "都固爾蘇隆"
+    },
+    {
+      "background": "/images/site/street/sv_mongolia.png",
+      "dialogue": "兩千三百年前，無數使用不同語言的部族結合成名為「<b9>匈奴</b9>」的龐大帝國。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 58,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieMG01.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 40,
+      "sound_effect": null,
+      "speaker": "都固爾蘇隆"
+    },
+    {
+      "background": "/images/site/street/sv_mongolia.png",
+      "dialogue": "在匈奴之後，北方大地又經歷鮮卑、柔然、突厥、回鶻（維吾爾）、黠戛斯（吉爾吉斯）、契丹等多個王朝。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 59,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieMG01.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 50,
+      "sound_effect": null,
+      "speaker": "都固爾蘇隆"
+    },
+    {
+      "background": "/images/site/street/sv_mongolia.png",
+      "dialogue": "但是千餘年後，北方大地的人民卻已變回一盤散沙，受東邊的<b9>女真人</b9>所宰制。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 60,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieMG01.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 60,
+      "sound_effect": null,
+      "speaker": "都固爾蘇隆"
+    },
+    {
+      "background": "/images/site/street/sv_mongolia.png",
+      "dialogue": "距今八百年前，名為<b9>鐵木真</b9>的男嬰在一個叫作<b9>蒙古</b9>的小王國誕生了。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 61,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieMG01.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 70,
+      "sound_effect": null,
+      "speaker": "都固爾蘇隆"
+    },
+    {
+      "background": "/images/site/street/sv_mongolia.png",
+      "dialogue": "他將北方大地重新團結在<b9>蒙古</b9>的名號下，帶領蒙古人征服至地與海的盡頭。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 62,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieMG01.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 80,
+      "sound_effect": null,
+      "speaker": "都固爾蘇隆"
+    },
+    {
+      "background": "/images/site/street/sv_mongolia.png",
+      "dialogue": "他就是我們的<b9>聖主成吉思汗</b9>。從日本到維也納，從莫斯科到爪哇，他的後人襲捲世界。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 63,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieMG01.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 90,
+      "sound_effect": null,
+      "speaker": "都固爾蘇隆"
+    },
+    {
+      "background": "/images/site/street/sv_mongolia.png",
+      "dialogue": "然而，蒙古因團結而興、因內鬥而衰。不過是經歷了短短的百年，蒙古人就再度變回一盤散沙。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 64,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieMG01.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 100,
+      "sound_effect": null,
+      "speaker": "都固爾蘇隆"
+    },
+    {
+      "background": "/images/site/street/sv_mongolia.png",
+      "dialogue": "三百年前，蒙古各部被<b9>滿洲</b9>的<b9>清帝</b9>逐一擊破，被迫承認清帝為博格達汗。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 65,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieMG01.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 110,
+      "sound_effect": null,
+      "speaker": "都固爾蘇隆"
+    },
+    {
+      "background": "/images/site/street/sv_mongolia.png",
+      "dialogue": "清帝在蒙古人的協助下，征服整片東方大陸，開啟滿蒙共治全大陸的盛世。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 66,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieMG01.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 120,
+      "sound_effect": null,
+      "speaker": "都固爾蘇隆"
+    },
+    {
+      "background": "/images/site/street/sv_mongolia.png",
+      "dialogue": "百年前，清帝被華夏軍隊推翻，蒙古終於趁機恢復獨立。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 67,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieMG01.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 130,
+      "sound_effect": null,
+      "speaker": "都固爾蘇隆"
+    },
+    {
+      "background": "/images/site/street/sv_mongolia.png",
+      "dialogue": "但推翻清帝的華夏軍隊卻得寸進尺、揮師進犯蒙古。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 68,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieMG01.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 140,
+      "sound_effect": null,
+      "speaker": "都固爾蘇隆"
+    },
+    {
+      "background": "/images/site/street/sv_mongolia.png",
+      "dialogue": "蒙古人奮起抵抗，並且先後得到俄羅斯與日本的協助，最終擊退華夏。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 69,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieMG01.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 150,
+      "sound_effect": null,
+      "speaker": "都固爾蘇隆"
+    },
+    {
+      "background": "/images/site/street/sv_mongolia.png",
+      "dialogue": "蒙古軍隊一度南下收復了戈壁沙漠南方的失土，可惜未竟全功、被迫撤軍。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 70,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieMG01.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 160,
+      "sound_effect": null,
+      "speaker": "都固爾蘇隆"
+    },
+    {
+      "background": "/images/site/street/sv_mongolia.png",
+      "dialogue": "但<b9>南蒙古人</b9>仍自組軍隊，在各方勢力中斡旋、維持了三十年的自治。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 71,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieMG01.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 170,
+      "sound_effect": null,
+      "speaker": "都固爾蘇隆"
+    },
+    {
+      "background": "/images/site/street/sv_mongolia.png",
+      "dialogue": "半世紀前，華夏的<b9>紅軍</b9>卻毀棄承諾，入侵當時<b9>作為共和國屬邦的南蒙古</b9>。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 72,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieMG01.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 180,
+      "sound_effect": null,
+      "speaker": "都固爾蘇隆"
+    },
+    {
+      "background": "/images/site/street/sv_mongolia.png",
+      "dialogue": "紅軍對蒙古人展開大屠殺，驅使漢人將牧場改為農田，並且逐步逼迫南蒙古人改說漢語。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 73,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieMG01.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 190,
+      "sound_effect": null,
+      "speaker": "都固爾蘇隆"
+    },
+    {
+      "background": "/images/site/street/sv_mongolia.png",
+      "dialogue": "將蒙古人視為世仇與後患的他們，決心要把蒙古人從草原上抹煞掉。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 74,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieMG01.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 200,
+      "sound_effect": null,
+      "speaker": "都固爾蘇隆"
+    },
+    {
+      "background": "/images/site/street/sv_mongolia.png",
+      "dialogue": "主角，只要我們蒙古人團結起來，就不會輸給任何敵人。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 75,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieMG01.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 210,
+      "sound_effect": null,
+      "speaker": "都固爾蘇隆"
+    },
+    {
+      "background": "/images/site/street/sv_mongolia.png",
+      "dialogue": "<b9>長生天護祐，蒙古人民萬歲！</b9>",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 76,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieMG01.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 220,
+      "sound_effect": null,
+      "speaker": "都固爾蘇隆"
+    }
+  ],
+  "anonymized": true,
+  "anonymized_placeholder": "主角"
+}
