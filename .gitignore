@@ -12,3 +12,35 @@ __pycache__/
 venv/
 .pytest_cache/
 .ruff_cache/
+
+# 站台的劇情資料是建置時從 data/ 複製過去的，不進版控（避免兩份副本）
+site/data/
+
+# 站台素材：本機保留完整的遊戲素材包（約 2.1 GB），但版控裡只收劇情實際引用到的，
+# 否則會超過 GitHub Pages 發佈網站的 1 GB 上限。缺的素材播放器會自動回退官方 CDN。
+site/assets/**
+!site/assets/ui/
+!site/assets/ui/**
+!site/assets/audio/
+!site/assets/audio/music/
+!site/assets/audio/music/**
+!site/assets/audio/sound_effect/
+!site/assets/audio/sound_effect/**
+!site/assets/images/
+!site/assets/images/slide/
+!site/assets/images/slide/actor/
+!site/assets/images/slide/actor/**
+!site/assets/images/slide/background/
+!site/assets/images/slide/background/**
+# 這幾張散落在別的目錄，整個目錄收下來太大（actor/gif 全收要 802 MB），只挑用到的
+!site/assets/images/actor/
+!site/assets/images/actor/gif/
+!site/assets/images/actor/gif/tachieCM02.gif
+!site/assets/images/actor/gif/tachieMG01.gif
+!site/assets/images/site/
+!site/assets/images/site/street/
+!site/assets/images/site/street/sv_mongolia.png
+!site/assets/images/site/street/sv_north_china.png
+
+# 參考用的遊戲端原始碼（含 .map），第三方程式碼不進版控
+assets/vendor/

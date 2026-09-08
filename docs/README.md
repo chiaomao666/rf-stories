@@ -1,9 +1,10 @@
-# RF Story Archive
+# 文件
 
-GitHub Pages static replay UI for the anonymized RF story dataset.
+這個目錄只放文件（`.md`）。網站在 `site/`，劇情資料在 `data/`。
 
-- `index.html`: story archive and slide replay UI
-- `data/`: red-army and non-red-army story JSON
-- `rf_story_capture.js`: browser console `[Story]` log capture helper
+| 檔案 | 說明 |
+| --- | --- |
+| `story_slides_engine.md` | 劇情播放引擎的完整拆解——slide 格式、渲染順序、四種觸發模式、UW 副本鏈路、素材網址解析，含多次實測紀錄 |
 
-The UI is static-only. It supports browsing the bundled JSON and importing an individual story JSON from the browser.
+`site/` 底下的重播器就是照這份文件重寫的（不是移植遊戲原始碼）。
+改播放行為前先回頭核對這份文件的實測值，對應的常數在 `site/js/config.js`。
