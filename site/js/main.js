@@ -190,8 +190,8 @@ $('#uwGrid').addEventListener('click', async (e) => {
     if (btn.disabled) return;
     const doc = await archive.loadUwPlot(btn.dataset.file);
     openPlayer({
-      title: `UW｜${doc.site_name || '未命名地點'} · Level ${doc.level ?? btn.dataset.level ?? '—'}`,
-      meta: `劇情段落 ${doc.site_plot_id ?? '—'} · CITY ${doc.city_id ?? '—'} · ${doc.counts?.total ?? doc.slides?.length ?? 0} 張`,
+      title: `UW 劇情｜${doc.site_name || '未命名劇情'} · Level ${doc.level ?? btn.dataset.level ?? '—'}`,
+      meta: `地點：${archive.uwCityName(doc.city_id)}（CITY ${doc.city_id ?? '—'}） · 劇情段落 ${doc.site_plot_id ?? '—'} · ${doc.counts?.total ?? doc.slides?.length ?? 0} 張`,
       slides: doc.slides || [],
       mode: 'uw_plot',
       defaultPhase: 'all',

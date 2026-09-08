@@ -150,6 +150,13 @@ export function variantLabel(variant) {
   return VARIANT_LABEL[variant] || variant;
 }
 
+export function uwCityName(cityId) {
+  const city = state.index?.cities?.find((item) => String(item.city_id) === String(cityId));
+  if (city?.city_name) return city.city_name;
+  if (String(cityId) === '37') return '維多利亞城';
+  return `CITY ${cityId}`;
+}
+
 export function renderCards(container) {
   const rows = filtered();
   if (!rows.length) {
@@ -208,9 +215,9 @@ export function renderUwCards(container) {
       return `
         <article class="story-card uw-card">
           <div>
-            <div class="eyebrow">UW · SITE ${escapeHtml(group.site_id)}</div>
-            <h3>${escapeHtml(group.site_name || '未命名地點')}</h3>
-            <p>劇情段落 ${plotIds.map(escapeHtml).join(' / ')} · CITY ${escapeHtml(group.city_id)}</p>
+            <div class="eyebrow">UW · 劇情名稱</div>
+            <h3>${escapeHtml(group.site_name || '未命名劇情')}</h3>
+            <p>劇情段落 ${plotIds.map(escapeHtml).join(' / ')} · 地點：${escapeHtml(uwCityName(group.city_id))}（CITY ${escapeHtml(group.city_id)}）</p>
           </div>
           <div class="uw-levels" aria-label="${escapeHtml(group.site_name || '')} 劇情等級">${levels}</div>
           <div class="card-foot">
