@@ -14,7 +14,7 @@ import {
   TYPE_SPEED_MS,
 } from './config.js';
 import { localAssetUrl, remoteAssetUrl } from './assets.js';
-import { applyMusic, playSoundEffect, stopAll } from './audio.js';
+import { applyMusic, ensurePlaying, playSoundEffect, stopAll } from './audio.js';
 import { typeInto } from './typewriter.js';
 
 export class StoryPlayer {
@@ -263,6 +263,8 @@ export class StoryPlayer {
    * 但若該張有 duration，點擊永遠只做「補完打字」，不提前翻頁。
    */
   handleTap() {
+    // 點擊是貨真價實的 user activation，被自動播放政策擋下的 BGM 只有在這種時機救得回來。
+    ensurePlaying();
     if (!this.current) return;
     if (!this.dialogueComplete) {
       this.typing?.complete();

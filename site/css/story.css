@@ -167,18 +167,6 @@
   opacity: 1;
 }
 
-.stage-label {
-  position: absolute;
-  top: 1.4cqw;
-  left: 2cqw;
-  z-index: 35;
-  color: #c8a66d;
-  font-size: max(10px, 1cqw);
-  letter-spacing: 0.1em;
-  text-shadow: 0 1px 3px #000;
-  pointer-events: none;
-}
-
 /* ---- 立繪站位 ------------------------------------------------------------
  * .posBox   外層：left 由站位決定、translateX(-50%)、滿版且 overflow:hidden
  * .actorImgBox 內層：置中，height 135%（GIF 版是 100%）

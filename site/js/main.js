@@ -2,7 +2,7 @@
 
 import { TYPE_SPEED_MS } from './config.js';
 import * as archive from './archive.js';
-import { isMuted, setMuted, setVolume } from './audio.js';
+import { isMuted, setBlockedListener, setMuted, setVolume } from './audio.js';
 import { StoryPlayer } from './story.js';
 
 const $ = (sel) => document.querySelector(sel);
@@ -118,13 +118,6 @@ player.onChange = (p) => {
   const pos = total ? p.slideIdx + 1 : 0;
   $('#counter').textContent = `${pos} / ${total}`;
   $('#bar').style.width = total ? `${(pos / total) * 100}%` : '0';
-  const slide = p.current;
-  // before_attack 只有攻城劇情有意義；陣營劇情沒這個欄位，UW 劇情的值是殘值。
-  const phaseLabel =
-    slide && typeof slide.before_attack === 'boolean' && p.mode !== 'uw_plot'
-      ? ` · ${slide.before_attack ? 'BEFORE ATTACK' : 'AFTER ATTACK'}`
-      : '';
-  $('#stageLabel').textContent = slide ? `SLIDE ${String(pos).padStart(3, '0')}${phaseLabel}` : '';
   renderLog(p);
 };
 
@@ -228,10 +221,22 @@ $('#typeSpeed').addEventListener('change', (e) => {
   player.setTypeSpeed(TYPE_SPEED_MS[e.target.value] ?? TYPE_SPEED_MS.normal);
 });
 
-$('#soundToggle').addEventListener('click', (e) => {
-  const muted = setMuted(!isMuted());
-  e.currentTarget.textContent = muted ? '🔇 音效關' : '🔊 音效開';
-  e.currentTarget.classList.toggle('is-on', !muted);
+function renderSoundButton() {
+  const btn = $('#soundToggle');
+  const muted = isMuted();
+  btn.textContent = muted ? '🔇 音效關' : '🔊 音效開';
+  btn.classList.toggle('is-on', !muted);
+}
+
+$('#soundToggle').addEventListener('click', () => {
+  setMuted(!isMuted());
+  renderSoundButton();
+});
+
+// 瀏覽器在頁面還沒有 user activation 前會拒絕 play()。與其無聲失敗，
+// 不如講清楚——點畫面任何一處就會恢復。
+setBlockedListener((blocked) => {
+  if (blocked) toast('瀏覽器擋下了自動播放，點一下畫面即可開始播放音樂。');
 });
 
 $('#volume').addEventListener('input', (e) => setVolume(Number(e.target.value)));
@@ -256,4 +261,5 @@ document.addEventListener('keydown', (e) => {
 // ---- 啟動 -----------------------------------------------------------------
 
 setVolume(Number($('#volume').value));
+renderSoundButton();
 switchVariant($('#variant').value);
