@@ -31,6 +31,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
+from rf_stories.anonymize import count_occurrences, scrub_slides  # noqa: E402
 from rf_stories.client import RFClient, RFError  # noqa: E402
 
 SKIP_STATUS = "no_entry"
@@ -92,6 +93,7 @@ async def main() -> int:
     ap.add_argument("--all", action="store_true", help="不過濾 status，打全部城市")
     ap.add_argument("--delay", type=float, default=0.3, help="每次請求間隔秒數")
     ap.add_argument("--force", action="store_true", help="即使目錄屬於其他帳號也覆寫")
+    ap.add_argument("--player-name", help="要替換掉的玩家暱稱（預設取登入回傳的暱稱）")
     args = ap.parse_args()
 
     email = os.environ.get("RF_EMAIL")
@@ -123,6 +125,13 @@ async def main() -> int:
             )
             return 2
         print(f"陣營: {nation.get('name') or '(未知)'} → variant={variant}")
+
+        # 劇情文本會把抓取帳號的暱稱寫進 speaker 與 dialogue，落地前先換掉。
+        player_name = args.player_name or rf.nickname
+        if player_name:
+            print(f"玩家暱稱「{player_name}」將替換為佔位符")
+        else:
+            print("⚠️ 取不到玩家暱稱，未做替換——公開前請用 scripts/scrub_data.py 補做")
 
         out = Path(args.out) if args.out else ROOT / "data" / variant
         story_dir = out / "main_story"
@@ -167,6 +176,9 @@ async def main() -> int:
                 await asyncio.sleep(args.delay)
                 continue
 
+            if player_name:
+                slides, _ = scrub_slides(slides, player_name)
+
             ch = chapter_of(c)
             phases = split_by_phase(slides)
             scan_assets(slides, assets)
@@ -209,6 +221,8 @@ async def main() -> int:
         nation_pl = await rf.nation_slides()
         n_slides = nation_pl.get("slides") or []
         if n_slides:
+            if player_name:
+                n_slides, _ = scrub_slides(n_slides, player_name)
             scan_assets(n_slides, assets)
             write_json(
                 out / "nation_story.json",
@@ -232,6 +246,7 @@ async def main() -> int:
                 "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                 "source": "api.komisureiya.com",
                 "user_id": rf.user_id,
+                "anonymized": bool(player_name),
                 "variant": variant,
                 "nation": nation,
                 "cities_total": len(cities),

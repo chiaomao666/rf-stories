@@ -1,0 +1,1034 @@
+{
+  "mode": "story_nation",
+  "variant": "red_army",
+  "nation": {
+    "id": 1,
+    "name": "紅軍"
+  },
+  "counts": {
+    "total": 26,
+    "with_dialogue": 26
+  },
+  "preloads": [
+    "/images/site/street/sv_north_china.png",
+    "/images/actor/gif/tachieCM02.gif"
+  ],
+  "slides": [
+    {
+      "background": "/images/site/street/sv_north_china.png",
+      "dialogue": "我們這片名為「<b9>華夏</b9>」的大地，早在五千年前就孕育出古老的文明。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 1,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieCM02.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 10,
+      "sound_effect": null,
+      "speaker": "趙彤"
+    },
+    {
+      "background": "/images/site/street/sv_north_china.png",
+      "dialogue": "在幾千年的歲月裡，華夏掌握了世界上最進步的生產力，是世界的商品中心。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 2,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieCM02.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 20,
+      "sound_effect": null,
+      "speaker": "趙彤"
+    },
+    {
+      "background": "/images/site/street/sv_north_china.png",
+      "dialogue": "六百年前，華夏更打造出了世界上規模最大的艦隊。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 3,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieCM02.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 30,
+      "sound_effect": null,
+      "speaker": "趙彤"
+    },
+    {
+      "background": "/images/site/street/sv_north_china.png",
+      "dialogue": "遺憾的是，我們的祖先當時並沒有航向世界、開啟大航海時代。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 4,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieCM02.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 40,
+      "sound_effect": null,
+      "speaker": "趙彤"
+    },
+    {
+      "background": "/images/site/street/sv_north_china.png",
+      "dialogue": "專制的皇權、封建的社會、停滯不前的生產技術，把海洋拱手讓給了歐洲人。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 5,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieCM02.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 50,
+      "sound_effect": null,
+      "speaker": "趙彤"
+    },
+    {
+      "background": "/images/site/street/sv_north_china.png",
+      "dialogue": "之後，更把大地讓給了來自滿洲的侵略者「<b9>清帝</b9>」。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 6,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieCM02.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 60,
+      "sound_effect": null,
+      "speaker": "趙彤"
+    },
+    {
+      "background": "/images/site/street/sv_north_china.png",
+      "dialogue": "華夏淪為滿洲人與蒙古人的殖民地，長達三百年。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 7,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieCM02.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 70,
+      "sound_effect": null,
+      "speaker": "趙彤"
+    },
+    {
+      "background": "/images/site/street/sv_north_china.png",
+      "dialogue": "清帝領導的封建統治集團，沒有能力面對<b9>工業革命</b9>帶來的挑戰。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 8,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieCM02.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 80,
+      "sound_effect": null,
+      "speaker": "趙彤"
+    },
+    {
+      "background": "/images/site/street/sv_north_china.png",
+      "dialogue": "在歐洲列強與日本的船堅砲利之下，清帝簽了一份又一份喪權辱國的條約。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 9,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieCM02.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 90,
+      "sound_effect": null,
+      "speaker": "趙彤"
+    },
+    {
+      "background": "/images/site/street/sv_north_china.png",
+      "dialogue": "百年前的一場軍人譁變，終於把清帝拉下歷史的舞臺。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 10,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieCM02.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 100,
+      "sound_effect": null,
+      "speaker": "趙彤"
+    },
+    {
+      "background": "/images/site/street/sv_north_china.png",
+      "dialogue": "不久後，當時還很弱小的<b9>共產黨</b9>，在上海誕生了。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 11,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieCM02.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 110,
+      "sound_effect": null,
+      "speaker": "趙彤"
+    },
+    {
+      "background": "/images/site/street/sv_north_china.png",
+      "dialogue": "黨領導下的紅軍吸取了歷朝歷代<b9>華夏農民起義</b9>的經驗，將廣大<b9>農民</b9>爭取到共產革命的隊伍中。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 12,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieCM02.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 120,
+      "sound_effect": null,
+      "speaker": "趙彤"
+    },
+    {
+      "background": "/images/site/street/sv_north_china.png",
+      "dialogue": "與帝國主義者、軍閥、少數民族割據勢力進行漫長而艱苦的鬥爭。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 13,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieCM02.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 130,
+      "sound_effect": null,
+      "speaker": "趙彤"
+    },
+    {
+      "background": "/images/site/street/sv_north_china.png",
+      "dialogue": "經過無數先烈的犧牲，黨帶領<b9>紅軍</b9>在數十年的混戰中取得最終的勝利。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 14,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieCM02.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 140,
+      "sound_effect": null,
+      "speaker": "趙彤"
+    },
+    {
+      "background": "/images/site/street/sv_north_china.png",
+      "dialogue": "解放整片東方大陸，把清帝的失土重新團結起來，組成統一的<b9>人民共和國</b9>。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 15,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieCM02.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 150,
+      "sound_effect": null,
+      "speaker": "趙彤"
+    },
+    {
+      "background": "/images/site/street/sv_north_china.png",
+      "dialogue": "在這一百年間，共產黨完成了土地改革與社會改造，革除封建陋習。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 16,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieCM02.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 160,
+      "sound_effect": null,
+      "speaker": "趙彤"
+    },
+    {
+      "background": "/images/site/street/sv_north_china.png",
+      "dialogue": "讓曾經食不果腹的窮苦人民，如今能夠得到溫飽。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 17,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieCM02.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 170,
+      "sound_effect": null,
+      "speaker": "趙彤"
+    },
+    {
+      "background": "/images/site/street/sv_north_china.png",
+      "dialogue": "並且帶領全國人民先後擊退了<b9>日本</b9>、<b9>美國</b9>、<b9>印度</b9>與<b9>越南</b9>的威脅。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 18,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieCM02.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 180,
+      "sound_effect": null,
+      "speaker": "趙彤"
+    },
+    {
+      "background": "/images/site/street/sv_north_china.png",
+      "dialogue": "下一個百年，我們不僅要收回曾經被清帝統治的<b9>臺灣</b9>、<b9>藏南</b9>、<b9>外蒙古</b9>、<b9>外東北</b9>與<b9>外西北</b9>。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 19,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieCM02.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 190,
+      "sound_effect": null,
+      "speaker": "趙彤"
+    },
+    {
+      "background": "/images/site/street/sv_north_china.png",
+      "dialogue": "更要帶領東方大陸的人民航向大海，一竟先民當年未能完成的缺憾。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 20,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieCM02.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 200,
+      "sound_effect": null,
+      "speaker": "趙彤"
+    },
+    {
+      "background": "/images/site/street/sv_north_china.png",
+      "dialogue": "奪回本應屬於我們東方人的<b9>海洋時代</b9>，<b9>讓紅旗飄揚在地與海的盡頭</b9>。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 21,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieCM02.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 210,
+      "sound_effect": null,
+      "speaker": "趙彤"
+    },
+    {
+      "background": "/images/site/street/sv_north_china.png",
+      "dialogue": "世界畏懼我們，所以不斷慫恿國內少數的反動派，妄想分裂共和國。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 22,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieCM02.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 220,
+      "sound_effect": null,
+      "speaker": "趙彤"
+    },
+    {
+      "background": "/images/site/street/sv_north_china.png",
+      "dialogue": "為了共和國的穩定、各族人民的溫飽，我們不得不<b9>自衛反擊</b9>。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 23,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieCM02.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 230,
+      "sound_effect": null,
+      "speaker": "趙彤"
+    },
+    {
+      "background": "/images/site/street/sv_north_china.png",
+      "dialogue": "我們會一雪數百年來的恥辱，粉碎敵對勢力的企圖，並且建立世界的<b9>新秩序</b9>。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 24,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieCM02.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 240,
+      "sound_effect": null,
+      "speaker": "趙彤"
+    },
+    {
+      "background": "/images/site/street/sv_north_china.png",
+      "dialogue": "主角，記住，在你身後有一個強大的祖國。",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 25,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieCM02.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 250,
+      "sound_effect": null,
+      "speaker": "趙彤"
+    },
+    {
+      "background": "/images/site/street/sv_north_china.png",
+      "dialogue": "<b9>人民萬歲！偉大的人民共和國萬歲！</b9>",
+      "dialogue_color": false,
+      "fade_in": false,
+      "fade_out": false,
+      "id": 26,
+      "music": "/audio/music/nation_slides.mp3",
+      "placement": {
+        "a": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "effect": null,
+          "figure": "/images/actor/gif/tachieCM02.gif",
+          "shift_to": null
+        },
+        "d": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 260,
+      "sound_effect": null,
+      "speaker": "趙彤"
+    }
+  ],
+  "anonymized": true,
+  "anonymized_placeholder": "主角"
+}
