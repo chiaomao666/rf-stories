@@ -14,7 +14,8 @@ UI 字串與文件維持正體中文。
 | `scripts/fetch_main_story.py` | 抓全部主線攻城劇情 + 陣營劇情 |
 | `scripts/uw_probe.py` | UW 站點偵查；`--dispatch` 可實際派遣抓取（會扣能量） |
 | `scripts/scrub_data.py` | 替既有資料補做玩家名去識別化 |
-| `data/` | 抓下來的劇情 JSON（已去識別化，見下方說明） |
+| `data/` | 抓下來的劇情 JSON（已去識別化，見下方說明）——版控裡只有這一份 |
+| `site/` | GitHub Pages 靜態重播站（見下方「重播站」） |
 
 ## 安裝
 
@@ -43,6 +44,9 @@ export RF_PASSWORD=...
 RF_EMAIL=<非紅軍帳號> RF_PASSWORD=... python scripts/fetch_main_story.py
 RF_EMAIL=<紅軍帳號>   RF_PASSWORD=... python scripts/fetch_main_story.py
 ```
+
+`index.json` 的城市依 `cities.position` 排序，也就是**遊戲本身的順序**
+（探險與特別篇會穿插在主線篇章之間）。舊版資料沒有這個欄位，重跑一次即可補上。
 
 `slides` 是純查詢事件——不扣資源、不改變遊戲狀態，可以隨時重跑。
 預設只打 `status != "no_entry"` 的城市（其餘尚未實作劇情，一律回空陣列），
@@ -120,3 +124,44 @@ python scripts/scrub_data.py data/non_red_army --player-name <暱稱>          #
 素材（背景、立繪、音樂）本身不在這裡，路徑是相對的，
 實際位於 `https://media.komisureiya.com`。直接熱連結等於把流量掛在對方帳上，
 且對方改版就整站失效——見文件的「素材網址解析」一節。
+
+## 重播站
+
+站台在 `site/`，由 GitHub Actions 部署（`.github/workflows/pages.yml`）。
+劇情資料在版控裡只有 `data/` 一份，部署時複製成 `site/data/`，所以 repo 內不會有兩份副本。
+
+```
+site/
+├── index.html          # 劇情索引 + 播放器
+├── css/                # site.css（索引頁）、story.css（舞台）
+├── js/                 # config / assets / audio / typewriter / story / archive / main
+├── assets/             # 素材：images/... 與 audio/...，路徑與 slide 內的相對路徑一致
+└── tools/              # rf_story_capture.js，貼進遊戲 console 側錄 [Story] log
+```
+
+本機預覽（從 repo 根目錄起，站台才找得到上一層的 `data/`）：
+
+```bash
+python -m http.server 8000
+# 開 http://127.0.0.1:8000/site/
+```
+
+播放器依 `docs/story_slides_engine.md` 的實測值重寫，不是移植遊戲原始碼：
+五站位 `a`–`e` 的 left/zIndex、立繪特效（fade_in / swift_in / half_transparent /
+motion / horizontal_shift）、`color_filter`、背景轉場 key 綁 `background` 而非索引、
+`music` 未填等於停止音樂、`duration` 自動翻頁、「第一下補完打字第二下才翻頁」、
+以及對白裡的自訂標籤（實測只有 `<b9>`）。對應常數集中在 `site/js/config.js`。
+
+### 素材
+
+`site/assets/` 依 slide 內的相對路徑收錄素材（`images/…`、`audio/…`），
+另有 `ui/bgStoryPanel.png` 是對話框底圖。**缺檔會自動回退官方 CDN**
+（`https://media.komisureiya.com`），所以缺素材不會讓播放器壞掉，只是離線時看不到、
+且流量掛在對方站上。
+
+`assets/vendor/` 放遊戲端原始碼（含 `.map`）供比對用，第三方程式碼不進版控，
+已在 `.gitignore` 排除。播放器的幾何與時間參數就是從那裡的 sourcemap 還原
+`pages/Story.js` 與 `Story.module.scss` 校正出來的：舞台 2800×1600（7:4）、
+立繪 posBox→actorImgBox(135%)→img 三層結構、`b9{font-weight:900}`、
+`filter_black{brightness(50%)}`、`dialogue_color{color:#ccc}`、
+對白 `Noto Sans TC` 500／speaker `Noto Serif TC` 900、字級 1.6428571429vw。
