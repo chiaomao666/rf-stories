@@ -343,6 +343,27 @@ code {
   border-color: #bea98c;
 }
 
+.uw-head {
+  margin-top: 64px;
+}
+
+.uw-notice {
+  border-left-color: var(--blue);
+}
+
+.uw-card {
+  min-height: 176px;
+  background: #f8f4ec;
+}
+
+.uw-card .eyebrow {
+  color: var(--blue);
+}
+
+.uw-grid {
+  margin-bottom: 12px;
+}
+
 .story-card h3 {
   font-family: Georgia, 'Noto Serif TC', serif;
   font-size: 23px;

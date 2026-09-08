@@ -168,6 +168,23 @@ $('#storyGrid').addEventListener('click', async (e) => {
   }
 });
 
+$('#uwGrid').addEventListener('click', async (e) => {
+  const btn = e.target.closest('.uw-play-link');
+  if (!btn) return;
+  try {
+    const doc = await archive.loadUwPlot(btn.dataset.file);
+    openPlayer({
+      title: `UW｜${doc.site_name || btn.dataset.site || '未命名地點'}`,
+      meta: `劇情段落 ${doc.site_plot_id ?? '—'} · Level ${doc.level ?? '—'} · ${doc.counts?.total ?? doc.slides?.length ?? 0} 張`,
+      slides: doc.slides || [],
+      mode: 'uw_plot',
+      defaultPhase: 'all',
+    });
+  } catch (err) {
+    toast(String(err.message || err));
+  }
+});
+
 // 陣營劇情與主線變體無關，九個陣營各一套，清單直接讀 nation_story/index.json。
 async function fillNations() {
   const select = $('#nationStory');
@@ -180,6 +197,18 @@ async function fillNations() {
     select.innerHTML = `<option value="">陣營劇情…（${options.length}/9）</option>` + options.join('');
   } catch {
     select.innerHTML = '<option value="">陣營劇情（讀取失敗）</option>';
+  }
+}
+
+async function fillUwPlots() {
+  const note = $('#uwLoadedNote');
+  try {
+    const idx = await archive.loadUwIndex();
+    note.textContent = `${idx.plots_total ?? idx.plots?.length ?? 0} 段 · ${idx.slides_total ?? 0} 張 slides · 更新於 ${String(idx.exported_at || '').slice(0, 10)}`;
+    archive.renderUwCards($('#uwGrid'));
+  } catch (err) {
+    note.textContent = '尚未載入 UW 資料';
+    $('#uwGrid').innerHTML = `<div class="empty">${archive.escapeHtml(err.message || err)}</div>`;
   }
 }
 
@@ -258,4 +287,5 @@ document.addEventListener('keydown', (e) => {
 setVolume(Number($('#volume').value));
 renderSoundButton();
 fillNations();
+fillUwPlots();
 switchVariant($('#variant').value);

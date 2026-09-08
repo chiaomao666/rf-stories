@@ -7,6 +7,7 @@ export const state = {
   variant: 'red_army',
   index: null,
   stories: [],
+  uwIndex: null,
   chapter: 'all',
   keyword: '',
 };
@@ -68,6 +69,16 @@ export function loadNationStory(nationId) {
   return loadJson(`nation_story/nation_${nationId}.json`);
 }
 
+export async function loadUwIndex() {
+  if (!cache.has('uw_index')) cache.set('uw_index', loadJson('uw_plots/index.json'));
+  state.uwIndex = await cache.get('uw_index');
+  return state.uwIndex;
+}
+
+export function loadUwPlot(file) {
+  return loadJson(`uw_plots/${file}`);
+}
+
 export function chapters() {
   const names = state.stories.map((s) => s.chapter_name).filter(Boolean);
   return [...new Set(names)];
@@ -126,5 +137,30 @@ export function renderCards(container) {
           </div>
         </article>`;
     })
+    .join('');
+}
+
+export function renderUwCards(container) {
+  const rows = state.uwIndex?.plots || [];
+  if (!rows.length) {
+    container.innerHTML = '<div class="empty">目前沒有已匯入的 UW 劇情。</div>';
+    return;
+  }
+  container.innerHTML = rows
+    .map(
+      (s) => `
+        <article class="story-card uw-card">
+          <div>
+            <div class="eyebrow">UW · SITE ${escapeHtml(s.site_id)} · LV.${escapeHtml(s.level)}</div>
+            <h3>${escapeHtml(s.site_name || '未命名地點')}</h3>
+            <p>劇情段落 ${escapeHtml(s.site_plot_id)} · CITY ${escapeHtml(s.city_id)}</p>
+          </div>
+          <div class="card-foot">
+            <span class="count">${escapeHtml(s.total)} 張 · 對白 ${escapeHtml(s.with_dialogue)}</span>
+            <button class="play-link uw-play-link" data-file="${escapeHtml(s.file)}"
+                    data-site="${escapeHtml(s.site_name || '')}">播放 →</button>
+          </div>
+        </article>`,
+    )
     .join('');
 }
