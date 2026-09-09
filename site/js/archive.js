@@ -199,17 +199,18 @@ export function renderUwCards(container) {
   }
   container.innerHTML = rows
     .map((group) => {
-      const byLevel = new Map(group.plots.map((plot) => [String(plot.level), plot]));
-      const plotIds = group.plots.map((plot) => plot.site_plot_id).sort((a, b) => Number(a) - Number(b));
+      const plots = [...group.plots].sort((a, b) => {
+        const level = Number(a.level) - Number(b.level);
+        return level || Number(a.site_plot_id) - Number(b.site_plot_id);
+      });
       const total = group.plots.reduce((sum, plot) => sum + Number(plot.total || 0), 0);
       const dialogue = group.plots.reduce((sum, plot) => sum + Number(plot.with_dialogue || 0), 0);
-      const levels = [1, 2, 3, 4, 5]
-        .map((level) => {
-          const plot = byLevel.get(String(level));
-          const attrs = plot
-            ? `data-file="${escapeHtml(plot.file)}" data-level="${level}"`
-            : 'disabled aria-disabled="true"';
-          return `<button class="level-btn uw-play-link${plot ? '' : ' is-unavailable'}" ${attrs}>Level ${level}</button>`;
+      const levels = plots
+        .map((plot, index) => {
+          const label = `Level ${escapeHtml(plot.level ?? '—')} · 結果 ${index + 1}`;
+          return `<button class="level-btn uw-play-link" data-file="${escapeHtml(plot.file)}"
+                    data-level="${escapeHtml(plot.level ?? '')}" data-plot-id="${escapeHtml(plot.site_plot_id)}"
+                    title="site_plot_id ${escapeHtml(plot.site_plot_id)}">${label}</button>`;
         })
         .join('');
       return `
@@ -217,11 +218,11 @@ export function renderUwCards(container) {
           <div>
             <div class="eyebrow">siteID:${escapeHtml(group.site_id)}</div>
             <h3>${escapeHtml(group.site_name || '未命名劇情')}</h3>
-            <p>劇情段落 ${plotIds.map(escapeHtml).join(' / ')} · 地點：${escapeHtml(uwCityName(group.city_id))}（CITY ${escapeHtml(group.city_id)}）</p>
+            <p>${plots.length} 個結果 · 地點：${escapeHtml(uwCityName(group.city_id))}（CITY ${escapeHtml(group.city_id)}）</p>
           </div>
           <div class="uw-levels" aria-label="${escapeHtml(group.site_name || '')} 劇情等級">${levels}</div>
           <div class="card-foot">
-            <span class="count">${total} 張 · 對白 ${dialogue} · ${group.plots.length} 個等級</span>
+            <span class="count">${total} 張 · 對白 ${dialogue} · ${group.plots.length} 個結果</span>
             <span class="uw-level-hint">選擇等級後播放</span>
           </div>
         </article>`;

@@ -376,7 +376,7 @@ payload keys: ['message', 'status', 'update_data']
 > 既有資料可用 `scripts/scrub_data.py` 補做。
 
 主線劇情抓一次即永久可用。UW 則需改用**累積式蒐集**：在抓取端掛鉤，每次派遣後
-把回覆 dump 一份，以 `site_plot_id` 去重存進劇情庫。看過一次就永久可重看——
+把回覆 dump 一份，以劇情內容指紋去重存進劇情庫；相同 `site_plot_id` 的不同結果也要保留。看過一次就永久可重看——
 對重播工具而言限制比遊戲本身寬鬆，但湊齊單一 site 的 `max_level` 段需要反覆派遣，
 能量成本是唯一無法繞過的瓶頸。
 

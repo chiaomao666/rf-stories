@@ -5,7 +5,7 @@
 // 為什麼需要這個：UW 劇情沒辦法像主線那樣一次抓完——每次派遣扣 energy_charge、
 // 角色必須當下就在該座城市、後端還會隨機抽選要播哪一段，客戶端無法指定。
 // 所以只能「累積式蒐集」：在平常遊玩的流程裡把每次看到的劇情 dump 下來，
-// 以 site_plot_id 去重。詳見 docs/story_slides_engine.md 的
+// 以劇情內容去重；相同 site_plot_id 的不同結果也要保留。詳見 docs/story_slides_engine.md 的
 // 「UW 的多段結構與可重看性」一節。
 //
 // UW 劇情不分陣營，看到什麼就收什麼。
@@ -29,7 +29,7 @@
     var PLACEHOLDER = '主角';
     var ORG_PLACEHOLDER = '組織';
 
-    var plots = {};        // site_plot_id -> record
+    var plots = {};        // site_plot_id + 內容指紋 -> record
     var identity = { nickname: null, organization: null };
     var panelEl, countEl, statusEl, idEl;
 
@@ -59,6 +59,16 @@
 
     function count() {
         return Object.keys(plots).length;
+    }
+
+    function contentKey(response) {
+        var text = JSON.stringify(response.slides || []);
+        var hash = 2166136261;
+        for (var i = 0; i < text.length; i += 1) {
+            hash ^= text.charCodeAt(i);
+            hash = Math.imul(hash, 16777619);
+        }
+        return String(response.site_id) + ':' + String(response.site_plot_id) + ':' + (hash >>> 0).toString(16);
     }
 
     // ---- 去識別化 ---------------------------------------------------------
@@ -118,11 +128,12 @@
     function capture(response) {
         var id = response.site_plot_id;
         if (id === undefined || id === null) return;
-        if (plots[id]) {
-            flashStatus('site_plot_id=' + id + ' 已收過，略過');
+        var key = contentKey(response);
+        if (plots[key]) {
+            flashStatus('site_plot_id=' + id + ' 的相同結果已收過，略過');
             return;
         }
-        plots[id] = {
+        plots[key] = {
             fetched_at: new Date().toISOString(),
             site_id: response.site_id,
             site_name: response.site_name,
@@ -135,7 +146,7 @@
         save();
         updatePanel();
         flashStatus('收到「' + (response.site_name || '?') + '」' + response.slides.length + ' 張 ✓');
-        console.log('[UW] 收錄 site_plot_id=' + id, plots[id]);
+        console.log('[UW] 收錄 site_plot_id=' + id + ' 的新結果', plots[key]);
     }
 
     function inspect(raw) {

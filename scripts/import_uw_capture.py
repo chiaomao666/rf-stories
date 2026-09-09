@@ -2,7 +2,7 @@
 """把 site/tools/rf_uw_capture.js 匯出的檔案併進 data/uw_plots/。
 
 UW 劇情只能累積式蒐集（每次派遣扣能量、後端隨機抽段、客戶端無法指定要看哪一段），
-所以這支腳本的重點是**合併**而不是覆蓋：以 site_plot_id 去重，已經收過的就跳過，
+所以這支腳本的重點是**合併**而不是覆蓋：以劇情內容指紋去重，內容相同的就跳過，
 可以在每次匯出後重跑。
 
 匯入前會檢查去識別化：只要文本裡還找得到暱稱或組織名就中止，
@@ -16,6 +16,7 @@ UW 劇情只能累積式蒐集（每次派遣扣能量、後端隨機抽段、�
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import sys
 from pathlib import Path
@@ -34,7 +35,23 @@ def write_json(path: Path, data: object) -> None:
 
 
 def plot_filename(record: dict) -> str:
-    return f"site_{record.get('site_id')}_plot_{record.get('site_plot_id')}.json"
+    """以內容指紋區分同一 site_plot_id 的不同隨機結果。"""
+    payload = json.dumps(record.get("slides") or [], ensure_ascii=False, sort_keys=True).encode("utf-8")
+    digest = hashlib.sha256(payload).hexdigest()[:10]
+    return f"site_{record.get('site_id')}_plot_{record.get('site_plot_id')}_{digest}.json"
+
+
+def existing_plot_path(out: Path, record: dict) -> Path | None:
+    pattern = f"site_{record.get('site_id')}_plot_{record.get('site_plot_id')}*.json"
+    slides = record.get("slides") or []
+    for path in sorted(out.glob(pattern)):
+        try:
+            existing = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        if (existing.get("slides") or []) == slides:
+            return path
+    return None
 
 
 def rebuild_index(out: Path) -> dict:
@@ -80,7 +97,7 @@ def main() -> int:
     ap.add_argument("--check", action="store_true", help="只回報，不寫檔")
     ap.add_argument("--player-name", help="匯出時沒清乾淨的話，在這裡補指定暱稱")
     ap.add_argument("--organization", help="匯出時沒清乾淨的話，在這裡補指定組織名")
-    ap.add_argument("--force", action="store_true", help="已存在的 site_plot_id 也覆寫")
+    ap.add_argument("--force", action="store_true", help="內容相同的既有段落也覆寫")
     args = ap.parse_args()
 
     dump = Path(args.dump)
@@ -120,7 +137,7 @@ def main() -> int:
             dirty.append(f"{plot_filename(rec)}（匯出時未做去識別化）")
             continue
 
-        path = out / plot_filename(rec)
+        path = existing_plot_path(out, rec) or out / plot_filename(rec)
         if path.exists() and not args.force:
             skipped += 1
             continue
