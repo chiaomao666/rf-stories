@@ -45,7 +45,7 @@ function renderStats() {
     ? '遊戲順序'
     : '章節順序（這份資料沒有 position，重跑 fetch_main_story.py 可取得遊戲順序）';
   $('#loadedNote').textContent =
-    `${archive.variantLabel(idx.variant)}版本 · 更新於 ${String(idx.fetched_at || '').slice(0, 10)} · ${order}`;
+    `${archive.variantLabel(idx.variant)}版本 · 更新於 ${archive.formatUtc8(idx.fetched_at)}（UTC+8） · ${order}`;
 }
 
 function fillChapters() {
@@ -191,7 +191,7 @@ $('#uwGrid').addEventListener('click', async (e) => {
     const doc = await archive.loadUwPlot(btn.dataset.file);
     openPlayer({
       title: `UW 劇情｜${doc.site_name || '未命名劇情'} · Level ${doc.level ?? btn.dataset.level ?? '—'}`,
-      meta: `地點：${archive.uwCityName(doc.city_id)}（CITY ${doc.city_id ?? '—'}） · 劇情段落 ${doc.site_plot_id ?? '—'} · ${doc.counts?.total ?? doc.slides?.length ?? 0} 張`,
+      meta: `地點：${archive.uwCityName(doc.city_id)} · 劇情段落 ${doc.site_plot_id ?? '—'} · ${doc.counts?.total ?? doc.slides?.length ?? 0} 張 · 收錄於 ${archive.formatUtc8(doc.fetched_at)}（UTC+8）`,
       slides: doc.slides || [],
       mode: 'uw_plot',
       defaultPhase: 'all',
@@ -226,10 +226,10 @@ async function fillUwPlots() {
       .join('');
     const citySelect = $('#uwCity');
     citySelect.innerHTML = '<option value="all">所有城市</option>' + archive.uwCities()
-      .map((city) => `<option value="${archive.escapeHtml(city)}">CITY ${archive.escapeHtml(city)}</option>`)
+      .map((city) => `<option value="${archive.escapeHtml(city)}">${archive.escapeHtml(archive.uwCityName(city))}</option>`)
       .join('');
     archive.renderUwCards($('#uwGrid'));
-    note.textContent = `${archive.groupedUwPlots().length} 個地點 · ${idx.plots_total ?? idx.plots?.length ?? 0} 段 · ${idx.slides_total ?? 0} 張 slides · 更新於 ${String(idx.exported_at || '').slice(0, 10)}`;
+    note.textContent = `${archive.groupedUwPlots().length} 個地點 · ${idx.plots_total ?? idx.plots?.length ?? 0} 段 · ${idx.slides_total ?? 0} 張 slides · 更新於 ${archive.formatUtc8(archive.latestFetchedAt(idx.plots || []))}（UTC+8）`;
   } catch (err) {
     note.textContent = '尚未載入 UW 資料';
     $('#uwGrid').innerHTML = `<div class="empty">${archive.escapeHtml(err.message || err)}</div>`;

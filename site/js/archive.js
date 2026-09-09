@@ -146,6 +146,29 @@ export function escapeHtml(value) {
   );
 }
 
+export function formatUtc8(value) {
+  if (!value) return '時間未知';
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return '時間未知';
+  return new Intl.DateTimeFormat('zh-TW', {
+    timeZone: 'Asia/Taipei',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: false,
+  }).format(date).replace(/\//g, '-');
+}
+
+export function latestFetchedAt(rows) {
+  return rows
+    .map((row) => row.fetched_at)
+    .filter(Boolean)
+    .sort((a, b) => new Date(b).getTime() - new Date(a).getTime())[0] || null;
+}
+
 export function variantLabel(variant) {
   return VARIANT_LABEL[variant] || variant;
 }
@@ -153,8 +176,9 @@ export function variantLabel(variant) {
 export function uwCityName(cityId) {
   const city = state.index?.cities?.find((item) => String(item.city_id) === String(cityId));
   if (city?.city_name) return city.city_name;
-  if (String(cityId) === '37') return '維多利亞城';
-  return `CITY ${cityId}`;
+  const uwPlot = state.uwIndex?.plots?.find((plot) => String(plot.city_id) === String(cityId));
+  if (uwPlot?.site_name) return uwPlot.site_name;
+  return '未命名城市';
 }
 
 export function renderCards(container) {
@@ -205,9 +229,13 @@ export function renderUwCards(container) {
       });
       const total = group.plots.reduce((sum, plot) => sum + Number(plot.total || 0), 0);
       const dialogue = group.plots.reduce((sum, plot) => sum + Number(plot.with_dialogue || 0), 0);
+      const resultNumbers = new Map();
       const levels = plots
-        .map((plot, index) => {
-          const label = `Level ${escapeHtml(plot.level ?? '—')} · 結果 ${index + 1}`;
+        .map((plot) => {
+          const level = String(plot.level ?? '—');
+          const resultNumber = (resultNumbers.get(level) || 0) + 1;
+          resultNumbers.set(level, resultNumber);
+          const label = `Level ${escapeHtml(level)} · 結果 ${resultNumber}`;
           return `<button class="level-btn uw-play-link" data-file="${escapeHtml(plot.file)}"
                     data-level="${escapeHtml(plot.level ?? '')}" data-plot-id="${escapeHtml(plot.site_plot_id)}"
                     title="site_plot_id ${escapeHtml(plot.site_plot_id)}">${label}</button>`;
@@ -218,7 +246,7 @@ export function renderUwCards(container) {
           <div>
             <div class="eyebrow">siteID:${escapeHtml(group.site_id)}</div>
             <h3>${escapeHtml(group.site_name || '未命名劇情')}</h3>
-            <p>${plots.length} 個結果 · 地點：${escapeHtml(uwCityName(group.city_id))}（CITY ${escapeHtml(group.city_id)}）</p>
+            <p>${plots.length} 個結果 · 地點：${escapeHtml(uwCityName(group.city_id))}</p>
           </div>
           <div class="uw-levels" aria-label="${escapeHtml(group.site_name || '')} 劇情等級">${levels}</div>
           <div class="card-foot">
