@@ -74,7 +74,7 @@ export function resolveDataBase() {
 
 export async function loadJson(relativePath) {
   const base = await resolveDataBase();
-  const res = await fetch(base + relativePath);
+  const res = await fetch(base + relativePath, { cache: 'no-store' });
   if (!res.ok) throw new Error(`載入 ${relativePath} 失敗：HTTP ${res.status}`);
   return res.json();
 }
