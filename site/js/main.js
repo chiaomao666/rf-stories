@@ -191,7 +191,7 @@ $('#uwGrid').addEventListener('click', async (e) => {
     const doc = await archive.loadUwPlot(btn.dataset.file);
     openPlayer({
       title: `UW 劇情｜${doc.site_name || '未命名劇情'} · Level ${doc.level ?? btn.dataset.level ?? '—'}`,
-      meta: `地點：${archive.uwCityName(doc.city_id)} · 劇情段落 ${doc.site_plot_id ?? '—'} · ${doc.counts?.total ?? doc.slides?.length ?? 0} 張 · 收錄於 ${archive.formatUtc8(doc.fetched_at)}（UTC+8）`,
+      meta: `${archive.uwLocation(doc.city_id)} · 劇情段落 ${doc.site_plot_id ?? '—'} · ${doc.counts?.total ?? doc.slides?.length ?? 0} 張 · 收錄於 ${archive.formatUtc8(doc.fetched_at)}（UTC+8）`,
       slides: doc.slides || [],
       mode: 'uw_plot',
       defaultPhase: 'all',
@@ -226,7 +226,7 @@ async function fillUwPlots() {
       .join('');
     const citySelect = $('#uwCity');
     citySelect.innerHTML = '<option value="all">所有城市</option>' + archive.uwCities()
-      .map((city) => `<option value="${archive.escapeHtml(city)}">${archive.escapeHtml(archive.uwCityName(city))}</option>`)
+      .map((city) => `<option value="${archive.escapeHtml(city)}">${archive.escapeHtml(archive.uwLocation(city))}</option>`)
       .join('');
     archive.renderUwCards($('#uwGrid'));
     note.textContent = `${archive.groupedUwPlots().length} 個地點 · ${idx.plots_total ?? idx.plots?.length ?? 0} 段 · ${idx.slides_total ?? 0} 張 slides · 更新於 ${archive.formatUtc8(archive.latestFetchedAt(idx.plots || []))}（UTC+8）`;

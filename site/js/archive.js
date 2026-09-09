@@ -17,6 +17,14 @@ export const state = {
 
 const cache = new Map();
 
+// UW 的 site_name 是劇情名稱；城市名稱依 citymap.js 的 city ID 字典。
+const UW_CITY_NAMES = {
+  37: '維多利亞城',
+  40: '九龍城',
+  302: '成都',
+  568: '阿壩',
+};
+
 /**
  * 排序鍵：遊戲用 cities.position 由小到大決定城鎮順序（Attackmap 的左右鍵就是依這個），
  * 探險與特別篇因此穿插在主線篇章之間，而不是全部擠在前面。
@@ -174,11 +182,11 @@ export function variantLabel(variant) {
 }
 
 export function uwCityName(cityId) {
-  const city = state.index?.cities?.find((item) => String(item.city_id) === String(cityId));
-  if (city?.city_name) return city.city_name;
-  const uwPlot = state.uwIndex?.plots?.find((plot) => String(plot.city_id) === String(cityId));
-  if (uwPlot?.site_name) return uwPlot.site_name;
-  return '未命名城市';
+  return UW_CITY_NAMES[cityId] || '未命名城市';
+}
+
+export function uwLocation(cityId) {
+  return `地點:${uwCityName(cityId)}(cityID:${cityId ?? '—'})`;
 }
 
 export function renderCards(container) {
@@ -246,7 +254,7 @@ export function renderUwCards(container) {
           <div>
             <div class="eyebrow">siteID:${escapeHtml(group.site_id)}</div>
             <h3>${escapeHtml(group.site_name || '未命名劇情')}</h3>
-            <p>${plots.length} 個結果 · 地點：${escapeHtml(uwCityName(group.city_id))}</p>
+            <p>${plots.length} 個結果 · ${escapeHtml(uwLocation(group.city_id))}</p>
           </div>
           <div class="uw-levels" aria-label="${escapeHtml(group.site_name || '')} 劇情等級">${levels}</div>
           <div class="card-foot">
