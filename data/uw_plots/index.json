@@ -1,9 +1,9 @@
 {
   "source": "rf_uw_capture.js",
   "anonymized": true,
-  "plots_total": 6,
-  "slides_total": 675,
-  "with_dialogue_total": 577,
+  "plots_total": 8,
+  "slides_total": 832,
+  "with_dialogue_total": 722,
   "plots": [
     {
       "site_id": 3,
@@ -39,6 +39,17 @@
       "fetched_at": "2026-09-09T08:36:38.938Z"
     },
     {
+      "site_id": 664,
+      "site_name": "九寨溝",
+      "site_plot_id": 13,
+      "level": 1,
+      "city_id": 568,
+      "file": "site_664_plot_13.json",
+      "total": 110,
+      "with_dialogue": 104,
+      "fetched_at": "2026-09-09T16:04:56.985Z"
+    },
+    {
       "site_id": 676,
       "site_name": "灣仔道",
       "site_plot_id": 48,
@@ -70,6 +81,17 @@
       "total": 39,
       "with_dialogue": 24,
       "fetched_at": "2026-09-08T14:30:00.880Z"
+    },
+    {
+      "site_id": 678,
+      "site_name": "平樂古鎮",
+      "site_plot_id": 12,
+      "level": 1,
+      "city_id": 302,
+      "file": "site_678_plot_12.json",
+      "total": 47,
+      "with_dialogue": 41,
+      "fetched_at": "2026-09-09T17:05:35.217Z"
     }
   ]
 }
