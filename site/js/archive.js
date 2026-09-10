@@ -183,7 +183,11 @@ export function variantLabel(variant) {
 }
 
 export function uwCityName(cityId) {
-  return UW_CITY_NAMES[cityId] || '未命名城市';
+  const normalizedId = String(cityId ?? '').trim();
+  const capturedName = state.uwIndex?.plots?.find(
+    (plot) => String(plot.city_id) === normalizedId && plot.city_name && plot.city_name !== '-',
+  )?.city_name;
+  return UW_CITY_NAMES[normalizedId] || capturedName || `城市${normalizedId || '未知'}`;
 }
 
 export function uwLocation(cityId) {
@@ -207,7 +211,7 @@ export function renderCards(container) {
         <article class="story-card">
           <div>
             <div class="eyebrow">CITY ${escapeHtml(s.city_id)}</div>
-            <h3>${escapeHtml(s.city_name || '未命名城市')}</h3>
+            <h3>${escapeHtml(s.city_name || `城市${s.city_id ?? '未知'}`)}</h3>
             ${title}
             <p>${escapeHtml(chapter || '（無章節資訊）')}</p>
           </div>

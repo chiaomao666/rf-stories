@@ -30,6 +30,7 @@
     var ORG_PLACEHOLDER = '組織';
 
     var plots = {};        // site_plot_id + 內容指紋 -> record
+    var cityNames = {};    // city_id -> 城市名稱
     var identity = { nickname: null, organization: null };
     var panelEl, countEl, statusEl, idEl;
 
@@ -41,6 +42,7 @@
             if (!raw) return;
             var saved = JSON.parse(raw);
             plots = saved.plots || {};
+            cityNames = saved.cityNames || {};
             identity = saved.identity || identity;
         } catch (error) {
             console.warn('[UW] 讀取既有紀錄失敗，從空的開始', error);
@@ -69,6 +71,32 @@
             hash = Math.imul(hash, 16777619);
         }
         return String(response.site_id) + ':' + String(response.site_plot_id) + ':' + (hash >>> 0).toString(16);
+    }
+
+    function rememberCity(cityId, name) {
+        if (cityId === undefined || cityId === null || !name || name === '-') return false;
+        var key = String(cityId);
+        if (cityNames[key] === name) return false;
+        cityNames[key] = name;
+        Object.keys(plots).forEach(function (plotKey) {
+            if (String(plots[plotKey].city_id) === key) plots[plotKey].city_name = name;
+        });
+        return true;
+    }
+
+    function rememberCities(obj) {
+        if (!obj || typeof obj !== 'object') return false;
+        var changed = false;
+        var cities = Array.isArray(obj) ? obj : obj.cities;
+        if (Array.isArray(cities)) {
+            cities.forEach(function (city) {
+                if (!city || typeof city !== 'object') return;
+                var id = city.id !== undefined ? city.id : city.city_id;
+                var name = city.name || city.city_name || city.city_title || city.title;
+                if (rememberCity(id, name)) changed = true;
+            });
+        }
+        return changed;
     }
 
     // ---- 去識別化 ---------------------------------------------------------
@@ -140,6 +168,7 @@
             site_plot_id: id,
             level: response.level,
             city_id: response.city_id,
+            city_name: response.city_name || response.city_title || cityNames[String(response.city_id)] || null,
             preloads: response.preloads || [],
             slides: response.slides
         };
@@ -167,6 +196,14 @@
         var response = body.response || body;
         if (!response || typeof response !== 'object') return;
 
+        var citiesChanged = rememberCities(body) || rememberCities(response);
+        if (response.city_id !== undefined) {
+            citiesChanged = rememberCity(
+                response.city_id,
+                response.city_name || response.city_title || (response.city && response.city.name),
+            ) || citiesChanged;
+        }
+        if (citiesChanged) save();
         rememberIdentity(response);
         if (Array.isArray(response.slides) && response.slides.length &&
             response.site_plot_id !== undefined) {
@@ -209,6 +246,7 @@
                 site_plot_id: plot.site_plot_id,
                 level: plot.level,
                 city_id: plot.city_id,
+                city_name: plot.city_name || cityNames[String(plot.city_id)] || null,
                 anonymized: subs.length > 0,
                 counts: {
                     total: result.slides.length,

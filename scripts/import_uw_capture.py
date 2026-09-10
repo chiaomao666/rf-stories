@@ -67,6 +67,7 @@ def rebuild_index(out: Path) -> dict:
                 "site_plot_id": record.get("site_plot_id"),
                 "level": record.get("level"),
                 "city_id": record.get("city_id"),
+                "city_name": record.get("city_name"),
                 "file": path.name,
                 "total": counts.get("total", len(slides)),
                 "with_dialogue": counts.get(
