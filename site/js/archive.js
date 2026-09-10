@@ -456,7 +456,7 @@ export function uwCityName(cityId) {
 }
 
 export function uwLocation(cityId) {
-  return `地點：${uwCityName(cityId)}（ｃｉｔｙＩＤ：${cityId ?? '—'}）`;
+  return `地點：${uwCityName(cityId)}（ID：${cityId ?? '—'}）`;
 }
 
 export function renderCards(container) {
