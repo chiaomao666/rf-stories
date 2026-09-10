@@ -226,7 +226,7 @@ async function fillUwPlots() {
       .join('');
     const citySelect = $('#uwCity');
     citySelect.innerHTML = '<option value="all">所有城市</option>' + archive.uwCities()
-      .map((city) => `<option value="${archive.escapeHtml(city)}">${archive.escapeHtml(archive.uwLocation(city))}</option>`)
+      .map((city) => `<option value="${archive.escapeHtml(city)}">${archive.escapeHtml(archive.uwCityName(city))}（ID：${archive.escapeHtml(city)}）</option>`)
       .join('');
     archive.renderUwCards($('#uwGrid'));
     note.textContent = `${archive.groupedUwPlots().length} 個地點 · ${idx.plots_total ?? idx.plots?.length ?? 0} 段 · ${idx.slides_total ?? 0} 張 slides · 更新於 ${archive.formatUtc8(archive.latestFetchedAt(idx.plots || []))}（UTC+8）`;
