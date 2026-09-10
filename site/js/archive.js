@@ -456,7 +456,7 @@ export function uwCityName(cityId) {
 }
 
 export function uwLocation(cityId) {
-  return `地點：${uwCityName(cityId)}（cityID:${cityId ?? '—'}）`;
+  return `地點：${uwCityName(cityId)}（ｃｉｔｙＩＤ：${cityId ?? '—'}）`;
 }
 
 export function renderCards(container) {
@@ -524,7 +524,7 @@ export function renderUwCards(container) {
           <div>
             <div class="eyebrow">siteID:${escapeHtml(group.site_id)}</div>
             <h3>${escapeHtml(group.site_name || '未命名劇情')}</h3>
-            <p>${plots.length} 個結果 · ${escapeHtml(uwLocation(group.city_id))}</p>
+            <p>${escapeHtml(uwLocation(group.city_id))}</p>
           </div>
           <div class="uw-levels" aria-label="${escapeHtml(group.site_name || '')} 劇情等級">${levels}</div>
           <div class="card-foot">
