@@ -39,10 +39,10 @@
 
     <div class="wrap">
       <section class="stats">
-        <div class="stat"><strong id="statCities">—</strong><span>可重播城市</span></div>
-        <div class="stat"><strong id="statSlides">—</strong><span>已保存 slides</span></div>
-        <div class="stat"><strong id="statDialogues">—</strong><span>含對白場景</span></div>
-        <div class="stat"><strong>2</strong><span>平行主線變體</span></div>
+        <div class="stat"><strong id="statMain">—</strong><span>主線劇情</span></div>
+        <div class="stat"><strong id="statNation">—</strong><span>陣營劇情</span></div>
+        <div class="stat"><strong id="statUw">—</strong><span>地下世界劇情</span></div>
+        <div class="stat"><strong id="statTotal">—</strong><span>累計收錄劇情</span></div>
       </section>
 
       <section id="archive">
@@ -63,9 +63,6 @@
             <option value="all">所有篇章</option>
           </select>
           <input id="search" class="field search" placeholder="搜尋城市、篇章…" />
-          <select id="nationStory" class="field" aria-label="陣營劇情">
-            <option value="">陣營劇情…</option>
-          </select>
         </div>
 
         <div class="notice">
@@ -85,6 +82,7 @@
         </div>
         <div class="notice uw-notice">
           地下世界劇情依地點與結果收錄。同一等級可能有多個結果，會各自保留並以完整段落直接重播。
+          「暗巷」性質同陣營劇情，每個陣營一版，合併成一張卡片，按鈕即為各陣營。
         </div>
         <div class="toolbar uw-toolbar">
           <input id="uwSearch" class="field search" placeholder="搜尋 UW 地點、site ID、劇情段落…"

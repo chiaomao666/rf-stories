@@ -343,6 +343,30 @@ code {
   border-color: #bea98c;
 }
 
+/* 陣營劇情卡：九個陣營併成一張，排在主線網格最前面。 */
+.nation-card {
+  background: #fbf6ec;
+  border-color: #c9b795;
+}
+
+.nation-card .eyebrow,
+.nation-card .uw-level-hint {
+  color: var(--red);
+}
+
+.uw-card.by-nation .uw-levels {
+  grid-template-columns: repeat(auto-fit, minmax(96px, 1fr));
+}
+
+.nation-card .level-btn {
+  color: var(--red);
+}
+
+.nation-card .level-btn:not(:disabled):hover {
+  background: var(--red);
+  border-color: var(--red);
+}
+
 .uw-head {
   margin-top: 64px;
 }

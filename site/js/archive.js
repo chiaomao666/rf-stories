@@ -7,6 +7,7 @@ export const state = {
   variant: 'red_army',
   index: null,
   stories: [],
+  nationIndex: null,
   uwIndex: null,
   uwKeyword: '',
   uwLevel: 'all',
@@ -291,6 +292,8 @@ const UW_CITY_NAMES = {
   594: "世界之塔"
 };
 
+const NATION_SITE_NAMES = new Set(['暗巷']);
+
 const UW_NATION_NAMES = {
   677: "香港",
   721: "反賊",
@@ -343,8 +346,10 @@ export function loadCity(variant, file) {
  * 陣營劇情是**陣營的屬性**，九個陣營各一套，與主線的紅軍／非紅軍版本無關，
  * 所以獨立放在 data/nation_story/ 底下以陣營 id 為主鍵。
  */
-export function loadNationIndex() {
-  return loadJson('nation_story/index.json');
+export async function loadNationIndex() {
+  if (!cache.has('nation_index')) cache.set('nation_index', loadJson('nation_story/index.json'));
+  state.nationIndex = await cache.get('nation_index');
+  return state.nationIndex;
 }
 
 export function loadNationStory(nationId) {
@@ -374,28 +379,51 @@ export function uwCities() {
 export function groupedUwPlots() {
   const groups = new Map();
   for (const plot of state.uwIndex?.plots || []) {
-    const key = `${plot.site_id}:${plot.site_name || ''}:${plot.city_id}`;
+    // 暗巷跟陣營劇情一樣是「每個陣營一版」，site_id 就是陣營，合併成同一張卡。
+    const key = isNationSite(plot.site_name)
+      ? `nation:${plot.site_name}`
+      : `${plot.site_id}:${plot.site_name || ''}:${plot.city_id}`;
     if (!groups.has(key)) {
       groups.set(key, {
         site_id: plot.site_id,
         site_name: plot.site_name,
         city_id: plot.city_id,
+        byNation: isNationSite(plot.site_name),
+        site_ids: [],
+        city_ids: [],
         plots: [],
       });
     }
-    groups.get(key).plots.push(plot);
+    const group = groups.get(key);
+    group.plots.push(plot);
+    if (!group.site_ids.includes(plot.site_id)) group.site_ids.push(plot.site_id);
+    if (!group.city_ids.includes(plot.city_id)) group.city_ids.push(plot.city_id);
   }
-  return [...groups.values()].sort((a, b) => Number(a.site_id) - Number(b.site_id));
+  // 暗巷這類「每陣營一版」的地點排在最前面，其餘依 site_id。
+  return [...groups.values()].sort(
+    (a, b) => Number(b.byNation) - Number(a.byNation) || Number(a.site_id) - Number(b.site_id),
+  );
+}
+
+/** 這個 UW 地點是否「每個陣營一版」。 */
+function isNationSite(siteName) {
+  return NATION_SITE_NAMES.has(siteName);
+}
+
+export function nationSiteName(siteId) {
+  return UW_NATION_NAMES[String(siteId ?? '').trim()] || `陣營 ${siteId ?? '未知'}`;
 }
 
 export function filteredUw() {
   const keyword = state.uwKeyword.trim().toLowerCase();
   return groupedUwPlots().filter((group) => {
     if (state.uwLevel !== 'all' && !group.plots.some((plot) => String(plot.level) === state.uwLevel)) return false;
-    if (state.uwCity !== 'all' && String(group.city_id) !== state.uwCity) return false;
+    if (state.uwCity !== 'all' && !group.city_ids.some((id) => String(id) === state.uwCity)) return false;
     if (!keyword) return true;
-    const values = [group.site_name, group.site_id, group.city_id];
+    const values = [group.site_name, ...group.site_ids, ...group.city_ids];
     for (const plot of group.plots) values.push(plot.site_plot_id, plot.level, plot.file);
+    if (group.byNation) values.push(...group.site_ids.map(nationSiteName));
+    values.push(...group.city_ids.map(uwCityName));
     return values
       .filter((value) => value !== null && value !== undefined)
       .some((value) => String(value).toLowerCase().includes(keyword));
@@ -464,13 +492,46 @@ export function uwLocation(cityId) {
   return `地點：${uwCityName(cityId)}（ID：${cityId ?? '—'}）`;
 }
 
+/**
+ * 陣營劇情卡：九個陣營合併成一張卡，按鈕就是各陣營。
+ * 它是陣營的屬性、不隸屬任何城市，所以不受篇章與關鍵字篩選影響，固定排在最前。
+ */
+export function nationCardHtml() {
+  const nations = state.nationIndex?.nations || [];
+  if (!nations.length) return '';
+  const total = nations.reduce((sum, n) => sum + Number(n.total || 0), 0);
+  const buttons = nations
+    .map(
+      (n) => `<button class="level-btn nation-play-link" data-nation-id="${escapeHtml(n.id)}"
+                data-nation-name="${escapeHtml(n.name || '')}"
+                title="${escapeHtml(n.name || `陣營 ${n.id}`)}：${escapeHtml(n.total)} 張">${escapeHtml(
+        n.name || `陣營 ${n.id}`,
+      )}</button>`,
+    )
+    .join('');
+  return `
+    <article class="story-card nation-card">
+      <div>
+        <div class="eyebrow">NATION STORY</div>
+        <h3>陣營劇情</h3>
+        <p>九個陣營各一套，與主線的紅軍／非紅軍版本無關。</p>
+      </div>
+      <div class="uw-levels" aria-label="陣營劇情">${buttons}</div>
+      <div class="card-foot">
+        <span class="count">${nations.length} 個陣營 · 共 ${total} 張</span>
+        <span class="uw-level-hint">選擇陣營後播放</span>
+      </div>
+    </article>`;
+}
+
 export function renderCards(container) {
   const rows = filtered();
+  const nationCard = nationCardHtml();
   if (!rows.length) {
-    container.innerHTML = '<div class="empty">找不到符合條件的劇情。</div>';
+    container.innerHTML = nationCard + '<div class="empty">找不到符合條件的劇情。</div>';
     return;
   }
-  container.innerHTML = rows
+  container.innerHTML = nationCard + rows
     .map((s) => {
       const chapter = [s.chapter_name, s.chapter_number, s.chapter_serial]
         .filter((v) => v !== null && v !== undefined && v !== '')
@@ -505,44 +566,78 @@ export function renderUwCards(container) {
     return;
   }
   container.innerHTML = rows
-    .map((group) => {
-      const plots = [...group.plots].sort((a, b) => {
-        const level = Number(a.level) - Number(b.level);
-        return level || Number(a.site_plot_id) - Number(b.site_plot_id);
-      });
-      const total = group.plots.reduce((sum, plot) => sum + Number(plot.total || 0), 0);
-      const dialogue = group.plots.reduce((sum, plot) => sum + Number(plot.with_dialogue || 0), 0);
-      const resultNumbers = new Map();
-      const levels = plots
-        .map((plot) => {
-          const level = String(plot.level ?? '—');
-          const resultNumber = (resultNumbers.get(level) || 0) + 1;
-          resultNumbers.set(level, resultNumber);
-          const isSingleDarkAlley = group.site_name === '暗巷'
-            && plots.length === 1
-            && level === '1'
-            && resultNumber === 1;
-          const label = isSingleDarkAlley
-            ? `${escapeHtml(UW_NATION_NAMES[group.site_id] || '未知陣營')}(${escapeHtml(uwCityName(group.city_id))})`
-            : `Level ${escapeHtml(level)} · 結果 ${resultNumber}`;
-          return `<button class="level-btn uw-play-link" data-file="${escapeHtml(plot.file)}"
-                    data-level="${escapeHtml(plot.level ?? '')}" data-plot-id="${escapeHtml(plot.site_plot_id)}"
-                    title="site_plot_id ${escapeHtml(plot.site_plot_id)}">${label}</button>`;
-        })
-        .join('');
-      return `
-        <article class="story-card uw-card">
-          <div>
-            <div class="eyebrow">siteID:${escapeHtml(group.site_id)}</div>
-            <h3>${escapeHtml(group.site_name || '未命名劇情')}</h3>
-            <p>${escapeHtml(uwLocation(group.city_id))}</p>
-          </div>
-          <div class="uw-levels" aria-label="${escapeHtml(group.site_name || '')} 劇情等級">${levels}</div>
-          <div class="card-foot">
-            <span class="count">${total} 張 · 對白 ${dialogue} · ${group.plots.length} 個結果</span>
-            <span class="uw-level-hint">選擇等級後播放</span>
-          </div>
-        </article>`;
+    .map((group) => (group.byNation ? nationSiteCardHtml(group) : siteCardHtml(group)))
+    .join('');
+}
+
+/** 一般 UW 地點：按鈕是 Level × 結果。 */
+function siteCardHtml(group) {
+  const plots = [...group.plots].sort((a, b) => {
+    const level = Number(a.level) - Number(b.level);
+    return level || Number(a.site_plot_id) - Number(b.site_plot_id);
+  });
+  const resultNumbers = new Map();
+  const levels = plots
+    .map((plot) => {
+      const level = String(plot.level ?? '—');
+      const resultNumber = (resultNumbers.get(level) || 0) + 1;
+      resultNumbers.set(level, resultNumber);
+      return uwButtonHtml(plot, `Level ${escapeHtml(level)} · 結果 ${resultNumber}`);
     })
     .join('');
+  return uwCardShell({
+    eyebrow: `siteID:${escapeHtml(group.site_id)}`,
+    title: escapeHtml(group.site_name || '未命名劇情'),
+    subtitle: escapeHtml(uwLocation(group.city_id)),
+    buttons: levels,
+    group,
+    unit: '個結果',
+    hint: '選擇等級後播放',
+  });
+}
+
+/** 暗巷這類地點每個陣營一版，合併成一張卡，按鈕就是陣營。 */
+function nationSiteCardHtml(group) {
+  const plots = [...group.plots].sort((a, b) => Number(a.site_id) - Number(b.site_id));
+  const buttons = plots
+    .map((plot) => uwButtonHtml(plot, escapeHtml(nationSiteName(plot.site_id)), nationSiteName(plot.site_id)))
+    .join('');
+  const places = plots
+    .map((plot) => `${nationSiteName(plot.site_id)}（${uwCityName(plot.city_id)}）`)
+    .join('、');
+  return uwCardShell({
+    eyebrow: `siteID:${escapeHtml(group.site_ids.join(' / '))}`,
+    title: escapeHtml(group.site_name || '未命名劇情'),
+    subtitle: `地點：${escapeHtml(places)}`,
+    buttons,
+    group,
+    unit: '個陣營',
+    hint: '選擇陣營後播放',
+    cardClass: ' by-nation',
+  });
+}
+
+function uwButtonHtml(plot, label, nationName) {
+  const nationAttr = nationName ? ` data-nation-name="${escapeHtml(nationName)}"` : '';
+  return `<button class="level-btn uw-play-link" data-file="${escapeHtml(plot.file)}"
+            data-level="${escapeHtml(plot.level ?? '')}" data-plot-id="${escapeHtml(plot.site_plot_id)}"${nationAttr}
+            title="site_plot_id ${escapeHtml(plot.site_plot_id)}">${label}</button>`;
+}
+
+function uwCardShell({ eyebrow, title, subtitle, buttons, group, unit, hint, cardClass = '' }) {
+  const total = group.plots.reduce((sum, plot) => sum + Number(plot.total || 0), 0);
+  const dialogue = group.plots.reduce((sum, plot) => sum + Number(plot.with_dialogue || 0), 0);
+  return `
+    <article class="story-card uw-card${cardClass}">
+      <div>
+        <div class="eyebrow">${eyebrow}</div>
+        <h3>${title}</h3>
+        <p>${subtitle}</p>
+      </div>
+      <div class="uw-levels" aria-label="${title} 劇情段落">${buttons}</div>
+      <div class="card-foot">
+        <span class="count">${total} 張 · 對白 ${dialogue} · ${group.plots.length} ${unit}</span>
+        <span class="uw-level-hint">${hint}</span>
+      </div>
+    </article>`;
 }

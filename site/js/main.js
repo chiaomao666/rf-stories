@@ -27,20 +27,25 @@ function toast(text) {
   toast.timer = setTimeout(() => el.classList.remove('show'), 2400);
 }
 
+// 四格統計只講「收錄了幾份劇情」——slides 張數與對白數放在各張卡片上就夠了。
 function renderStats() {
   const idx = archive.state.index;
+  const main = idx ? idx.cities_with_story ?? (idx.cities || []).length : null;
+  const nation = archive.state.nationIndex?.nations?.length ?? null;
+  const uwIndex = archive.state.uwIndex;
+  const uw = uwIndex ? uwIndex.plots_total ?? (uwIndex.plots || []).length : null;
+  const counts = [main, nation, uw];
+  const total = counts.every((n) => n === null)
+    ? null
+    : counts.reduce((sum, n) => sum + (n || 0), 0);
+  const show = (sel, value) => {
+    $(sel).textContent = value === null ? '—' : value.toLocaleString('zh-TW');
+  };
+  show('#statMain', main);
+  show('#statNation', nation);
+  show('#statUw', uw);
+  show('#statTotal', total);
   if (!idx) return;
-  const totals = (idx.cities || []).reduce(
-    (acc, c) => {
-      acc.slides += c.total || 0;
-      acc.dialogues += c.with_dialogue || 0;
-      return acc;
-    },
-    { slides: 0, dialogues: 0 },
-  );
-  $('#statCities').textContent = idx.cities_with_story ?? (idx.cities || []).length;
-  $('#statSlides').textContent = totals.slides.toLocaleString('zh-TW');
-  $('#statDialogues').textContent = totals.dialogues.toLocaleString('zh-TW');
   const order = archive.hasGameOrder()
     ? '遊戲順序'
     : '章節順序（這份資料沒有 position，重跑 fetch_main_story.py 可取得遊戲順序）';
@@ -165,6 +170,11 @@ $('#uwCity').addEventListener('change', (e) => {
 });
 
 $('#storyGrid').addEventListener('click', async (e) => {
+  const nationBtn = e.target.closest('.nation-play-link');
+  if (nationBtn) {
+    playNationStory(nationBtn.dataset.nationId, nationBtn.dataset.nationName);
+    return;
+  }
   const btn = e.target.closest('.play-link');
   if (!btn) return;
   try {
@@ -190,7 +200,9 @@ $('#uwGrid').addEventListener('click', async (e) => {
     if (btn.disabled) return;
     const doc = await archive.loadUwPlot(btn.dataset.file);
     openPlayer({
-      title: `UW 劇情｜${doc.site_name || '未命名劇情'} · Level ${doc.level ?? btn.dataset.level ?? '—'}`,
+      title: btn.dataset.nationName
+        ? `UW 劇情｜${doc.site_name || '未命名劇情'} · ${btn.dataset.nationName}`
+        : `UW 劇情｜${doc.site_name || '未命名劇情'} · Level ${doc.level ?? btn.dataset.level ?? '—'}`,
       meta: `${archive.uwLocation(doc.city_id)} · 劇情段落 ${doc.site_plot_id ?? '—'} · ${doc.counts?.total ?? doc.slides?.length ?? 0} 張 · 收錄於 ${archive.formatUtc8(doc.fetched_at)}（UTC+8）`,
       slides: doc.slides || [],
       mode: 'uw_plot',
@@ -201,18 +213,30 @@ $('#uwGrid').addEventListener('click', async (e) => {
   }
 });
 
-// 陣營劇情與主線變體無關，九個陣營各一套，清單直接讀 nation_story/index.json。
+// 陣營劇情與主線變體無關，九個陣營各一套，清單直接讀 nation_story/index.json，
+// 併成主線網格最前面的一張卡片。
 async function fillNations() {
-  const select = $('#nationStory');
   try {
-    const idx = await archive.loadNationIndex();
-    const options = (idx.nations || []).map(
-      (n) =>
-        `<option value="${n.id}">${archive.escapeHtml(n.name || `陣營 ${n.id}`)}（${n.total} 張）</option>`,
-    );
-    select.innerHTML = `<option value="">陣營劇情…（${options.length}/9）</option>` + options.join('');
-  } catch {
-    select.innerHTML = '<option value="">陣營劇情（讀取失敗）</option>';
+    await archive.loadNationIndex();
+  } catch (err) {
+    toast(`陣營劇情讀取失敗：${err.message || err}`);
+  }
+  renderStats();
+}
+
+async function playNationStory(id, name) {
+  if (!id) return;
+  try {
+    const doc = await archive.loadNationStory(id);
+    openPlayer({
+      title: `陣營劇情｜${doc.nation?.name || name || `陣營 ${id}`}`,
+      meta: `story_nation · ${doc.counts?.total ?? doc.slides.length} 張`,
+      slides: doc.slides || [],
+      mode: 'story_nation',
+      defaultPhase: 'all',
+    });
+  } catch (err) {
+    toast(String(err.message || err));
   }
 }
 
@@ -229,6 +253,7 @@ async function fillUwPlots() {
       .map((city) => `<option value="${archive.escapeHtml(city)}">${archive.escapeHtml(archive.uwCityName(city))}（ID：${archive.escapeHtml(city)}）</option>`)
       .join('');
     archive.renderUwCards($('#uwGrid'));
+    renderStats();
     note.textContent = `${archive.groupedUwPlots().length} 個地點 · ${idx.plots_total ?? idx.plots?.length ?? 0} 段 · ${idx.slides_total ?? 0} 張 slides · 更新於 ${archive.formatUtc8(archive.latestFetchedAt(idx.plots || []))}（UTC+8）`;
   } catch (err) {
     note.textContent = '尚未載入 UW 資料';
@@ -242,24 +267,6 @@ function renderUwFilterResults() {
   const shown = archive.filteredUw().length;
   $('#uwLoadedNote').textContent = `顯示 ${shown} / ${total} 個 UW 地點`;
 }
-
-$('#nationStory').addEventListener('change', async (e) => {
-  const id = e.target.value;
-  e.target.selectedIndex = 0;
-  if (!id) return;
-  try {
-    const doc = await archive.loadNationStory(id);
-    openPlayer({
-      title: `陣營劇情｜${doc.nation?.name || `陣營 ${id}`}`,
-      meta: `story_nation · ${doc.counts?.total ?? doc.slides.length} 張`,
-      slides: doc.slides || [],
-      mode: 'story_nation',
-      defaultPhase: 'all',
-    });
-  } catch (err) {
-    toast(String(err.message || err));
-  }
-});
 
 $('#phase').addEventListener('change', applyPhase);
 $('#closePlayer').addEventListener('click', closePlayer);
@@ -317,6 +324,6 @@ document.addEventListener('keydown', (e) => {
 
 setVolume(Number($('#volume').value));
 renderSoundButton();
-fillNations();
 fillUwPlots();
-switchVariant($('#variant').value);
+// 陣營劇情卡跟城市卡同一個網格，兩份索引都到齊才畫，避免先畫一次再重畫。
+fillNations().then(() => switchVariant($('#variant').value));
