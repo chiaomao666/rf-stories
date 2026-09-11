@@ -427,8 +427,19 @@ export function filteredUw() {
     if (state.uwLevel !== 'all' && !group.plots.some((plot) => String(plot.level) === state.uwLevel)) return false;
     if (state.uwCity !== 'all' && !group.city_ids.some((id) => String(id) === state.uwCity)) return false;
     if (!keyword) return true;
+    const numericValues = [
+      ...group.site_ids,
+      ...group.city_ids,
+      ...group.plots.flatMap((plot) => [plot.site_plot_id, plot.level]),
+    ];
+    // A numeric query represents an ID or level. Match it exactly so `40`
+    // does not also return city 540 (or an incidental number in a filename).
+    if (/^\d+$/.test(keyword)) {
+      return numericValues.some((value) => String(value) === keyword);
+    }
     const values = [group.site_name, ...group.site_ids, ...group.city_ids];
-    for (const plot of group.plots) values.push(plot.site_plot_id, plot.level, plot.file);
+    // `file` includes a content-hash suffix, so it is deliberately not searchable.
+    for (const plot of group.plots) values.push(plot.site_plot_id, plot.level);
     if (group.byNation) values.push(...group.site_ids.map(nationSiteName));
     values.push(...group.city_ids.map(uwCityName));
     return values
