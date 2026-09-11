@@ -358,6 +358,20 @@ code {
   grid-template-columns: repeat(auto-fit, minmax(96px, 1fr));
 }
 
+.uw-card.by-nation .level-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  text-align: left;
+}
+
+.uw-card.by-nation .uw-plot-id {
+  flex: none;
+  font-size: 0.82em;
+  white-space: nowrap;
+}
+
 .nation-card .level-btn {
   color: var(--red);
 }

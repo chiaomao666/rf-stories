@@ -432,10 +432,10 @@ export function filteredUw() {
       ...group.city_ids,
       ...group.plots.flatMap((plot) => [plot.site_plot_id, plot.level]),
     ];
-    // A numeric query represents an ID or level. Match it exactly so `40`
-    // does not also return city 540 (or an incidental number in a filename).
+    // Numeric queries search IDs and levels by substring, just like text
+    // queries; content-hash filenames are deliberately excluded below.
     if (/^\d+$/.test(keyword)) {
-      return numericValues.some((value) => String(value) === keyword);
+      return numericValues.some((value) => String(value).includes(keyword));
     }
     const values = [group.site_name, ...group.site_ids, ...group.city_ids];
     // `file` includes a content-hash suffix, so it is deliberately not searchable.
@@ -594,13 +594,10 @@ function siteCardHtml(group) {
     const level = Number(a.level) - Number(b.level);
     return level || Number(a.site_plot_id) - Number(b.site_plot_id);
   });
-  const resultNumbers = new Map();
   const levels = plots
     .map((plot) => {
       const level = String(plot.level ?? '—');
-      const resultNumber = (resultNumbers.get(level) || 0) + 1;
-      resultNumbers.set(level, resultNumber);
-      return uwButtonHtml(plot, `Level ${escapeHtml(level)} · 結果 ${resultNumber}`);
+      return uwButtonHtml(plot, `Level ${escapeHtml(level)}<br>ID:${escapeHtml(plot.site_plot_id)}`);
     })
     .join('');
   return uwCardShell({
@@ -618,7 +615,11 @@ function siteCardHtml(group) {
 function nationSiteCardHtml(group) {
   const plots = [...group.plots].sort((a, b) => Number(a.site_id) - Number(b.site_id));
   const buttons = plots
-    .map((plot) => uwButtonHtml(plot, escapeHtml(nationSiteName(plot.site_id)), nationSiteName(plot.site_id)))
+    .map((plot) => uwButtonHtml(
+      plot,
+      `<span>${escapeHtml(nationSiteName(plot.site_id))}</span><span class="uw-plot-id">ID:${escapeHtml(plot.site_plot_id)}</span>`,
+      nationSiteName(plot.site_id),
+    ))
     .join('');
   const places = plots
     .map((plot) => `${nationSiteName(plot.site_id)}（${uwCityName(plot.city_id)}）`)
