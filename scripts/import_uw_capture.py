@@ -16,6 +16,7 @@ UW 劇情只能累積式蒐集（每次派遣扣能量、後端隨機抽段、�
 from __future__ import annotations
 
 import argparse
+from difflib import SequenceMatcher
 import hashlib
 import json
 import sys
@@ -25,6 +26,14 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from rf_stories.anonymize import count_occurrences, scrub_slides  # noqa: E402
+
+
+TEXT_FIELDS = {"speaker", "dialogue"}
+# Captures of the same plot can differ only because an earlier export did not
+# know the player nickname (or substituted a short organization name into
+# ordinary prose).  Keep genuinely different plot outcomes, but collapse these
+# near-identical, presentation-only variants.
+NEAR_DUPLICATE_TEXT_RATIO = 0.985
 
 
 def write_json(path: Path, data: object) -> None:
@@ -39,6 +48,65 @@ def slides_signature(slides: list[dict]) -> str:
     return hashlib.sha256(payload).hexdigest()
 
 
+def slide_layout_signature(slides: list[dict]) -> str:
+    """Hash the non-text portion of a plot's slides."""
+    layout = [{key: value for key, value in slide.items() if key not in TEXT_FIELDS} for slide in slides]
+    payload = json.dumps(layout, ensure_ascii=False, sort_keys=True).encode("utf-8")
+    return hashlib.sha256(payload).hexdigest()
+
+
+def protagonist_aliases(left: list[dict], right: list[dict]) -> set[str]:
+    """Find names paired with the canonical 主角 speaker in matching slides."""
+    aliases = set()
+    for left_slide, right_slide in zip(left, right):
+        left_speaker = str(left_slide.get("speaker") or "")
+        right_speaker = str(right_slide.get("speaker") or "")
+        if left_speaker == "主角" and right_speaker:
+            aliases.add(right_speaker)
+        if right_speaker == "主角" and left_speaker:
+            aliases.add(left_speaker)
+    aliases.discard("主角")
+    return aliases
+
+
+def slide_text(slides: list[dict], aliases: set[str] | None = None) -> str:
+    aliases = aliases or set()
+    def canonical(value: object) -> str:
+        text = str(value or "")
+        for alias in aliases:
+            text = text.replace(alias, "主角")
+        return text
+
+    return "\n".join(
+        f"{canonical(slide.get('speaker'))}\n{canonical(slide.get('dialogue'))}"
+        for slide in slides
+    )
+
+
+def same_plot_content(left: list[dict], right: list[dict]) -> bool:
+    """Return whether two captures are identical apart from minor text scrubbing."""
+    if left == right:
+        return True
+    if len(left) != len(right) or slide_layout_signature(left) != slide_layout_signature(right):
+        return False
+    aliases = protagonist_aliases(left, right)
+    return (
+        SequenceMatcher(
+            None, slide_text(left, aliases), slide_text(right, aliases), autojunk=False
+        ).ratio()
+        >= NEAR_DUPLICATE_TEXT_RATIO
+    )
+
+
+def anonymization_quality(record: dict) -> int:
+    """Prefer a capture that has already replaced the player name with 主角."""
+    return sum(
+        str(slide.get(field) or "").count("主角")
+        for slide in record.get("slides") or []
+        for field in TEXT_FIELDS
+    )
+
+
 def plot_filename(record: dict) -> str:
     """以內容指紋區分同一 site_plot_id 的不同隨機結果。"""
     digest = slides_signature(record.get("slides") or [])[:10]
@@ -48,6 +116,10 @@ def plot_filename(record: dict) -> str:
 def preferred_record(record: dict, current: dict | None) -> bool:
     if current is None:
         return True
+    record_quality = anonymization_quality(record)
+    current_quality = anonymization_quality(current)
+    if record_quality != current_quality:
+        return record_quality > current_quality
     current_city = current.get("city_name")
     record_city = record.get("city_name")
     current_has_city = bool(current_city and str(current_city).strip() not in {"", "-", "null"})
@@ -69,7 +141,7 @@ def existing_plot_path(out: Path, record: dict) -> Path | None:
             existing = json.loads(path.read_text(encoding="utf-8"))
         except (OSError, json.JSONDecodeError):
             continue
-        if (existing.get("slides") or []) == slides:
+        if same_plot_content(existing.get("slides") or [], slides):
             return path
     return None
 
@@ -82,10 +154,17 @@ def rebuild_index(out: Path) -> dict:
         except (OSError, json.JSONDecodeError):
             continue
         slides = record.get("slides") or []
-        key = (record.get("site_id"), record.get("site_plot_id"), slides_signature(slides))
+        key = (record.get("site_id"), record.get("site_plot_id"), slide_layout_signature(slides))
         current = kept.get(key)
-        if current is None or preferred_record(record, current[1]):
+        if current is None:
             kept[key] = (path, record)
+        elif same_plot_content(current[1].get("slides") or [], slides):
+            if preferred_record(record, current[1]):
+                kept[key] = (path, record)
+        else:
+            # The layout happens to match but the text describes a genuinely
+            # different random outcome, so retain it under its full signature.
+            kept[(record.get("site_id"), record.get("site_plot_id"), slides_signature(slides))] = (path, record)
 
     plots = []
     for path, record in sorted(kept.values(), key=lambda item: item[0].name):
