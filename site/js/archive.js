@@ -291,6 +291,11 @@ const UW_CITY_NAMES = {
   594: "世界之塔"
 };
 
+const UW_NATION_NAMES = {
+  677: "香港",
+  721: "反賊",
+};
+
 /**
  * 排序鍵：遊戲用 cities.position 由小到大決定城鎮順序（Attackmap 的左右鍵就是依這個），
  * 探險與特別篇因此穿插在主線篇章之間，而不是全部擠在前面。
@@ -513,7 +518,13 @@ export function renderUwCards(container) {
           const level = String(plot.level ?? '—');
           const resultNumber = (resultNumbers.get(level) || 0) + 1;
           resultNumbers.set(level, resultNumber);
-          const label = `Level ${escapeHtml(level)} · 結果 ${resultNumber}`;
+          const isSingleDarkAlley = group.site_name === '暗巷'
+            && plots.length === 1
+            && level === '1'
+            && resultNumber === 1;
+          const label = isSingleDarkAlley
+            ? `${escapeHtml(UW_NATION_NAMES[group.site_id] || '未知陣營')}(${escapeHtml(uwCityName(group.city_id))})`
+            : `Level ${escapeHtml(level)} · 結果 ${resultNumber}`;
           return `<button class="level-btn uw-play-link" data-file="${escapeHtml(plot.file)}"
                     data-level="${escapeHtml(plot.level ?? '')}" data-plot-id="${escapeHtml(plot.site_plot_id)}"
                     title="site_plot_id ${escapeHtml(plot.site_plot_id)}">${label}</button>`;
