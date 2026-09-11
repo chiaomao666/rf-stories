@@ -88,7 +88,7 @@ def rebuild_index(out: Path) -> dict:
             kept[key] = (path, record)
 
     plots = []
-    for _, record in sorted(kept.values(), key=lambda item: item[0].name):
+    for path, record in sorted(kept.values(), key=lambda item: item[0].name):
         slides = record.get("slides") or []
         counts = record.get("counts") or {}
         plots.append(
@@ -99,7 +99,7 @@ def rebuild_index(out: Path) -> dict:
                 "level": record.get("level"),
                 "city_id": record.get("city_id"),
                 "city_name": record.get("city_name"),
-                "file": Path(record.get("file", "")).name if record.get("file") else "",
+                "file": path.name,
                 "total": counts.get("total", len(slides)),
                 "with_dialogue": counts.get(
                     "with_dialogue", sum(bool(s.get("dialogue")) for s in slides)
