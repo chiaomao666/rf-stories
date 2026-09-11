@@ -34,11 +34,31 @@ def write_json(path: Path, data: object) -> None:
     tmp.replace(path)
 
 
+def slides_signature(slides: list[dict]) -> str:
+    payload = json.dumps(slides or [], ensure_ascii=False, sort_keys=True).encode("utf-8")
+    return hashlib.sha256(payload).hexdigest()
+
+
 def plot_filename(record: dict) -> str:
     """以內容指紋區分同一 site_plot_id 的不同隨機結果。"""
-    payload = json.dumps(record.get("slides") or [], ensure_ascii=False, sort_keys=True).encode("utf-8")
-    digest = hashlib.sha256(payload).hexdigest()[:10]
+    digest = slides_signature(record.get("slides") or [])[:10]
     return f"site_{record.get('site_id')}_plot_{record.get('site_plot_id')}_{digest}.json"
+
+
+def preferred_record(record: dict, current: dict | None) -> bool:
+    if current is None:
+        return True
+    current_city = current.get("city_name")
+    record_city = record.get("city_name")
+    current_has_city = bool(current_city and str(current_city).strip() not in {"", "-", "null"})
+    record_has_city = bool(record_city and str(record_city).strip() not in {"", "-", "null"})
+    current_time = current.get("fetched_at") or ""
+    record_time = record.get("fetched_at") or ""
+    return (
+        (record_has_city > current_has_city)
+        or (record_has_city == current_has_city and record_time > current_time)
+        or (record_has_city == current_has_city and record_time == current_time and record.get("file", "") > current.get("file", ""))
+    )
 
 
 def existing_plot_path(out: Path, record: dict) -> Path | None:
@@ -55,9 +75,20 @@ def existing_plot_path(out: Path, record: dict) -> Path | None:
 
 
 def rebuild_index(out: Path) -> dict:
-    plots = []
+    kept: dict[tuple[int | None, int | None, str], tuple[Path, dict]] = {}
     for path in sorted(out.glob("site_*_plot_*.json")):
-        record = json.loads(path.read_text(encoding="utf-8"))
+        try:
+            record = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        slides = record.get("slides") or []
+        key = (record.get("site_id"), record.get("site_plot_id"), slides_signature(slides))
+        current = kept.get(key)
+        if current is None or preferred_record(record, current[1]):
+            kept[key] = (path, record)
+
+    plots = []
+    for _, record in sorted(kept.values(), key=lambda item: item[0].name):
         slides = record.get("slides") or []
         counts = record.get("counts") or {}
         plots.append(
@@ -68,7 +99,7 @@ def rebuild_index(out: Path) -> dict:
                 "level": record.get("level"),
                 "city_id": record.get("city_id"),
                 "city_name": record.get("city_name"),
-                "file": path.name,
+                "file": Path(record.get("file", "")).name if record.get("file") else "",
                 "total": counts.get("total", len(slides)),
                 "with_dialogue": counts.get(
                     "with_dialogue", sum(bool(s.get("dialogue")) for s in slides)
