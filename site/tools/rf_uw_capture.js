@@ -235,7 +235,7 @@
     // ---- 匯出 -------------------------------------------------------------
 
     function buildExport() {
-        var subs = substitutions();
+        var hasNickname = Boolean(identity.nickname);
         var records = Object.keys(plots).map(function (key) {
             var plot = plots[key];
             var result = scrubSlides(plot.slides);
@@ -247,7 +247,11 @@
                 level: plot.level,
                 city_id: plot.city_id,
                 city_name: plot.city_name || cityNames[String(plot.city_id)] || null,
-                anonymized: subs.length > 0,
+                anonymized: hasNickname,
+                anonymization: {
+                    nickname: hasNickname,
+                    organization: Boolean(identity.organization)
+                },
                 counts: {
                     total: result.slides.length,
                     with_dialogue: result.slides.filter(function (s) { return s.dialogue; }).length
@@ -259,7 +263,11 @@
         return {
             source: 'rf_uw_capture.js',
             exported_at: new Date().toISOString(),
-            anonymized: subs.length > 0,
+            anonymized: hasNickname,
+            anonymization: {
+                nickname: hasNickname,
+                organization: Boolean(identity.organization)
+            },
             plots: records
         };
     }
@@ -269,8 +277,8 @@
             flashStatus('目前沒有收到任何 UW 劇情');
             return;
         }
-        if (!identity.nickname && !identity.organization) {
-            flashStatus('還沒辨識出你的暱稱／組織，先在下方填好再匯出');
+        if (!identity.nickname) {
+            flashStatus('還沒辨識出你的暱稱，先在下方填好再匯出');
             return;
         }
         var blob = new Blob([JSON.stringify(buildExport(), null, 2)],

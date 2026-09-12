@@ -36,6 +36,12 @@ TEXT_FIELDS = {"speaker", "dialogue"}
 NEAR_DUPLICATE_TEXT_RATIO = 0.985
 
 
+def has_verified_player_scrub(record: dict) -> bool:
+    """Only accept exports that confirm the player nickname was scrubbed."""
+    status = record.get("anonymization")
+    return isinstance(status, dict) and bool(status.get("nickname"))
+
+
 def write_json(path: Path, data: object) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(path.suffix + ".tmp")
@@ -234,18 +240,30 @@ def main() -> int:
         if not slides:
             continue
 
+        nickname_scrubbed = has_verified_player_scrub(rec) or bool(args.player_name)
+        organization_scrubbed = bool(
+            (rec.get("anonymization") or {}).get("organization") or args.organization
+        )
         # 匯出時就該清乾淨了；這裡是最後一道關卡。
         if args.player_name or args.organization:
             slides, _ = scrub_slides(
                 slides, args.player_name, organization=args.organization
             )
-            rec = {**rec, "slides": slides, "anonymized": True}
+            rec = {
+                **rec,
+                "slides": slides,
+                "anonymized": nickname_scrubbed,
+                "anonymization": {
+                    "nickname": nickname_scrubbed,
+                    "organization": organization_scrubbed,
+                },
+            }
         hits = count_occurrences(slides, args.player_name, args.organization)
         if sum(hits.values()):
             dirty.append(f"{plot_filename(rec)}（{sum(hits.values())} 處）")
             continue
-        if not rec.get("anonymized"):
-            dirty.append(f"{plot_filename(rec)}（匯出時未做去識別化）")
+        if not nickname_scrubbed:
+            dirty.append(f"{plot_filename(rec)}（未驗證玩家暱稱已去識別化）")
             continue
 
         path = existing_plot_path(out, rec) or out / plot_filename(rec)
