@@ -1,0 +1,5927 @@
+{
+  "fetched_at": "2026-09-12T15:08:49.956Z",
+  "site_id": 681,
+  "site_name": "邦達草原",
+  "site_plot_id": 30,
+  "level": 2,
+  "city_id": 555,
+  "city_name": "昌都",
+  "anonymized": true,
+  "counts": {
+    "total": 123,
+    "with_dialogue": 116
+  },
+  "preloads": [
+    "/images/slide/background/U0090.png",
+    "/images/slide/actor/FRNM0200.png",
+    "/images/slide/actor/FRNM0201.png",
+    "/images/slide/actor/TB02.png",
+    "/images/slide/background/BG0100.png"
+  ],
+  "slides": [
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": null,
+      "dialogue_color": false,
+      "duration": 1,
+      "fade_in": true,
+      "fade_out": false,
+      "fast_paging": true,
+      "id": 21682,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 1,
+      "sound_effect": "",
+      "speaker": null,
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": null,
+      "dialogue_color": false,
+      "duration": 1.4,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": true,
+      "id": 21683,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": "swift_in",
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 2,
+      "sound_effect": "/audio/sound_effect/SE22.mp3",
+      "speaker": null,
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "在邦達與吉塘之間的公路上，牧人趕著成群的氂牛行進。",
+      "dialogue_color": true,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21684,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 3,
+      "sound_effect": "",
+      "speaker": null,
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "幾個揹負野菇與曲拉乾酪的女人家站在路旁，像是在等車。",
+      "dialogue_color": true,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21685,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 4,
+      "sound_effect": "",
+      "speaker": null,
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "吉塘再過去，能到昌都城裡？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21686,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 5,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "能。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21687,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 6,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯實在挺難想像那年代。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21688,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 7,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "達賴喇嘛還統治昌都的年代。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21689,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 8,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21690,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 9,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "比起拉薩那邊，昌都的情況比較複雜。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21691,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 10,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "清帝還在的那時候，昌都軍政大權更多是落到駐藏大臣手裡，實際統治者並不是達賴。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21692,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 11,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "清末最後那幾年就更緊張一些，川軍在藏地橫行霸道的多。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21693,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 12,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "達賴喇嘛後來就驅逐四川人嘛，驅漢驅的大多就是四川人。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21694,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 13,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "昌都這邊也反感川軍，達賴出兵把川軍趕跑了，昌都就比較支持達賴。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21695,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 14,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "而金沙江以東就又是另一個情緒。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21696,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 15,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯金沙江以東支持川軍？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21697,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 16,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "倒也不能那麼說，應該是兩邊都不支持。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21698,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 17,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "金沙江以東自古土司多，晚清最後幾年才改土歸流。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21699,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 18,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "可藏軍到了金沙江以東也不是要恢復藏族土司或實施自治。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21700,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 19,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "那年代的統治者都想著富國強兵，拉薩那邊也想中央集權，土司廢了正好。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21701,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 20,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "所以金沙江以東有比較多不靠川、不靠藏，康巴自己搞自治的想法。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21702,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 21,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "於是才出了格桑澤仁這樣的人。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21703,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 22,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21704,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 23,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "格桑澤仁要是真到這，究竟會和達賴的官談些什麼。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21705,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 24,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "談判失敗以後⋯⋯又抱著什麼樣的心情離開這地方。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21706,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 25,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "親信在巴塘被殺絕了，南京和雲南軍閥又都給不上實際幫助。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21707,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 26,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "最後，找上了藏軍也談不下去⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21708,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 27,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "這才有意思。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21709,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0201.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 28,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "要知道，格桑澤仁是已經料到自己有危險，提前出了城才逃過追殺。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21710,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0201.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 29,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "這什麼意思？他這逃，是逃得有所準備的。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21711,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0201.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 30,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "最後的銀錢武器肯定都帶走了，一點不留給川康軍，談判時也絕不能讓藏軍扣走對吧。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21712,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0201.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 31,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "一個走投無路的不滿30歲的男人，他會把最後的翻身本錢藏在什麼地方？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21713,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0201.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 32,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21714,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 33,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "看來要把銀錢藏起來，最西大概也就到邦達，不大可能再深入藏軍控制區。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21715,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 34,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "在往來的牧人、商販與氂牛之間，一名揹著大箱子的康巴少年走向他們。",
+      "dialogue_color": true,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21716,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 35,
+      "sound_effect": "",
+      "speaker": null,
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": null,
+      "dialogue_color": false,
+      "duration": 1.4,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": true,
+      "id": 21717,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": "horizontal_shift",
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": "b"
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": "swift_in",
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 36,
+      "sound_effect": "/audio/sound_effect/SE22.mp3",
+      "speaker": null,
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "（藏語）貢布，怎麼來這？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21718,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 37,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "（藏語）辦事嘛。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21719,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 38,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "上山過來的？要一直過去拉薩？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21720,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 39,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "不去，去那做啥。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21721,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 40,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "先不說這⋯⋯箱裡好東西有不？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21722,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 41,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "萬○路，印度那邊熟人便宜搞到的。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21723,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 42,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "一條賣多少？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21724,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 43,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "二百五。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21725,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 44,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "拉倒吧，這價格我跟你買做什麼。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21726,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 45,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "不然多少？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21727,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 46,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "兩百。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21728,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 47,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "二百三。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21729,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 48,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "兩百。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21730,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 49,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "那你還是戒菸吧。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21731,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 50,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "帶條菸掙不到幾個錢，你又不跟我買電子菸。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21732,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 51,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "不抽電子菸。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21733,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 52,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "上次失手掉了一支電子菸，掉進怒江裡沖走了，心疼。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21734,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 53,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "不囉嗦，二百三。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21735,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 54,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "你出二百，我只能給你一條黃鶴樓。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21736,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 55,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21737,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 56,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "去去去，二百三就二百三。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21738,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 57,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯對了，你是理塘人吧？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21739,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 58,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "不接受任何人拿我開丁真玩笑。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21740,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 59,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "不是要說那個⋯⋯早些年的事，你熟不熟悉？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21741,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 60,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21742,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 61,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "想問什麼。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21743,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 62,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "<b9>格桑澤仁</b9>。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21744,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 63,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "民國時期的那個格桑澤仁，巴塘的那個。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21745,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 64,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "巴塘不就你們理塘旁邊而已？這人聽過沒有。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21746,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 65,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "我知道你在說誰，<b9>巴安事變</b9>。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21747,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 66,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "我不曉得你好奇他什麼事，總之你怎麼不直接去巴塘問？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21748,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 67,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "去過了。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21749,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 68,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "那裡有個上了年紀的女人，要我們往金沙江以西這方向查。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21750,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 69,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯為什麼？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21751,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 70,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "說格桑澤仁逃亡後，曾經跑去找藏軍談判，想找藏軍合作。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21752,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 71,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21753,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 72,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "不可能。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21754,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 73,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "人家那是聽老兵說過的，憑啥說不可能⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21755,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 74,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "<b9>貢嘎喇嘛</b9>。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21756,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 75,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "芒康的貢嘎喇嘛因為拒絕上繳武器，格桑澤仁出兵討伐他，這兩人有仇。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21757,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 76,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "藏軍圍攻巴塘，就是貢嘎喇嘛給藏軍帶路殺過去的。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21758,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 77,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "你是格桑澤仁，你知道貢嘎喇嘛在藏軍那邊，你還敢過去？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21759,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 78,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21760,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 79,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "再說格桑澤仁那時間點沒兵沒權的，藏軍憑什麼理你個光桿司令？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21761,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 80,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "格桑澤仁會那麼傻？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21762,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 81,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21763,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 82,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "那這野路子情報怎麼傳出來的？還說是老兵⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21764,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 83,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "老兵？那是建國後從川康軍改編的人吧。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21765,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 84,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "川康軍和格桑澤仁不好，我看就是故意造謠他勾結達賴。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21766,
+      "music": "/audio/music/BGM12.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 85,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21767,
+      "music": "",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 86,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "看來格桑澤仁是沒來過這了。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21768,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 87,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "你也這麼覺得？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21769,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 88,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "可惡⋯⋯這不是白忙活了。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21770,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 89,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "還是往雲南查吧。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21771,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 90,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "格桑澤仁逃離巴塘以後要去雲南，會是怎麼走的？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21772,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 91,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "我怎麼知道？那麼多條路能走⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21773,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 92,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21774,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 93,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "<b9>奔子欄</b9>。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21775,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 94,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "從雲南往返康區，其實未必比從成都平原過來康區麻煩。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21776,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 95,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "因為有金沙江這條天然的南北交通渠道。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21777,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 96,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "尤其如果要運送東西進出，那年代很難不經過奔子欄。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21778,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 97,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "！⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21779,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 98,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "奔子欄在⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21780,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 99,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "在<b9>迪慶州</b9>，雲南的迪慶。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21781,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 100,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "過了奔子欄，就從四川進到雲南了。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21782,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 101,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "看來該去奔子欄打聽。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21783,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 102,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "如果格桑澤仁當時找了騾隊幫忙，也許更可能在奔子欄留下線索。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21784,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 103,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯媽的，看來買東西是能帶來好運的。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21785,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0201.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 104,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "在這草原上瞎忙那麼久，不如找你買條菸。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21786,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0201.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 105,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "還是不清楚你們到底查這些事情做什麼，但需要好運對吧？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21787,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 106,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "要不要買這個放在身上？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21788,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 107,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "日嘎拿出一段五彩的編繩。",
+      "dialogue_color": true,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21789,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 108,
+      "sound_effect": "/audio/sound_effect/SE89.mp3",
+      "speaker": null,
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯護身結？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21790,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 109,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "還沒加持過的。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21791,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 110,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "你們買了拿到邦達寺或強巴林寺之類的寺院，請寺裡的喇嘛加持。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21792,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 111,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "戴在手上，保路上平安、事情順利。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21793,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 112,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21794,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 113,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "怎麼樣？主角你信不信這些？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21795,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 114,
+      "sound_effect": "",
+      "speaker": "貢布",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯給我一條吧。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21796,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 115,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "行，要什麼顏色的？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21797,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 116,
+      "sound_effect": "",
+      "speaker": "日嘎",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "你選吧。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21798,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 117,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": "謝謝你今天帶給我們的好運。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21799,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 118,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0090.png",
+      "before_attack": true,
+      "dialogue": null,
+      "dialogue_color": false,
+      "duration": 0.3,
+      "fade_in": false,
+      "fade_out": true,
+      "fast_paging": true,
+      "id": 21800,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": "black",
+          "effect": "half_transparent",
+          "figure": "/images/slide/actor/FRNM0200.png",
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": "black",
+          "effect": "half_transparent",
+          "figure": "/images/slide/actor/TB02.png",
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 119,
+      "sound_effect": "",
+      "speaker": null,
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/BG0100.png",
+      "before_attack": true,
+      "dialogue": null,
+      "dialogue_color": false,
+      "duration": 0.7,
+      "fade_in": true,
+      "fade_out": false,
+      "fast_paging": true,
+      "id": 21801,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 120,
+      "sound_effect": "",
+      "speaker": null,
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/BG0100.png",
+      "before_attack": true,
+      "dialogue": null,
+      "dialogue_color": false,
+      "duration": 1,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": true,
+      "id": 21802,
+      "music": "",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 121,
+      "sound_effect": "",
+      "speaker": null,
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/BG0100.png",
+      "before_attack": true,
+      "dialogue": "迪慶 奔子欄 探索條件已解鎖",
+      "dialogue_color": true,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 21803,
+      "music": "",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 122,
+      "sound_effect": "/audio/sound_effect/SE153.mp3",
+      "speaker": null,
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/BG0100.png",
+      "before_attack": false,
+      "dialogue": null,
+      "dialogue_color": false,
+      "duration": 0.1,
+      "fade_in": true,
+      "fade_out": false,
+      "fast_paging": true,
+      "id": 21804,
+      "music": "",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 999,
+      "sound_effect": "",
+      "speaker": null,
+      "subtitle": null
+    }
+  ]
+}
