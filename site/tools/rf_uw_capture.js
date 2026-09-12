@@ -14,8 +14,14 @@
 // 之後照常玩，每派遣一次 UW 就會自動收一筆。要入庫時按「下載 JSON」，
 // 再用 scripts/import_uw_capture.py 匯入 data/uw_plots/。
 //
-// ⚠️ 劇情文本會帶你的暱稱與組織名。這支腳本在**匯出時**才做去識別化，
-// 身分辨識不出來時會擋下匯出——帶身分的文本等同散佈帳號身分。
+// ⚠️ 劇情文本會帶你的暱稱與組織名。這支腳本在**收到當下**就做去識別化，
+// localStorage 與匯出檔裡永遠只有清乾淨的文本。
+//
+// 身分來自登入後的 `profile` 回覆（`profile.nickname` / `.organization`）。
+// 改過名的帳號會累積記住每一個看過的暱稱與組織名，舊名也一起替換——
+// 舊版只換「匯出當下」那一個名字，導致改名前側錄的段落整段沒清到。
+// 還沒認出暱稱就收到劇情時，該段只暫存在記憶體（不落地），
+// 等 profile 到手或你在面板手動填入後自動補做並入庫。
 (function () {
     'use strict';
 
@@ -32,7 +38,11 @@
     var plots = {};        // site_plot_id + 內容指紋 -> record
     var cityNames = {};    // city_id -> 城市名稱
     var identity = { nickname: null, organization: null };
-    var panelEl, countEl, statusEl, idEl;
+    // 累積記住所有看過的名字，改名後舊段落才不會漏清。
+    var aliases = { nicknames: [], organizations: [] };
+    // 還沒認出暱稱時收到的劇情：只放記憶體，絕不寫進 localStorage。
+    var pending = [];
+    var panelEl, countEl, pendingEl, statusEl, idEl;
 
     // ---- 儲存 -------------------------------------------------------------
 
@@ -44,14 +54,32 @@
             plots = saved.plots || {};
             cityNames = saved.cityNames || {};
             identity = saved.identity || identity;
+            aliases = {
+                nicknames: (saved.aliases && saved.aliases.nicknames) || [],
+                organizations: (saved.aliases && saved.aliases.organizations) || []
+            };
+            // 舊版沒有 aliases，用當時的 identity 補起來。
+            rememberAlias('nickname', identity.nickname);
+            rememberAlias('organization', identity.organization);
         } catch (error) {
             console.warn('[UW] 讀取既有紀錄失敗，從空的開始', error);
+        }
+        // 舊版是匯出時才清，localStorage 裡可能躺著帶身分的原文。
+        var cleaned = rescrubStored();
+        if (cleaned) {
+            console.warn('[UW] 既有紀錄有 ' + cleaned + ' 處殘留身分，已就地清掉');
+            save();
         }
     }
 
     function save() {
         try {
-            localStorage.setItem(STORAGE_KEY, JSON.stringify({ plots: plots, identity: identity }));
+            localStorage.setItem(STORAGE_KEY, JSON.stringify({
+                plots: plots,
+                cityNames: cityNames,
+                identity: identity,
+                aliases: aliases
+            }));
         } catch (error) {
             // localStorage 大約只有 5MB，UW 劇情一段就可能上百 KB。
             flashStatus('儲存失敗（容量已滿）——請先下載再清空');
@@ -101,12 +129,43 @@
 
     // ---- 去識別化 ---------------------------------------------------------
 
+    function rememberAlias(key, value) {
+        var name = typeof value === 'string' ? value.trim() : '';
+        if (!name) return false;
+        var bucket = key === 'nickname' ? aliases.nicknames : aliases.organizations;
+        if (bucket.indexOf(name) !== -1) return false;
+        bucket.push(name);
+        if (name.length <= 2) {
+            // 有測試帳號的暱稱與組織名都是單一底線；全文替換一定會誤傷正常文本
+            // （主線 city_32 就有顏文字 (ಥ _ ಥ)）。照樣替換，但要留下痕跡。
+            console.warn('[UW] 記住的名字只有 ' + name.length +
+                ' 個字，全文替換可能誤傷正常文本，匯入前務必先跑 --check');
+        }
+        return true;
+    }
+
     // 先換長的：組織名若包含暱稱，先換短的會把長的切碎。
     function substitutions() {
         var subs = [];
-        if (identity.nickname) subs.push([identity.nickname, PLACEHOLDER]);
-        if (identity.organization) subs.push([identity.organization, ORG_PLACEHOLDER]);
+        aliases.nicknames.forEach(function (name) { subs.push([name, PLACEHOLDER]); });
+        aliases.organizations.forEach(function (name) { subs.push([name, ORG_PLACEHOLDER]); });
         return subs.sort(function (a, b) { return b[0].length - a[0].length; });
+    }
+
+    function anonymizationStamp() {
+        return {
+            nickname: aliases.nicknames.length > 0,
+            organization: true,
+            // 帳號本來就沒有組織名時沒有東西可漏，不該卡住匯出。
+            organization_source: aliases.organizations.length ? 'replaced' : 'none'
+        };
+    }
+
+    function shortAliasLengths() {
+        // 只回報長度，不回報名字本身——匯出檔不該帶任何身分字串。
+        return aliases.nicknames.concat(aliases.organizations)
+            .filter(function (name) { return name.length <= 2; })
+            .map(function (name) { return name.length; });
     }
 
     function scrubSlides(slides) {
@@ -132,50 +191,117 @@
         return { slides: cleaned, changed: changed };
     }
 
+    /** 用目前的 alias 清單把已收錄的段落重清一遍，並重算內容指紋。
+     *
+     * 認到新名字（例如改名、或事後手動補填）時呼叫。指紋是算在清理後的
+     * 文本上，所以改名前後看到的同一段會在這裡自然合併成一筆。
+     */
+    function rescrubStored() {
+        if (!substitutions().length) return 0;
+        var next = {};
+        var changed = 0;
+        Object.keys(plots).forEach(function (key) {
+            var plot = plots[key];
+            var result = scrubSlides(plot.slides || []);
+            changed += result.changed;
+            plot.slides = result.slides;
+            plot.anonymized = true;
+            plot.anonymization = anonymizationStamp();
+            next[contentKey(plot)] = plot;
+        });
+        plots = next;
+        return changed;
+    }
+
     // ---- 側錄 -------------------------------------------------------------
 
     function rememberIdentity(obj) {
         if (!obj || typeof obj !== 'object') return;
         var profile = obj.profile && typeof obj.profile === 'object' ? obj.profile : obj;
-        var changed = false;
+        var learned = false;
         if (profile.nickname && identity.nickname !== profile.nickname) {
             identity.nickname = profile.nickname;
-            changed = true;
+            learned = rememberAlias('nickname', profile.nickname) || learned;
         }
         if (profile.organization && identity.organization !== profile.organization) {
             identity.organization = profile.organization;
-            changed = true;
+            learned = rememberAlias('organization', profile.organization) || learned;
         }
-        if (changed) {
-            save();
-            updatePanel();
-            console.log('[UW] 記住身分：', identity);
+        if (!learned) return;
+        console.log('[UW] 記住身分（累積 ' + aliases.nicknames.length + ' 個暱稱、' +
+            aliases.organizations.length + ' 個組織名）');
+        var cleaned = rescrubStored();
+        if (cleaned) {
+            flashStatus('認到新名字，已回頭清掉 ' + cleaned + ' 處');
         }
+        save();
+        flushPending();
+        updatePanel();
+    }
+
+    /** 認出暱稱前收到的段落補做去識別化並入庫。 */
+    function flushPending() {
+        if (!pending.length || !aliases.nicknames.length) return;
+        var queued = pending;
+        pending = [];
+        var stored = 0;
+        queued.forEach(function (response) {
+            if (storeScrubbed(response, true)) stored += 1;
+        });
+        save();
+        updatePanel();
+        flashStatus('補收暫存的 ' + stored + ' 段 ✓');
+        console.log('[UW] 暫存的 ' + queued.length + ' 段已清理入庫（新增 ' + stored + ' 段）');
     }
 
     function capture(response) {
         var id = response.site_plot_id;
         if (id === undefined || id === null) return;
-        var key = contentKey(response);
-        if (plots[key]) {
-            flashStatus('site_plot_id=' + id + ' 的相同結果已收過，略過');
+        if (!aliases.nicknames.length) {
+            // 落地前一定要清乾淨，所以先押在記憶體裡，別浪費掉這次派遣的能量。
+            pending.push(response);
+            updatePanel();
+            flashStatus('還沒認出暱稱，這段先暫存（' + pending.length + ' 段待清理）');
+            console.warn('[UW] 尚未取得 profile.nickname，暫存 site_plot_id=' + id +
+                '。重整頁面讓 profile 重送，或在面板填入暱稱，就會自動清理入庫。' +
+                '注意：暫存只在記憶體，關掉分頁就沒了。');
             return;
         }
-        plots[key] = {
+        storeScrubbed(response, false);
+    }
+
+    /** 去識別化後才寫進 plots；回傳是否真的新增了一筆。 */
+    function storeScrubbed(response, quiet) {
+        var result = scrubSlides(response.slides || []);
+        var record = {
             fetched_at: new Date().toISOString(),
             site_id: response.site_id,
             site_name: response.site_name,
-            site_plot_id: id,
+            site_plot_id: response.site_plot_id,
             level: response.level,
             city_id: response.city_id,
             city_name: response.city_name || response.city_title || cityNames[String(response.city_id)] || null,
+            anonymized: true,
+            anonymization: anonymizationStamp(),
+            scrubbed: result.changed,
             preloads: response.preloads || [],
-            slides: response.slides
+            slides: result.slides
         };
-        save();
-        updatePanel();
-        flashStatus('收到「' + (response.site_name || '?') + '」' + response.slides.length + ' 張 ✓');
-        console.log('[UW] 收錄 site_plot_id=' + id + ' 的新結果', plots[key]);
+        // 指紋算在清理後的文本上，改名前後的同一段才會被視為同一筆。
+        var key = contentKey(record);
+        if (plots[key]) {
+            if (!quiet) flashStatus('site_plot_id=' + record.site_plot_id + ' 的相同結果已收過，略過');
+            return false;
+        }
+        plots[key] = record;
+        if (!quiet) {
+            save();
+            updatePanel();
+            flashStatus('收到「' + (record.site_name || '?') + '」' + result.slides.length + ' 張 ✓');
+            console.log('[UW] 收錄 site_plot_id=' + record.site_plot_id +
+                ' 的新結果（清掉 ' + result.changed + ' 處身分）', record);
+        }
+        return true;
     }
 
     function inspect(raw) {
@@ -234,11 +360,12 @@
 
     // ---- 匯出 -------------------------------------------------------------
 
+    // 匯出只是把已經清乾淨的紀錄倒出來——替換是在收到當下就做完的。
     function buildExport() {
-        var hasNickname = Boolean(identity.nickname);
+        var stamp = anonymizationStamp();
         var records = Object.keys(plots).map(function (key) {
             var plot = plots[key];
-            var result = scrubSlides(plot.slides);
+            var slides = plot.slides || [];
             return {
                 fetched_at: plot.fetched_at,
                 site_id: plot.site_id,
@@ -247,26 +374,26 @@
                 level: plot.level,
                 city_id: plot.city_id,
                 city_name: plot.city_name || cityNames[String(plot.city_id)] || null,
-                anonymized: hasNickname,
-                anonymization: {
-                    nickname: hasNickname,
-                    organization: Boolean(identity.organization)
-                },
+                anonymized: true,
+                anonymization: plot.anonymization || stamp,
                 counts: {
-                    total: result.slides.length,
-                    with_dialogue: result.slides.filter(function (s) { return s.dialogue; }).length
+                    total: slides.length,
+                    with_dialogue: slides.filter(function (s) { return s.dialogue; }).length
                 },
                 preloads: plot.preloads,
-                slides: result.slides
+                slides: slides
             };
         });
         return {
             source: 'rf_uw_capture.js',
             exported_at: new Date().toISOString(),
-            anonymized: hasNickname,
-            anonymization: {
-                nickname: hasNickname,
-                organization: Boolean(identity.organization)
+            anonymized: true,
+            anonymization: stamp,
+            // 只帶長度不帶名字：匯出檔不該出現任何身分字串。
+            short_alias_lengths: shortAliasLengths(),
+            aliases_applied: {
+                nicknames: aliases.nicknames.length,
+                organizations: aliases.organizations.length
             },
             plots: records
         };
@@ -277,9 +404,17 @@
             flashStatus('目前沒有收到任何 UW 劇情');
             return;
         }
-        if (!identity.nickname) {
+        if (!aliases.nicknames.length) {
             flashStatus('還沒辨識出你的暱稱，先在下方填好再匯出');
             return;
+        }
+        if (pending.length) {
+            flashStatus(pending.length + ' 段還沒清理，不會包含在這次匯出');
+        }
+        var shorts = shortAliasLengths();
+        if (shorts.length) {
+            console.warn('[UW] 有 ' + shorts.length +
+                ' 個名字短到只有 1-2 個字，可能誤傷正常文本，匯入前請先跑 --check');
         }
         var blob = new Blob([JSON.stringify(buildExport(), null, 2)],
             { type: 'application/json;charset=utf-8' });
@@ -301,6 +436,7 @@
             return;
         }
         plots = {};
+        pending = [];
         save();
         updatePanel();
         flashStatus('已清空');
@@ -318,6 +454,11 @@
 
     function updatePanel() {
         if (countEl) countEl.textContent = count();
+        if (pendingEl) {
+            pendingEl.textContent = pending.length
+                ? '⚠ ' + pending.length + ' 段待清理（僅在記憶體，關掉分頁就沒了）'
+                : '';
+        }
         if (idEl) {
             idEl.querySelector('[data-field="nickname"]').value = identity.nickname || '';
             idEl.querySelector('[data-field="organization"]').value = identity.organization || '';
@@ -342,9 +483,18 @@
         input.placeholder = '未偵測到';
         input.style.cssText = 'flex:1;min-width:0;padding:3px 5px;font-size:11px;' +
             'border:1px solid #3b4650;background:#161d23;color:#e6ebe8;border-radius:2px';
-        input.oninput = function () {
+        // 用 change 不用 input：逐字輸入會把「柴」「柴貓」「柴貓的」每個前綴
+        // 都記成 alias，接著整份文本被單字替換掉，救不回來。
+        input.onchange = function () {
             identity[key] = input.value.trim() || null;
+            // 手動補填也要進 alias 清單，並回頭把已收錄的段落重清一次。
+            if (rememberAlias(key, identity[key])) {
+                var cleaned = rescrubStored();
+                if (cleaned) flashStatus('已回頭清掉 ' + cleaned + ' 處');
+                flushPending();
+            }
             save();
+            updatePanel();
         };
         wrap.appendChild(input);
         return wrap;
@@ -375,6 +525,10 @@
         idEl.appendChild(field('暱稱', 'nickname'));
         idEl.appendChild(field('組織', 'organization'));
         panelEl.appendChild(idEl);
+
+        pendingEl = document.createElement('div');
+        pendingEl.style.cssText = 'min-height:0;margin-bottom:6px;font-size:11px;color:#d98b68';
+        panelEl.appendChild(pendingEl);
 
         var row = document.createElement('div');
         row.style.cssText = 'display:flex;gap:5px;margin-bottom:6px';
@@ -416,7 +570,17 @@
 
     window.__RF_UW_CAPTURE__ = {
         plots: function () { return plots; },
+        pending: function () { return pending.length; },
         identity: identity,
+        aliases: aliases,
+        // 萬一記錯了名字（例如手動填錯），清掉 alias 清單重來。
+        // 已經替換掉的文本救不回來，只能連同 plots 一起清空重收。
+        resetAliases: function () {
+            aliases = { nicknames: [], organizations: [] };
+            save();
+            updatePanel();
+            console.log('[UW] alias 清單已清空');
+        },
         download: download,
         clear: clearAll
     };
