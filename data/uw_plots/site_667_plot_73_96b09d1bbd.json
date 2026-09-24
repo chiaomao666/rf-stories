@@ -1,28 +1,35 @@
 {
-  "fetched_at": "2026-09-11T14:29:57.993Z",
-  "site_id": 669,
-  "site_name": "阿波羅廣場",
-  "site_plot_id": 57,
-  "level": 1,
-  "city_id": 286,
-  "city_name": "野百合教會",
+  "fetched_at": "2026-09-24T13:01:00.680Z",
+  "site_id": 667,
+  "site_name": "拉傑帕特納加",
+  "site_plot_id": 73,
+  "level": 2,
+  "city_id": 541,
+  "city_name": "德里",
   "anonymized": true,
+  "anonymization": {
+    "nickname": true,
+    "organization": true,
+    "organization_source": "replaced"
+  },
   "counts": {
-    "total": 132,
-    "with_dialogue": 118
+    "total": 173,
+    "with_dialogue": 155
   },
   "preloads": [
-    "/images/slide/background/U0019.png",
-    "/images/slide/actor/UG0300.png",
-    "/images/slide/actor/UG0303.png",
-    "/images/slide/actor/UG0304.png",
+    "/images/slide/background/U0013.png",
+    "/images/slide/actor/TB0301.png",
+    "/images/slide/actor/TB0304.png",
+    "/images/slide/actor/TB0302b.png",
     "/images/slide/background/BG0100.png",
-    "/images/slide/background/U0020.png",
-    "/images/slide/actor/UG0301.png"
+    "/images/slide/background/U0012.png",
+    "/images/slide/actor/TB0303.png",
+    "/images/slide/background/U0015.png",
+    "/images/slide/background/U0016.png"
   ],
   "slides": [
     {
-      "background": "/images/slide/background/U0019.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
       "dialogue": null,
       "dialogue_color": false,
@@ -30,7 +37,7 @@
       "fade_in": true,
       "fade_out": false,
       "fast_paging": true,
-      "id": 16795,
+      "id": 24550,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -65,20 +72,20 @@
         }
       },
       "position": 1,
-      "sound_effect": "/audio/sound_effect/SE22.mp3",
+      "sound_effect": "",
       "speaker": null,
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0019.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": "⋯⋯長沙火車站附近這一帶，好久沒來了。",
+      "dialogue": null,
       "dialogue_color": false,
-      "duration": null,
+      "duration": 1.4,
       "fade_in": false,
       "fade_out": false,
-      "fast_paging": false,
-      "id": 16796,
+      "fast_paging": true,
+      "id": 24551,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -94,9 +101,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
+          "color_filter": "black",
+          "effect": "swift_in",
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -113,20 +120,20 @@
         }
       },
       "position": 2,
-      "sound_effect": "",
-      "speaker": "主角",
+      "sound_effect": "/audio/sound_effect/SE22.mp3",
+      "speaker": null,
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0019.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": "人還是挺多的。",
+      "dialogue": "⋯⋯你今天倒是挺準時的啊。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16797,
+      "id": 24552,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -142,9 +149,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": null,
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -166,15 +173,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0019.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": "這附近房子老一些，又吵鬧，租金通常比較便宜。",
+      "dialogue": "因為今天難得拉克夏Sir不在辦公室呀。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16798,
+      "id": 24553,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -192,7 +199,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": null,
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -210,19 +217,19 @@
       },
       "position": 4,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0019.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": "外地來的打工人口大概很多住在這地方。",
+      "dialogue": "既然主管不在，就沒有留下來的理由了。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16799,
+      "id": 24554,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -240,7 +247,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": null,
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -258,163 +265,19 @@
       },
       "position": 5,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0019.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": null,
-      "dialogue_color": false,
-      "duration": 1.4,
-      "fade_in": false,
-      "fade_out": false,
-      "fast_paging": true,
-      "id": 16800,
-      "music": "/audio/music/BGM22.mp3",
-      "placement": {
-        "a": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "b": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "c": {
-          "color_filter": null,
-          "effect": "swift_in",
-          "figure": "/images/slide/actor/UG0300.png",
-          "shift_to": null
-        },
-        "d": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "e": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        }
-      },
-      "position": 6,
-      "sound_effect": "/audio/sound_effect/SE22.mp3",
-      "speaker": null,
-      "subtitle": null
-    },
-    {
-      "background": "/images/slide/background/U0019.png",
-      "before_attack": true,
-      "dialogue": "一名神色可疑的妙齡女子與主角擦身而過。",
-      "dialogue_color": true,
-      "duration": null,
-      "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 16801,
-      "music": "/audio/music/BGM22.mp3",
-      "placement": {
-        "a": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "b": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "c": {
-          "color_filter": null,
-          "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
-          "shift_to": null
-        },
-        "d": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "e": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        }
-      },
-      "position": 7,
-      "sound_effect": "",
-      "speaker": null,
-      "subtitle": null
-    },
-    {
-      "background": "/images/slide/background/U0019.png",
-      "before_attack": true,
-      "dialogue": "⋯⋯",
+      "dialogue": "不在辦公室⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16802,
-      "music": "/audio/music/BGM22.mp3",
-      "placement": {
-        "a": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "b": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "c": {
-          "color_filter": null,
-          "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
-          "shift_to": null
-        },
-        "d": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "e": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        }
-      },
-      "position": 8,
-      "sound_effect": "",
-      "speaker": "熱依瑪",
-      "subtitle": null
-    },
-    {
-      "background": "/images/slide/background/U0019.png",
-      "before_attack": true,
-      "dialogue": "⋯⋯",
-      "dialogue_color": false,
-      "duration": null,
-      "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 16803,
+      "id": 24555,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -432,7 +295,151 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 6,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0013.png",
+      "before_attack": true,
+      "dialogue": "他出差了。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24556,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 7,
+      "sound_effect": "",
+      "speaker": "格桑卓瑪",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0013.png",
+      "before_attack": true,
+      "dialogue": "出差⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24557,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 8,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0013.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24558,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -454,15 +461,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0019.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": "熱依瑪。",
+      "dialogue": "⋯⋯是不是去古瓦哈蒂？",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16804,
+      "id": 24559,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -480,7 +487,7 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -502,15 +509,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0019.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": "欸⋯⋯欸？",
+      "dialogue": "嗯啊⋯⋯等等。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16805,
+      "id": 24560,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -528,7 +535,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0304.png",
           "shift_to": null
         },
         "d": {
@@ -546,19 +553,19 @@
       },
       "position": 11,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0019.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": "你怎麼⋯⋯出現在這種地方⋯⋯",
+      "dialogue": "等等、等等⋯⋯不對。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16806,
+      "id": 24561,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -576,7 +583,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0304.png",
           "shift_to": null
         },
         "d": {
@@ -594,19 +601,19 @@
       },
       "position": 12,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0019.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": "先不提這個了。",
+      "dialogue": "你是從哪聽說的？我不可能告訴你這種事。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16807,
+      "id": 24562,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -622,9 +629,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0304.png",
           "shift_to": null
         },
         "d": {
@@ -642,19 +649,19 @@
       },
       "position": 13,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0019.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": "你拿的那什麼東西。",
+      "dialogue": "拉克夏負責的事情不就那些。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16808,
+      "id": 24563,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -672,7 +679,7 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0304.png",
           "shift_to": null
         },
         "d": {
@@ -694,15 +701,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0019.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": "主角指向熱依瑪懷裡緊抱的東西。",
-      "dialogue_color": true,
+      "dialogue": "孟加拉、緬甸、人民共和國⋯⋯還有曼尼普爾邦的問題。",
+      "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16809,
+      "id": 24564,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -720,7 +727,7 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0304.png",
           "shift_to": null
         },
         "d": {
@@ -738,19 +745,19 @@
       },
       "position": 15,
       "sound_effect": "",
-      "speaker": null,
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0019.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": "那東西是長條形的，被用不透明的塑膠袋裹住。",
-      "dialogue_color": true,
+      "dialogue": "這些事情全都離不開印度東北的七姊妹邦。",
+      "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16810,
+      "id": 24565,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -768,7 +775,7 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0304.png",
           "shift_to": null
         },
         "d": {
@@ -786,67 +793,19 @@
       },
       "position": 16,
       "sound_effect": "",
-      "speaker": null,
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0019.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": "什⋯⋯什麼東西⋯⋯我沒⋯⋯沒看到⋯⋯",
+      "dialogue": "七姊妹邦最重要的城市，就是阿薩姆邦的古瓦哈蒂。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16811,
-      "music": "/audio/music/BGM22.mp3",
-      "placement": {
-        "a": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "b": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "c": {
-          "color_filter": null,
-          "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
-          "shift_to": null
-        },
-        "d": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "e": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        }
-      },
-      "position": 17,
-      "sound_effect": "",
-      "speaker": "熱依瑪",
-      "subtitle": null
-    },
-    {
-      "background": "/images/slide/background/U0019.png",
-      "before_attack": true,
-      "dialogue": "就你手上現在拿的那個啊，塑料袋包著的。",
-      "dialogue_color": false,
-      "duration": null,
-      "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 16812,
+      "id": 24566,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -864,7 +823,55 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": "/images/slide/actor/TB0304.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 17,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0013.png",
+      "before_attack": true,
+      "dialogue": "要開什麼工作上的會，他最可能去的地方當然就是那裡。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24567,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB0304.png",
           "shift_to": null
         },
         "d": {
@@ -886,15 +893,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0019.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": "這⋯⋯這個嗎？⋯⋯",
+      "dialogue": "⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16813,
+      "id": 24568,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -912,7 +919,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": "/images/slide/actor/TB0304.png",
           "shift_to": null
         },
         "d": {
@@ -930,19 +937,19 @@
       },
       "position": 19,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0019.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": "哈⋯⋯啊哈⋯⋯沒⋯⋯這沒什麼⋯⋯",
+      "dialogue": "哇⋯⋯你好可怕。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16814,
+      "id": 24569,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -960,7 +967,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": "/images/slide/actor/TB0304.png",
           "shift_to": null
         },
         "d": {
@@ -978,20 +985,20 @@
       },
       "position": 20,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0019.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": "你看，那個人是不是熱依瑪？",
+      "dialogue": "所以真的不是我說的對吧？確定不是我說溜嘴對吧？",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16815,
-      "music": "/audio/music/BGM13.mp3",
+      "id": 24570,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -1006,9 +1013,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": "/images/slide/actor/TB0304.png",
           "shift_to": null
         },
         "d": {
@@ -1026,20 +1033,20 @@
       },
       "position": 21,
       "sound_effect": "",
-      "speaker": "不遠處的聲音",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0019.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": "可是和她說話的那個人是誰？沒見過。",
+      "dialogue": "我對自己的口風其實滿有自信的⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16816,
-      "music": "/audio/music/BGM13.mp3",
+      "id": 24571,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -1054,9 +1061,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": "/images/slide/actor/TB0304.png",
           "shift_to": null
         },
         "d": {
@@ -1074,20 +1081,20 @@
       },
       "position": 22,
       "sound_effect": "",
-      "speaker": "不遠處的聲音",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0019.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": "聽到不遠處傳來的人聲，熱依瑪神色驚恐。",
-      "dialogue_color": true,
+      "dialogue": "放心吧，你沒跟我說過。",
+      "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16817,
-      "music": "/audio/music/BGM13.mp3",
+      "id": 24572,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -1102,9 +1109,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0304.png",
+          "figure": "/images/slide/actor/TB0304.png",
           "shift_to": null
         },
         "d": {
@@ -1122,20 +1129,20 @@
       },
       "position": 23,
       "sound_effect": "",
-      "speaker": null,
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0019.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": "快走！",
+      "dialogue": "（格桑卓瑪這人雖然愛聊天，看上去無話不談。）",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16818,
-      "music": "/audio/music/BGM13.mp3",
+      "id": 24573,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -1150,9 +1157,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0304.png",
+          "figure": "/images/slide/actor/TB0304.png",
           "shift_to": null
         },
         "d": {
@@ -1170,20 +1177,20 @@
       },
       "position": 24,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0019.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": "<b9>不能讓人看到你！</b9>",
+      "dialogue": "（但仔細注意可以發現，關於她確切的工作內容，她是一點都沒提到。）",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16819,
-      "music": "/audio/music/BGM13.mp3",
+      "id": 24574,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -1198,9 +1205,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0304.png",
+          "figure": "/images/slide/actor/TB0304.png",
           "shift_to": null
         },
         "d": {
@@ -1218,20 +1225,20 @@
       },
       "position": 25,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0019.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": null,
+      "dialogue": "（我對他主管的瞭解也是從別人那裡聽說的。）",
       "dialogue_color": false,
-      "duration": 0.3,
+      "duration": null,
       "fade_in": false,
-      "fade_out": true,
-      "fast_paging": true,
-      "id": 16820,
-      "music": "/audio/music/BGM13.mp3",
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24575,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -1246,9 +1253,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
-          "effect": "half_transparent",
-          "figure": "/images/slide/actor/UG0304.png",
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB0304.png",
           "shift_to": null
         },
         "d": {
@@ -1265,21 +1272,21 @@
         }
       },
       "position": 26,
-      "sound_effect": "/audio/sound_effect/SE55.mp3",
-      "speaker": null,
+      "sound_effect": "",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/BG0100.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": null,
+      "dialogue": "⋯⋯話說回來，你來得那麼早，是不是待會又預約了韓式修眉？",
       "dialogue_color": false,
-      "duration": 2,
-      "fade_in": true,
+      "duration": null,
+      "fade_in": false,
       "fade_out": false,
-      "fast_paging": true,
-      "id": 16821,
-      "music": "/audio/music/BGM13.mp3",
+      "fast_paging": false,
+      "id": 24576,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -1294,9 +1301,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": null,
+          "figure": "/images/slide/actor/TB0304.png",
           "shift_to": null
         },
         "d": {
@@ -1314,20 +1321,20 @@
       },
       "position": 27,
       "sound_effect": "",
-      "speaker": null,
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/BG0100.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": "穿越一座公園後，熱依瑪帶著主角跑進朝陽路上的一棟老公寓。",
-      "dialogue_color": true,
+      "dialogue": "才不是！",
+      "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16822,
-      "music": "/audio/music/BGM13.mp3",
+      "id": 24577,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -1344,7 +1351,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": null,
+          "figure": "/images/slide/actor/TB0302b.png",
           "shift_to": null
         },
         "d": {
@@ -1362,20 +1369,20 @@
       },
       "position": 28,
       "sound_effect": "",
-      "speaker": null,
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/BG0100.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": "上樓進到一間雅房以後，熱依瑪迅速關上門，再鎖上兩道內鎖。",
-      "dialogue_color": true,
+      "dialogue": "開玩笑的，我想也是，哪有人一天到晚修眉⋯⋯",
+      "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16823,
-      "music": "/audio/music/BGM13.mp3",
+      "id": 24578,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -1390,9 +1397,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": null,
+          "figure": "/images/slide/actor/TB0302b.png",
           "shift_to": null
         },
         "d": {
@@ -1409,21 +1416,21 @@
         }
       },
       "position": 29,
-      "sound_effect": "/audio/sound_effect/SE189.mp3",
-      "speaker": null,
+      "sound_effect": "",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": null,
+      "dialogue": "對呀，我昨天才修過眉毛，怎麼可能今天又修。",
       "dialogue_color": false,
-      "duration": 1,
-      "fade_in": true,
+      "duration": null,
+      "fade_in": false,
       "fade_out": false,
-      "fast_paging": true,
-      "id": 16824,
-      "music": "/audio/music/BGM12.mp3",
+      "fast_paging": false,
+      "id": 24579,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -1440,7 +1447,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": null,
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -1458,20 +1465,20 @@
       },
       "position": 30,
       "sound_effect": "",
-      "speaker": null,
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": null,
+      "dialogue": "⋯⋯昨天？",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16825,
-      "music": "/audio/music/BGM12.mp3",
+      "id": 24580,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -1486,9 +1493,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
-          "effect": "swift_in",
-          "figure": "/images/slide/actor/UG0303.png",
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -1506,20 +1513,20 @@
       },
       "position": 31,
       "sound_effect": "",
-      "speaker": null,
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": "哈⋯⋯啊哈⋯⋯哈⋯⋯",
+      "dialogue": "你昨天又跑去修眉毛？你前不久不是才剛修過⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16826,
-      "music": "/audio/music/BGM12.mp3",
+      "id": 24581,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -1534,9 +1541,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -1554,20 +1561,20 @@
       },
       "position": 32,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": "連跑四層樓的熱依瑪氣喘吁吁。",
-      "dialogue_color": true,
+      "dialogue": "因為我昨天領薪水呀。",
+      "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16827,
-      "music": "/audio/music/BGM12.mp3",
+      "id": 24582,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -1584,7 +1591,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -1602,20 +1609,20 @@
       },
       "position": 33,
       "sound_effect": "",
-      "speaker": null,
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": "⋯⋯",
+      "dialogue": "你領薪水跟你眉毛生長速度有什麼關係？",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16828,
-      "music": "/audio/music/BGM12.mp3",
+      "id": 24583,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -1632,7 +1639,7 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -1654,16 +1661,16 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": "那些人到底是什麼人？",
+      "dialogue": "沒差啦，你有Smart Card吧？",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16829,
-      "music": "/audio/music/BGM12.mp3",
+      "id": 24584,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -1678,9 +1685,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -1698,20 +1705,20 @@
       },
       "position": 35,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": "他們要對你做什麼？",
+      "dialogue": "當然有，不然我怎麼搭地鐵過來的。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16830,
-      "music": "/audio/music/BGM12.mp3",
+      "id": 24585,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -1728,7 +1735,7 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -1750,16 +1757,16 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": "做什麼？⋯⋯沒有、沒有⋯⋯",
+      "dialogue": "那好，我們走吧！",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16831,
-      "music": "/audio/music/BGM12.mp3",
+      "id": 24586,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -1776,7 +1783,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -1794,20 +1801,20 @@
       },
       "position": 37,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": "她倆是工作室裡新來的妹妹⋯⋯我們民族舞工作室⋯⋯",
+      "dialogue": "搭紫線只要兩站就到了。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16832,
-      "music": "/audio/music/BGM12.mp3",
+      "id": 24587,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -1824,7 +1831,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -1842,20 +1849,20 @@
       },
       "position": 38,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0013.png",
       "before_attack": true,
-      "dialogue": "氣死我了這倆哈薩勺子，我見什麼人干她們什麼事⋯⋯",
+      "dialogue": null,
       "dialogue_color": false,
-      "duration": null,
+      "duration": 0.3,
       "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 16833,
-      "music": "/audio/music/BGM12.mp3",
+      "fade_out": true,
+      "fast_paging": true,
+      "id": 24588,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -1871,8 +1878,8 @@
         },
         "c": {
           "color_filter": null,
-          "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "effect": "half_transparent",
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -1890,20 +1897,20 @@
       },
       "position": 39,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": null,
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/BG0100.png",
       "before_attack": true,
-      "dialogue": "我回頭就去學校找少民班老師搞死她倆⋯⋯哈⋯⋯哈⋯⋯",
+      "dialogue": null,
       "dialogue_color": false,
-      "duration": null,
+      "duration": 1.5,
       "fade_in": false,
       "fade_out": false,
-      "fast_paging": false,
-      "id": 16834,
-      "music": "/audio/music/BGM12.mp3",
+      "fast_paging": true,
+      "id": 24589,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -1920,7 +1927,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": null,
           "shift_to": null
         },
         "d": {
@@ -1938,20 +1945,20 @@
       },
       "position": 40,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": null,
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "⋯⋯",
+      "dialogue": null,
       "dialogue_color": false,
-      "duration": null,
-      "fade_in": false,
+      "duration": 1,
+      "fade_in": true,
       "fade_out": false,
-      "fast_paging": false,
-      "id": 16835,
-      "music": "/audio/music/BGM12.mp3",
+      "fast_paging": true,
+      "id": 24590,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -1966,9 +1973,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": null,
           "shift_to": null
         },
         "d": {
@@ -1986,20 +1993,20 @@
       },
       "position": 41,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": null,
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "⋯⋯真的沒事？",
+      "dialogue": null,
       "dialogue_color": false,
-      "duration": null,
+      "duration": 1.4,
       "fade_in": false,
       "fade_out": false,
-      "fast_paging": false,
-      "id": 16836,
-      "music": "/audio/music/BGM12.mp3",
+      "fast_paging": true,
+      "id": 24591,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -2015,8 +2022,8 @@
         },
         "c": {
           "color_filter": "black",
-          "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "effect": "swift_in",
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -2033,21 +2040,21 @@
         }
       },
       "position": 42,
-      "sound_effect": "",
-      "speaker": "主角",
+      "sound_effect": "/audio/sound_effect/SE22.mp3",
+      "speaker": null,
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "沒事沒事⋯⋯就點尕尕的事兒⋯⋯我只是不想讓人注意到你⋯⋯",
+      "dialogue": "⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16837,
-      "music": "/audio/music/BGM12.mp3",
+      "id": 24592,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -2062,9 +2069,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -2082,20 +2089,20 @@
       },
       "position": 43,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "⋯⋯好吧。",
+      "dialogue": "可汗市集⋯⋯原來是這樣的地方。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16838,
-      "music": "/audio/music/BGM12.mp3",
+      "id": 24593,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -2112,7 +2119,7 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -2134,16 +2141,16 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "那你手上到底拿的是什麼東西？",
+      "dialogue": "對呀，很文青吧。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16839,
-      "music": "/audio/music/BGM12.mp3",
+      "id": 24594,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -2158,9 +2165,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -2178,20 +2185,20 @@
       },
       "position": 45,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "這個？⋯⋯",
+      "dialogue": "這邊有很多書店和咖啡廳，很適合探店和拍照打卡。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16840,
-      "music": "/audio/music/BGM12.mp3",
+      "id": 24595,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -2208,7 +2215,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -2226,20 +2233,20 @@
       },
       "position": 46,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "⋯⋯",
+      "dialogue": "路上的人畫風也不太一樣。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16841,
-      "music": "/audio/music/BGM12.mp3",
+      "id": 24596,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -2256,7 +2263,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -2274,20 +2281,20 @@
       },
       "position": 47,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "主角，你聽好了。",
+      "dialogue": "其實光看一個人的穿搭，就能多少猜到這個人的出身階級和教育背景。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16842,
-      "music": "/audio/music/BGM12.mp3",
+      "id": 24597,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -2304,7 +2311,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -2322,20 +2329,20 @@
       },
       "position": 48,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "<b9>你絕對不可以告訴別人。</b9>",
+      "dialogue": "⋯⋯所以你帶我來這做什麼？",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16843,
-      "music": "/audio/music/BGM12.mp3",
+      "id": 24598,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -2350,9 +2357,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -2370,20 +2377,20 @@
       },
       "position": 49,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "熱依瑪小心翼翼地打開兩層塑膠袋，取出裡面的事物。",
-      "dialogue_color": true,
+      "dialogue": "幫我買書呀。",
+      "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16844,
-      "music": "/audio/music/BGM12.mp3",
+      "id": 24599,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -2400,7 +2407,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -2418,20 +2425,20 @@
       },
       "position": 50,
       "sound_effect": "",
-      "speaker": null,
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "！⋯⋯",
+      "dialogue": "買書？",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16845,
-      "music": "/audio/music/BGM12.mp3",
+      "id": 24600,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -2448,7 +2455,7 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -2470,16 +2477,16 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "這是⋯⋯",
+      "dialogue": "我要找介紹人民共和國黨政軍體制運作的書。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16846,
-      "music": "/audio/music/BGM12.mp3",
+      "id": 24601,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -2494,9 +2501,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -2514,20 +2521,20 @@
       },
       "position": 52,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "⋯⋯",
+      "dialogue": "這種東西你最清楚吧？",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16847,
-      "music": "/audio/music/BGM12.mp3",
+      "id": 24602,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -2542,9 +2549,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -2562,20 +2569,20 @@
       },
       "position": 53,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "這長得很像蔥⋯⋯這個像韭菜⋯⋯這些是什麼東西？",
+      "dialogue": "⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16848,
-      "music": "/audio/music/BGM12.mp3",
+      "id": 24603,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -2592,7 +2599,7 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -2614,63 +2621,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "就是青蔥和韭菜。",
+      "dialogue": "⋯⋯不是，這種東西你們才最清楚吧？",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16849,
-      "music": "/audio/music/BGM22.mp3",
-      "placement": {
-        "a": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "b": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "c": {
-          "color_filter": null,
-          "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
-          "shift_to": null
-        },
-        "d": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "e": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        }
-      },
-      "position": 55,
-      "sound_effect": "",
-      "speaker": "熱依瑪",
-      "subtitle": null
-    },
-    {
-      "background": "/images/slide/background/U0020.png",
-      "before_attack": true,
-      "dialogue": "就是青蔥和韭菜啊？",
-      "dialogue_color": false,
-      "duration": null,
-      "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 16850,
+      "id": 24604,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -2688,7 +2647,55 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 55,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0012.png",
+      "before_attack": true,
+      "dialogue": "你們單位不該是全印度最瞭解鄰國情勢的人嗎⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24605,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -2710,15 +2717,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "就是青蔥和韭菜啊。",
+      "dialogue": "⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16851,
+      "id": 24606,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -2736,7 +2743,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0302b.png",
           "shift_to": null
         },
         "d": {
@@ -2754,19 +2761,19 @@
       },
       "position": 57,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "青蔥和韭菜有啥好不能說出去的⋯⋯",
+      "dialogue": "⋯⋯當然啊！我們當然最瞭解！",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16852,
+      "id": 24607,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -2782,9 +2789,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0302b.png",
           "shift_to": null
         },
         "d": {
@@ -2802,19 +2809,19 @@
       },
       "position": 58,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "這房裡規定不能煮東西的！要是被發現要讓房東攆出去的！",
+      "dialogue": "那就不需要買這種書吧。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16853,
+      "id": 24608,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -2830,9 +2837,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": "/images/slide/actor/TB0302b.png",
           "shift_to": null
         },
         "d": {
@@ -2850,19 +2857,19 @@
       },
       "position": 59,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "我上哪再找那麼便宜的房啊我⋯⋯",
+      "dialogue": "⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16854,
+      "id": 24609,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -2880,7 +2887,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": "/images/slide/actor/TB0302b.png",
           "shift_to": null
         },
         "d": {
@@ -2898,19 +2905,19 @@
       },
       "position": 60,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "⋯⋯",
+      "dialogue": "⋯⋯⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16855,
+      "id": 24610,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -2926,9 +2933,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": "/images/slide/actor/TB0302b.png",
           "shift_to": null
         },
         "d": {
@@ -2946,19 +2953,19 @@
       },
       "position": 61,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "你這地方是跟人合租的吧？",
+      "dialogue": "⋯⋯可是拉克夏Sir叫我去買。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16856,
+      "id": 24611,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -2974,9 +2981,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -2994,19 +3001,19 @@
       },
       "position": 62,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "你室友知道你會在房裡偷偷做菜？",
+      "dialogue": "⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16857,
+      "id": 24612,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -3024,7 +3031,7 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -3046,63 +3053,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "啊⋯⋯那個阿克蘇X子，肯定不能讓她知道的。",
+      "dialogue": "拉克夏是什麼嚴厲的老師嗎。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16858,
-      "music": "/audio/music/BGM22.mp3",
-      "placement": {
-        "a": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "b": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "c": {
-          "color_filter": null,
-          "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
-          "shift_to": null
-        },
-        "d": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "e": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        }
-      },
-      "position": 64,
-      "sound_effect": "",
-      "speaker": "熱依瑪",
-      "subtitle": null
-    },
-    {
-      "background": "/images/slide/background/U0020.png",
-      "before_attack": true,
-      "dialogue": "能不能別管自己室友叫X子。",
-      "dialogue_color": false,
-      "duration": null,
-      "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 16859,
+      "id": 24613,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -3120,7 +3079,55 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0303.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 64,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0012.png",
+      "before_attack": true,
+      "dialogue": "是不是他考你什麼問題，你答錯了，而且錯得特別離譜？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24614,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -3142,15 +3149,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "可那X子就真特麼是個999純金的純X子，憑什麼房東少收她一百塊房租？",
+      "dialogue": "不是啊！到底誰會知道北戴河會議是什麼東西！",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16860,
+      "id": 24615,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -3168,7 +3175,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0302b.png",
           "shift_to": null
         },
         "d": {
@@ -3186,19 +3193,19 @@
       },
       "position": 66,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "？⋯⋯各自繳多少錢居然不是你倆自己談好的？",
+      "dialogue": "我以為北戴河在卡納塔卡邦。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16861,
+      "id": 24616,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -3214,9 +3221,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -3234,19 +3241,19 @@
       },
       "position": 67,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "算了咱們先擱置這爭端，你那阿克蘇室友要是忽然進門了該怎麼辦？",
+      "dialogue": "⋯⋯在卡納塔卡邦的那個是比德爾，不是北戴河。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16862,
+      "id": 24617,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -3264,7 +3271,7 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -3286,111 +3293,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "她啊？她被叫去衡陽那兒的商演，明天才回來。",
+      "dialogue": "比德爾是以前巴赫曼尼蘇丹國的首都，北戴河在河北秦皇島。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16863,
-      "music": "/audio/music/BGM22.mp3",
-      "placement": {
-        "a": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "b": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "c": {
-          "color_filter": null,
-          "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
-          "shift_to": null
-        },
-        "d": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "e": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        }
-      },
-      "position": 69,
-      "sound_effect": "",
-      "speaker": "熱依瑪",
-      "subtitle": null
-    },
-    {
-      "background": "/images/slide/background/U0020.png",
-      "before_attack": true,
-      "dialogue": "所以我才趁這幾天買菜回來。",
-      "dialogue_color": false,
-      "duration": null,
-      "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 16864,
-      "music": "/audio/music/BGM22.mp3",
-      "placement": {
-        "a": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "b": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "c": {
-          "color_filter": null,
-          "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
-          "shift_to": null
-        },
-        "d": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "e": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        }
-      },
-      "position": 70,
-      "sound_effect": "",
-      "speaker": "熱依瑪",
-      "subtitle": null
-    },
-    {
-      "background": "/images/slide/background/U0020.png",
-      "before_attack": true,
-      "dialogue": "⋯⋯",
-      "dialogue_color": false,
-      "duration": null,
-      "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 16865,
+      "id": 24618,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -3408,7 +3319,103 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0303.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 69,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0012.png",
+      "before_attack": true,
+      "dialogue": "可是拉克夏Sir唸的比德爾和北戴河聽起來根本一模一樣啊！",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24619,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB0302b.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 70,
+      "sound_effect": "",
+      "speaker": "格桑卓瑪",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0012.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯所以你真的跟他說北戴河會議是在卡納塔卡邦開的？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24620,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB0302b.png",
           "shift_to": null
         },
         "d": {
@@ -3430,15 +3437,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "好吧，所以你買了蔥和韭菜回房做什麼？",
+      "dialogue": "⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16866,
+      "id": 24621,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -3454,9 +3461,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -3474,19 +3481,19 @@
       },
       "position": 72,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "是什麼東西讓你冒那麼大風險也要吃上？",
+      "dialogue": "工作上的事，無可奉告。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16867,
+      "id": 24622,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -3502,9 +3509,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -3522,19 +3529,19 @@
       },
       "position": 73,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "⋯⋯",
+      "dialogue": "這句話不是這種時候用的。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16868,
+      "id": 24623,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -3550,9 +3557,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -3570,19 +3577,19 @@
       },
       "position": 74,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "⋯⋯沙蔥。",
+      "dialogue": "你的北戴河會議是一群人在卡納塔卡邦北部開開心心圍在一起，彈著坦布拉琴、吃著昆達糖對吧？",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16869,
+      "id": 24624,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -3598,9 +3605,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -3618,11 +3625,11 @@
       },
       "position": 75,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
       "dialogue": "⋯⋯",
       "dialogue_color": false,
@@ -3630,7 +3637,7 @@
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16870,
+      "id": 24625,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -3646,9 +3653,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -3666,19 +3673,19 @@
       },
       "position": 76,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "熱依瑪，做菜不是煉金術。",
+      "dialogue": "虧人家那麼信任你⋯⋯早知道就不要約你來了。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16871,
+      "id": 24626,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -3694,9 +3701,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -3714,19 +3721,19 @@
       },
       "position": 77,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "把青蔥和韭菜炒在一塊也不會變成新疆沙蔥的。",
+      "dialogue": "⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16872,
+      "id": 24627,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -3744,7 +3751,7 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -3766,15 +3773,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "⋯⋯",
+      "dialogue": "（怎麼忽然有種罪惡感⋯⋯我是不是玩笑開得過火了。）",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16873,
+      "id": 24628,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -3790,9 +3797,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -3810,19 +3817,19 @@
       },
       "position": 79,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "我不知道上哪買沙蔥⋯⋯",
+      "dialogue": "⋯⋯走吧，前面那家書店看上去挺像一回事。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16874,
+      "id": 24629,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -3838,9 +3845,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -3858,19 +3865,19 @@
       },
       "position": 80,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "⋯⋯",
+      "dialogue": "不知道能找到些什麼相關的書，總之試試吧。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16875,
+      "id": 24630,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -3886,9 +3893,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -3906,19 +3913,19 @@
       },
       "position": 81,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0012.png",
       "before_attack": true,
-      "dialogue": "⋯⋯好多年沒吃到沙蔥炒雞蛋。",
+      "dialogue": null,
       "dialogue_color": false,
-      "duration": null,
+      "duration": 0.3,
       "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 16876,
+      "fade_out": true,
+      "fast_paging": true,
+      "id": 24631,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -3934,9 +3941,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
-          "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "color_filter": "black",
+          "effect": "half_transparent",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -3954,19 +3961,19 @@
       },
       "position": 82,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": null,
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/BG0100.png",
       "before_attack": true,
-      "dialogue": "⋯⋯",
+      "dialogue": null,
       "dialogue_color": false,
-      "duration": null,
+      "duration": 2.5,
       "fade_in": false,
       "fade_out": false,
-      "fast_paging": false,
-      "id": 16877,
+      "fast_paging": true,
+      "id": 24632,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -3982,9 +3989,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": null,
           "shift_to": null
         },
         "d": {
@@ -4001,20 +4008,20 @@
         }
       },
       "position": 83,
-      "sound_effect": "",
-      "speaker": "主角",
+      "sound_effect": "/audio/sound_effect/SE22.mp3",
+      "speaker": null,
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": "湖南確實不好買到沙蔥。",
+      "dialogue": null,
       "dialogue_color": false,
-      "duration": null,
-      "fade_in": false,
+      "duration": 1,
+      "fade_in": true,
       "fade_out": false,
-      "fast_paging": false,
-      "id": 16878,
+      "fast_paging": true,
+      "id": 24633,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -4030,9 +4037,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": null,
           "shift_to": null
         },
         "d": {
@@ -4050,19 +4057,19 @@
       },
       "position": 84,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": null,
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": "今天時間晚了⋯⋯也不能明天再出去找，明天你室友回來。",
+      "dialogue": null,
       "dialogue_color": false,
-      "duration": null,
+      "duration": 1,
       "fade_in": false,
       "fade_out": false,
-      "fast_paging": false,
-      "id": 16879,
+      "fast_paging": true,
+      "id": 24634,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -4079,8 +4086,8 @@
         },
         "c": {
           "color_filter": "black",
-          "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "effect": "swift_in",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -4098,19 +4105,19 @@
       },
       "position": 85,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": null,
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": "我想想⋯⋯",
+      "dialogue": "⋯⋯這本是哈佛大學的費正清中心出版的，參考價值高一些。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16880,
+      "id": 24635,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -4128,7 +4135,7 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0303.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -4150,15 +4157,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": "主角打開冰箱。",
-      "dialogue_color": true,
+      "dialogue": "再來這本⋯⋯史丹佛大學的胡佛研究所，他們對軍方研究是挺透澈的。",
+      "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16881,
+      "id": 24636,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -4176,7 +4183,7 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -4193,20 +4200,20 @@
         }
       },
       "position": 87,
-      "sound_effect": "/audio/sound_effect/SE325.mp3",
-      "speaker": null,
+      "sound_effect": "",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": "⋯⋯果然不會有羊油這種東西。",
+      "dialogue": "還有這個，這本是加州大學柏克萊分校⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16882,
+      "id": 24637,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -4224,7 +4231,7 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -4246,15 +4253,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": "不過孜然倒是有，還有黃油？",
+      "dialogue": "哈⋯⋯唔姆。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16883,
+      "id": 24638,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -4270,9 +4277,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -4290,19 +4297,19 @@
       },
       "position": 89,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": "熱依瑪，你用的是小電爐嗎⋯⋯這網上便宜買的東西會不會爆炸啊？",
+      "dialogue": "⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16884,
+      "id": 24639,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -4320,7 +4327,7 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -4342,15 +4349,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": "而且這玩意不大好炒東西⋯⋯",
+      "dialogue": "你剛剛是不是打哈欠？",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16885,
+      "id": 24640,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -4368,7 +4375,7 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -4390,15 +4397,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": "⋯⋯",
+      "dialogue": "嗯？我嗎？沒有啊⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16886,
+      "id": 24641,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -4414,9 +4421,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -4434,19 +4441,19 @@
       },
       "position": 92,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": "⋯⋯總之我試試。",
+      "dialogue": "⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16887,
+      "id": 24642,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -4464,7 +4471,7 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -4486,15 +4493,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": null,
+      "dialogue": "是說，你中文說得挺好的，為什麼不自己找些中文的資料來看？",
       "dialogue_color": false,
-      "duration": 0.3,
+      "duration": null,
       "fade_in": false,
-      "fade_out": true,
-      "fast_paging": true,
-      "id": 16888,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24643,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -4511,8 +4518,8 @@
         },
         "c": {
           "color_filter": "black",
-          "effect": "half_transparent",
-          "figure": "/images/slide/actor/UG0300.png",
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -4530,19 +4537,19 @@
       },
       "position": 94,
       "sound_effect": "",
-      "speaker": null,
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/BG0100.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": null,
+      "dialogue": "啊？不行不行不行⋯⋯",
       "dialogue_color": false,
-      "duration": 3,
+      "duration": null,
       "fade_in": false,
       "fade_out": false,
-      "fast_paging": true,
-      "id": 16889,
+      "fast_paging": false,
+      "id": 24644,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -4560,7 +4567,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": null,
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -4577,20 +4584,20 @@
         }
       },
       "position": 95,
-      "sound_effect": "/audio/sound_effect/SE296.mp3",
-      "speaker": null,
+      "sound_effect": "",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": null,
+      "dialogue": "中文這種東西會說和會讀根本是兩回事。",
       "dialogue_color": false,
-      "duration": 1,
-      "fade_in": true,
+      "duration": null,
+      "fade_in": false,
       "fade_out": false,
-      "fast_paging": true,
-      "id": 16890,
+      "fast_paging": false,
+      "id": 24645,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -4608,7 +4615,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": null,
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -4626,19 +4633,19 @@
       },
       "position": 96,
       "sound_effect": "",
-      "speaker": null,
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": null,
+      "dialogue": "說中文很容易的，中文的文法太簡單了，動詞根本沒有時態，而且也沒有格位的問題。",
       "dialogue_color": false,
-      "duration": 1,
+      "duration": null,
       "fade_in": false,
       "fade_out": false,
-      "fast_paging": true,
-      "id": 16891,
+      "fast_paging": false,
+      "id": 24646,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -4655,8 +4662,8 @@
         },
         "c": {
           "color_filter": null,
-          "effect": "swift_in",
-          "figure": "/images/slide/actor/UG0300.png",
+          "effect": null,
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -4674,19 +4681,19 @@
       },
       "position": 97,
       "sound_effect": "",
-      "speaker": null,
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": "⋯⋯",
+      "dialogue": "但中文字到底是什麼鬼畜東西⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16892,
+      "id": 24647,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -4704,7 +4711,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -4722,59 +4729,11 @@
       },
       "position": 98,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
-      "before_attack": true,
-      "dialogue": "這⋯⋯",
-      "dialogue_color": false,
-      "duration": null,
-      "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 16893,
-      "music": "/audio/music/BGM22.mp3",
-      "placement": {
-        "a": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "b": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "c": {
-          "color_filter": null,
-          "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
-          "shift_to": null
-        },
-        "d": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "e": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        }
-      },
-      "position": 99,
-      "sound_effect": "",
-      "speaker": "熱依瑪",
-      "subtitle": null
-    },
-    {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
       "dialogue": "⋯⋯",
       "dialogue_color": false,
@@ -4782,7 +4741,7 @@
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16894,
+      "id": 24648,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -4800,7 +4759,55 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0303.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 99,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0015.png",
+      "before_attack": true,
+      "dialogue": "我無法反駁你。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24649,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -4822,15 +4829,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": "⋯⋯我沒把握，你嚐一口。",
+      "dialogue": "那個⋯⋯我覺得書買這樣就差不多了。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16895,
+      "id": 24650,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -4846,9 +4853,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -4866,19 +4873,19 @@
       },
       "position": 101,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": "熱依瑪拿起不鏽鋼筷，夾起一口。",
-      "dialogue_color": true,
+      "dialogue": "你說這本是什麼？哥倫比亞大學⋯⋯",
+      "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16896,
+      "id": 24651,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -4896,7 +4903,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -4913,20 +4920,20 @@
         }
       },
       "position": 102,
-      "sound_effect": "/audio/sound_effect/SE326.mp3",
-      "speaker": null,
+      "sound_effect": "",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": "⋯⋯",
+      "dialogue": "哥大東亞所出的不是這本，你拿的這本是約翰霍普金斯大學出版的。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16897,
+      "id": 24652,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -4942,9 +4949,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -4962,19 +4969,19 @@
       },
       "position": 103,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": "有點像，雖然還是不大一樣，可是⋯⋯",
+      "dialogue": "⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16898,
+      "id": 24653,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -4992,7 +4999,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -5010,19 +5017,19 @@
       },
       "position": 104,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": "⋯⋯",
+      "dialogue": "我們等一下去咖啡店坐一下好不好？",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16899,
+      "id": 24654,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -5040,7 +5047,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -5058,19 +5065,19 @@
       },
       "position": 105,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": "⋯⋯是家裡的味道。",
+      "dialogue": "你再跟我說一次哪一本是關於什麼研究的，我貼便條紙上去。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16900,
+      "id": 24655,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -5088,7 +5095,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -5106,19 +5113,19 @@
       },
       "position": 106,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": "七分韭，三分蔥。",
+      "dialogue": "這樣拉克夏Sir看到我桌上的書時，我才能說得出這些是什麼東西。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16901,
+      "id": 24656,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -5134,9 +5141,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -5154,19 +5161,19 @@
       },
       "position": 107,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": "雖然沒有羊油，但添點黃油入鍋多少產生類似的滑潤感。",
+      "dialogue": "⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16902,
+      "id": 24657,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -5184,7 +5191,7 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -5206,15 +5213,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": "孜然先用油煎過，菜下鍋立刻下火爆香，還沒出水就起鍋。",
+      "dialogue": "你該不會壓根沒打算讀這些書？只是買回去當擺飾。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16903,
+      "id": 24658,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -5232,7 +5239,7 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -5254,15 +5261,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": "材料有限，要不還能做得更像真的。",
+      "dialogue": "什麼？不！⋯⋯不不不，我一定會讀的，千萬別誤會⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16904,
+      "id": 24659,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -5278,9 +5285,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0304.png",
           "shift_to": null
         },
         "d": {
@@ -5298,19 +5305,19 @@
       },
       "position": 110,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": "⋯⋯",
+      "dialogue": "只是我比較偏向那個什麼⋯⋯左腦記憶⋯⋯圖像學習法⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16905,
+      "id": 24660,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -5328,7 +5335,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -5346,19 +5353,19 @@
       },
       "position": 111,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": "小時候，媽媽從沒教過我下廚。",
+      "dialogue": "⋯⋯你是不是要說右腦記憶？",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16906,
+      "id": 24661,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -5374,9 +5381,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -5394,19 +5401,19 @@
       },
       "position": 112,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": "她要我專注學習就好，不必做家務。",
+      "dialogue": "對、對對對⋯⋯右腦才對⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16907,
+      "id": 24662,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -5424,7 +5431,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -5442,19 +5449,19 @@
       },
       "position": 113,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": "就算不能像隔壁村那姐姐一樣出國讀書⋯⋯也到內地上個好一點的大學。",
+      "dialogue": "可是圖像學習法跟你說的這些有什麼關聯？",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16908,
+      "id": 24663,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -5470,9 +5477,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -5490,19 +5497,19 @@
       },
       "position": 114,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": "⋯⋯你幾歲來長沙的？",
+      "dialogue": "⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16909,
+      "id": 24664,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -5518,9 +5525,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -5538,19 +5545,19 @@
       },
       "position": 115,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": "小學畢業就來的，後來沒再回去過。",
+      "dialogue": "虧人家那麼信任你⋯⋯早知道就不要約你來了。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16910,
+      "id": 24665,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -5568,7 +5575,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -5586,19 +5593,19 @@
       },
       "position": 116,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": "所以新疆的很多事情⋯⋯已經記不清楚了。",
+      "dialogue": "少給我又來這招。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16911,
+      "id": 24666,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -5614,9 +5621,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -5634,19 +5641,19 @@
       },
       "position": 117,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0015.png",
       "before_attack": true,
-      "dialogue": "可我看你口音還是有的。",
+      "dialogue": null,
       "dialogue_color": false,
-      "duration": null,
+      "duration": 0.3,
       "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 16912,
+      "fade_out": true,
+      "fast_paging": true,
+      "id": 24667,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -5663,8 +5670,8 @@
         },
         "c": {
           "color_filter": "black",
-          "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "effect": "half_transparent",
+          "figure": "/images/slide/actor/TB0303.png",
           "shift_to": null
         },
         "d": {
@@ -5682,19 +5689,19 @@
       },
       "position": 118,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": null,
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/BG0100.png",
       "before_attack": true,
-      "dialogue": "因為到這兒還是和新疆老鄉處一塊兒。",
+      "dialogue": null,
       "dialogue_color": false,
-      "duration": null,
+      "duration": 1.5,
       "fade_in": false,
       "fade_out": false,
-      "fast_paging": false,
-      "id": 16913,
+      "fast_paging": true,
+      "id": 24668,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -5712,7 +5719,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": null,
           "shift_to": null
         },
         "d": {
@@ -5729,20 +5736,20 @@
         }
       },
       "position": 119,
-      "sound_effect": "",
-      "speaker": "熱依瑪",
+      "sound_effect": "/audio/sound_effect/SE323.mp3",
+      "speaker": null,
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0016.png",
       "before_attack": true,
-      "dialogue": "哎你看看這房裡連續幾層樓住的都是新疆人，別地方不大肯給新疆人租房，怕惹事。",
+      "dialogue": null,
       "dialogue_color": false,
-      "duration": null,
-      "fade_in": false,
+      "duration": 1,
+      "fade_in": true,
       "fade_out": false,
-      "fast_paging": false,
-      "id": 16914,
+      "fast_paging": true,
+      "id": 24669,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -5760,7 +5767,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": null,
           "shift_to": null
         },
         "d": {
@@ -5778,19 +5785,19 @@
       },
       "position": 120,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": null,
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0016.png",
       "before_attack": true,
-      "dialogue": "這地方是我們工作室特別安排上的。",
+      "dialogue": null,
       "dialogue_color": false,
-      "duration": null,
+      "duration": 1,
       "fade_in": false,
       "fade_out": false,
-      "fast_paging": false,
-      "id": 16915,
+      "fast_paging": true,
+      "id": 24670,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -5807,8 +5814,8 @@
         },
         "c": {
           "color_filter": null,
-          "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "effect": "swift_in",
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -5826,19 +5833,19 @@
       },
       "position": 121,
       "sound_effect": "",
-      "speaker": "熱依瑪",
+      "speaker": null,
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0016.png",
       "before_attack": true,
-      "dialogue": "這樣啊⋯⋯",
+      "dialogue": "主角，我要喝冷咖啡，你呢？",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16916,
+      "id": 24671,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -5854,9 +5861,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -5874,19 +5881,19 @@
       },
       "position": 122,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0016.png",
       "before_attack": true,
-      "dialogue": "⋯⋯",
+      "dialogue": "那就一樣吧，一樣就行。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16917,
+      "id": 24672,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -5904,7 +5911,7 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -5926,15 +5933,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0016.png",
       "before_attack": true,
-      "dialogue": "總之要是想再吃些什麼不容易吃上的，再找我吧。",
+      "dialogue": "好～兩杯冷咖啡！",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16918,
+      "id": 24673,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -5950,9 +5957,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -5970,115 +5977,19 @@
       },
       "position": 124,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": "格桑卓瑪",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0016.png",
       "before_attack": true,
-      "dialogue": "⋯⋯真的？",
+      "dialogue": "（冷咖啡⋯⋯估計就是冰美式之類的黑咖啡吧，還是冷萃咖啡？⋯⋯）",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16919,
-      "music": "/audio/music/BGM22.mp3",
-      "placement": {
-        "a": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "b": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "c": {
-          "color_filter": null,
-          "effect": null,
-          "figure": "/images/slide/actor/UG0300.png",
-          "shift_to": null
-        },
-        "d": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "e": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        }
-      },
-      "position": 125,
-      "sound_effect": "",
-      "speaker": "熱依瑪",
-      "subtitle": null
-    },
-    {
-      "background": "/images/slide/background/U0020.png",
-      "before_attack": true,
-      "dialogue": "好好好，我再找機會把那阿克蘇X子打發走⋯⋯",
-      "dialogue_color": false,
-      "duration": null,
-      "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 16920,
-      "music": "/audio/music/BGM22.mp3",
-      "placement": {
-        "a": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "b": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "c": {
-          "color_filter": null,
-          "effect": null,
-          "figure": "/images/slide/actor/UG0301.png",
-          "shift_to": null
-        },
-        "d": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "e": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        }
-      },
-      "position": 126,
-      "sound_effect": "",
-      "speaker": "熱依瑪",
-      "subtitle": null
-    },
-    {
-      "background": "/images/slide/background/U0020.png",
-      "before_attack": true,
-      "dialogue": "別頂著你那張無害的臉說這種話，我求你了。",
-      "dialogue_color": false,
-      "duration": null,
-      "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 16921,
+      "id": 24674,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -6096,7 +6007,103 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/UG0301.png",
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 125,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "（喜歡喝這種東西，倒是挺像韓國人的。）",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24675,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 126,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "（但更多時候還是覺得⋯⋯格桑卓瑪更像是個普通的北印度年輕女孩。）",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24676,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -6118,15 +6125,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0020.png",
+      "background": "/images/slide/background/U0016.png",
       "before_attack": true,
-      "dialogue": null,
+      "dialogue": "⋯⋯對了，你拿了印度的身分證，家裡沒意見嗎？",
       "dialogue_color": false,
-      "duration": 0.3,
+      "duration": null,
       "fade_in": false,
-      "fade_out": true,
-      "fast_paging": true,
-      "id": 16922,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24677,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -6143,8 +6150,8 @@
         },
         "c": {
           "color_filter": "black",
-          "effect": "half_transparent",
-          "figure": "/images/slide/actor/UG0301.png",
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
           "shift_to": null
         },
         "d": {
@@ -6162,6 +6169,1974 @@
       },
       "position": 128,
       "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "我聽說印度藏人社群裡一般比較傾向維持流亡身分吧。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24678,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 129,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "嗯⋯⋯別人或許是這樣吧，特別是老一輩。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24679,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 130,
+      "sound_effect": "",
+      "speaker": "格桑卓瑪",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "老一輩是追隨我們法王過來的，覺得自己有朝一日還能跟著法王回家鄉去。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24680,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 131,
+      "sound_effect": "",
+      "speaker": "格桑卓瑪",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "如果聽到自己家裡孩子為了方便，想申請印度的身分，心裡可能會有點難過。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24681,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 132,
+      "sound_effect": "",
+      "speaker": "格桑卓瑪",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "但我不是，我們家很晚才過來印度，所以比較沒有這種想法。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24682,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 133,
+      "sound_effect": "",
+      "speaker": "格桑卓瑪",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "來印度是為了過更好的生活，我媽不希望孩子生活不方便⋯⋯她很早就幫我辦歸化。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24683,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 134,
+      "sound_effect": "",
+      "speaker": "格桑卓瑪",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "可是我不是在印度出生的，沒辦法直接取得印度國籍，所以就只能慢慢走歸化程序。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24684,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 135,
+      "sound_effect": "",
+      "speaker": "格桑卓瑪",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯那你自己怎麼想的？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24685,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 136,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "你是印度人，還是藏人？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24686,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 137,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "我嗎？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24687,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 138,
+      "sound_effect": "",
+      "speaker": "格桑卓瑪",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "我當然是雙重國籍呀，哈哈哈⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24688,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 139,
+      "sound_effect": "",
+      "speaker": "格桑卓瑪",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "雙重國籍⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24689,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 140,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "雙重國籍是不是很厲害？聽起來就超～級～有～錢～",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24690,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 141,
+      "sound_effect": "",
+      "speaker": "格桑卓瑪",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "感覺像不像是媽媽為了幫小孩弄到美國國籍，特地花錢飛到美國生小孩的那種感覺。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24691,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 142,
+      "sound_effect": "",
+      "speaker": "格桑卓瑪",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24692,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 143,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "你在跟我開玩笑是吧⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24693,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 144,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "沒有喔。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24694,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 145,
+      "sound_effect": "",
+      "speaker": "格桑卓瑪",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "印度這個國家接納了我們國家的存在。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24695,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 146,
+      "sound_effect": "",
+      "speaker": "格桑卓瑪",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "那我們也真心接納印度這個國家，沒什麼不對吧？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24696,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 147,
+      "sound_effect": "",
+      "speaker": "格桑卓瑪",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "正當主角尋思著格桑卓瑪的話語時，兩杯冷咖啡被端上桌了。",
+      "dialogue_color": true,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24697,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 148,
+      "sound_effect": "/audio/sound_effect/SE185.mp3",
+      "speaker": null,
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "啊，不知道這家黑咖啡用的是那一種豆⋯⋯我去這是什麼東西！",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24698,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 149,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "冷咖啡呀。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24699,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 150,
+      "sound_effect": "",
+      "speaker": "格桑卓瑪",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "這哪裡還是咖啡？這是奶昔吧！",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24700,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 151,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯冷咖啡不是本來就這樣？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24701,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 152,
+      "sound_effect": "",
+      "speaker": "格桑卓瑪",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "真的不是奶昔啦，不要因為上面有冰淇淋就對它抱持偏見。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24702,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 153,
+      "sound_effect": "",
+      "speaker": "格桑卓瑪",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "你先喝一口再說，一定會改觀。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24703,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 154,
+      "sound_effect": "",
+      "speaker": "格桑卓瑪",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24704,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 155,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯噗。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24705,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 156,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "甜死了！這喝起來分明就是奶昔啊！",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24706,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 157,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "你連味蕾都被印度人同化了嗎！",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24707,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 158,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24708,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB0303.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 159,
+      "sound_effect": "",
+      "speaker": "格桑卓瑪",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "虧人家那麼信任你⋯⋯早知道就不要約你來了。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24709,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB0303.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 160,
+      "sound_effect": "",
+      "speaker": "格桑卓瑪",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "這跟信任什麼關係？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24710,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB0303.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 161,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "而且是我對你的信任被破壞了！我還信你說它不是奶昔⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24711,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB0303.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 162,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯幹嘛，急了喔？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24712,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 163,
+      "sound_effect": "",
+      "speaker": "格桑卓瑪",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "是不是很怕我真的不再約你出來？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24713,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 164,
+      "sound_effect": "",
+      "speaker": "格桑卓瑪",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "你這人到底在說什麼⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24714,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 165,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24715,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 166,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "主角注意到微笑的格桑卓瑪臉上，有著一對小酒窩。",
+      "dialogue_color": true,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24716,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 167,
+      "sound_effect": "",
+      "speaker": null,
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯偶爾來點甜的，或許也不差。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 24717,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 168,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0016.png",
+      "before_attack": true,
+      "dialogue": null,
+      "dialogue_color": false,
+      "duration": 0.3,
+      "fade_in": false,
+      "fade_out": true,
+      "fast_paging": true,
+      "id": 24718,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": "half_transparent",
+          "figure": "/images/slide/actor/TB0301.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 169,
+      "sound_effect": "",
       "speaker": null,
       "subtitle": null
     },
@@ -6174,7 +8149,7 @@
       "fade_in": true,
       "fade_out": false,
       "fast_paging": true,
-      "id": 16923,
+      "id": 24719,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -6208,7 +8183,7 @@
           "shift_to": null
         }
       },
-      "position": 129,
+      "position": 170,
       "sound_effect": "",
       "speaker": null,
       "subtitle": null
@@ -6222,7 +8197,7 @@
       "fade_in": true,
       "fade_out": false,
       "fast_paging": true,
-      "id": 16924,
+      "id": 24720,
       "music": "",
       "placement": {
         "a": {
@@ -6256,7 +8231,7 @@
           "shift_to": null
         }
       },
-      "position": 130,
+      "position": 171,
       "sound_effect": "",
       "speaker": null,
       "subtitle": null
@@ -6264,13 +8239,13 @@
     {
       "background": "/images/slide/background/BG0100.png",
       "before_attack": true,
-      "dialogue": "下一階段邂逅將於熱依瑪關係等級到達II時解鎖",
+      "dialogue": "下一階段邂逅尚未開放 敬請期待",
       "dialogue_color": true,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 16925,
+      "id": 24721,
       "music": "",
       "placement": {
         "a": {
@@ -6304,8 +8279,8 @@
           "shift_to": null
         }
       },
-      "position": 131,
-      "sound_effect": "/audio/sound_effect/SE153.mp3",
+      "position": 172,
+      "sound_effect": "/audio/sound_effect/SE147.mp3",
       "speaker": null,
       "subtitle": null
     },
@@ -6318,7 +8293,7 @@
       "fade_in": true,
       "fade_out": false,
       "fast_paging": true,
-      "id": 16926,
+      "id": 24722,
       "music": "",
       "placement": {
         "a": {
