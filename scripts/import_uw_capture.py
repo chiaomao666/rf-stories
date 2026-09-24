@@ -36,10 +36,21 @@ TEXT_FIELDS = {"speaker", "dialogue"}
 NEAR_DUPLICATE_TEXT_RATIO = 0.985
 
 
-def has_verified_player_scrub(record: dict) -> bool:
-    """Only accept exports that confirm the player nickname was scrubbed."""
-    status = record.get("anonymization")
-    return isinstance(status, dict) and bool(status.get("nickname"))
+def has_verified_player_scrub(record: dict, top_level_anonymization: dict | None = None) -> bool:
+    """Only accept exports that confirm the player nickname was scrubbed.
+
+    新版 rf_uw_capture.js 在每筆 record 裡寫 anonymization.nickname。
+    舊版沒有這個欄位，但 download() 已在匯出前確認 aliases.nicknames.length > 0，
+    所以 record.anonymized == True 且無 anonymization 欄位，視為舊格式，接受之。
+    頂層 anonymization 也可作為後備（整份匯出的去識別化聲明）。
+    """
+    status = record.get("anonymization") or top_level_anonymization
+    if isinstance(status, dict) and bool(status.get("nickname")):
+        return True
+    # 舊格式：record 有 anonymized=True 但整個 anonymization 欄位都不存在。
+    if record.get("anonymization") is None and record.get("anonymized") is True:
+        return True
+    return False
 
 
 def write_json(path: Path, data: object) -> None:
@@ -234,15 +245,17 @@ def main() -> int:
     added = skipped = 0
     dirty: list[str] = []
     to_write: list[tuple[Path, dict]] = []
+    # 頂層 anonymization 是舊格式的後備聲明（新格式每筆 record 各自帶）。
+    top_anon = raw.get("anonymization") if isinstance(raw, dict) else None
 
     for rec in records:
         slides = rec.get("slides") or []
         if not slides:
             continue
 
-        nickname_scrubbed = has_verified_player_scrub(rec) or bool(args.player_name)
+        nickname_scrubbed = has_verified_player_scrub(rec, top_anon) or bool(args.player_name)
         organization_scrubbed = bool(
-            (rec.get("anonymization") or {}).get("organization") or args.organization
+            (rec.get("anonymization") or top_anon or {}).get("organization") or args.organization
         )
         # 匯出時就該清乾淨了；這裡是最後一道關卡。
         if args.player_name or args.organization:
