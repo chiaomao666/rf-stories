@@ -1,36 +1,41 @@
 {
-  "fetched_at": "2026-09-11T16:17:06.916Z",
+  "fetched_at": "2026-09-24T13:12:02.148Z",
   "site_id": 672,
   "site_name": "舒古爾之橋",
-  "site_plot_id": 80,
-  "level": 1,
+  "site_plot_id": 81,
+  "level": 2,
   "city_id": 509,
   "city_name": "伊德利卜",
   "anonymized": true,
+  "anonymization": {
+    "nickname": true,
+    "organization": true,
+    "organization_source": "replaced"
+  },
   "counts": {
-    "total": 121,
-    "with_dialogue": 105
+    "total": 170,
+    "with_dialogue": 160
   },
   "preloads": [
-    "/images/slide/background/U0034.png",
-    "/images/slide/actor/FRTK0401.png",
+    "/images/slide/background/U0038.png",
     "/images/slide/actor/FRTK0400.png",
+    "/images/slide/actor/FRTK0401.png",
     "/images/slide/background/BG0100.png",
-    "/images/slide/background/U0035.png",
-    "/images/slide/background/U0036.png",
-    "/images/slide/background/U0037.png"
+    "/images/slide/background/U0039a.png",
+    "/images/slide/actor/FRTK0403.png",
+    "/images/slide/actor/FRTK0404.png"
   ],
   "slides": [
     {
-      "background": "/images/slide/background/U0034.png",
+      "background": "/images/slide/background/U0038.png",
       "before_attack": true,
       "dialogue": null,
       "dialogue_color": false,
-      "duration": 1.4,
+      "duration": 1,
       "fade_in": true,
       "fade_out": false,
       "fast_paging": true,
-      "id": 10450,
+      "id": 10571,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -65,20 +70,20 @@
         }
       },
       "position": 1,
-      "sound_effect": "/audio/sound_effect/SE22.mp3",
+      "sound_effect": "",
       "speaker": null,
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0034.png",
+      "background": "/images/slide/background/U0038.png",
       "before_attack": true,
-      "dialogue": "⋯⋯從土耳其過來這地方真的很麻煩。",
+      "dialogue": null,
       "dialogue_color": false,
-      "duration": null,
+      "duration": 1.4,
       "fade_in": false,
       "fade_out": false,
-      "fast_paging": false,
-      "id": 10451,
+      "fast_paging": true,
+      "id": 10572,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -94,9 +99,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
+          "color_filter": "black",
+          "effect": "swift_in",
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -113,20 +118,20 @@
         }
       },
       "position": 2,
-      "sound_effect": "",
-      "speaker": "主角",
+      "sound_effect": "/audio/sound_effect/SE22.mp3",
+      "speaker": null,
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0034.png",
+      "background": "/images/slide/background/U0038.png",
       "before_attack": true,
-      "dialogue": "在土耳其動用了一點關係，才終於搞到記者身分，能從哈塔伊省進入敘利亞。",
+      "dialogue": "⋯⋯拜拉姆，你要帶我去什麼地方？",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10452,
+      "id": 10573,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -142,9 +147,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": null,
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -166,15 +171,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0034.png",
+      "background": "/images/slide/background/U0038.png",
       "before_attack": true,
-      "dialogue": "雖然敘利亞過渡政府名義上結束了內戰，但這一帶還算是土耳其勢力範圍吧？",
+      "dialogue": "噓⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10453,
+      "id": 10574,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -192,7 +197,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": null,
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -210,19 +215,19 @@
       },
       "position": 4,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": "拜拉姆",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0034.png",
+      "background": "/images/slide/background/U0038.png",
       "before_attack": true,
-      "dialogue": "一名年輕的土耳其男子走向主角",
+      "dialogue": "拜拉姆看了主角一眼，把食指放在嘴唇前面。",
       "dialogue_color": true,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10454,
+      "id": 10575,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -240,7 +245,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": null,
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -262,15 +267,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0034.png",
+      "background": "/images/slide/background/U0038.png",
       "before_attack": true,
-      "dialogue": null,
-      "dialogue_color": false,
-      "duration": 1.4,
+      "dialogue": "主角看到，他的拇指外側還有素描時摩擦紙面所留下來的石墨痕跡。",
+      "dialogue_color": true,
+      "duration": null,
       "fade_in": false,
       "fade_out": false,
-      "fast_paging": true,
-      "id": 10455,
+      "fast_paging": false,
+      "id": 10576,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -286,9 +291,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
-          "effect": "swift_in",
-          "figure": "/images/slide/actor/FRTK0401.png",
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -305,20 +310,20 @@
         }
       },
       "position": 6,
-      "sound_effect": "/audio/sound_effect/SE22.mp3",
+      "sound_effect": "",
       "speaker": null,
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0034.png",
+      "background": "/images/slide/background/U0038.png",
       "before_attack": true,
-      "dialogue": "主角。",
+      "dialogue": "這是祕密。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10456,
+      "id": 10577,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -358,15 +363,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0034.png",
+      "background": "/images/slide/background/U0038.png",
       "before_attack": true,
-      "dialogue": "你真的來了。",
+      "dialogue": "我不想讓太多人知道。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10457,
+      "id": 10578,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -406,439 +411,7 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0034.png",
-      "before_attack": true,
-      "dialogue": "⋯⋯說過了，我會親自來一趟。",
-      "dialogue_color": false,
-      "duration": null,
-      "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 10458,
-      "music": "/audio/music/BGM22.mp3",
-      "placement": {
-        "a": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "b": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "c": {
-          "color_filter": "black",
-          "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
-          "shift_to": null
-        },
-        "d": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "e": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        }
-      },
-      "position": 9,
-      "sound_effect": "",
-      "speaker": "主角",
-      "subtitle": null
-    },
-    {
-      "background": "/images/slide/background/U0034.png",
-      "before_attack": true,
-      "dialogue": "⋯⋯",
-      "dialogue_color": false,
-      "duration": null,
-      "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 10459,
-      "music": "/audio/music/BGM22.mp3",
-      "placement": {
-        "a": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "b": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "c": {
-          "color_filter": "black",
-          "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
-          "shift_to": null
-        },
-        "d": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "e": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        }
-      },
-      "position": 10,
-      "sound_effect": "",
-      "speaker": "主角",
-      "subtitle": null
-    },
-    {
-      "background": "/images/slide/background/U0034.png",
-      "before_attack": true,
-      "dialogue": "你是休假特地回來的？",
-      "dialogue_color": false,
-      "duration": null,
-      "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 10460,
-      "music": "/audio/music/BGM22.mp3",
-      "placement": {
-        "a": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "b": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "c": {
-          "color_filter": "black",
-          "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
-          "shift_to": null
-        },
-        "d": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "e": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        }
-      },
-      "position": 11,
-      "sound_effect": "",
-      "speaker": "主角",
-      "subtitle": null
-    },
-    {
-      "background": "/images/slide/background/U0034.png",
-      "before_attack": true,
-      "dialogue": "⋯⋯對。",
-      "dialogue_color": false,
-      "duration": null,
-      "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 10461,
-      "music": "/audio/music/BGM22.mp3",
-      "placement": {
-        "a": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "b": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "c": {
-          "color_filter": null,
-          "effect": null,
-          "figure": "/images/slide/actor/FRTK0400.png",
-          "shift_to": null
-        },
-        "d": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "e": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        }
-      },
-      "position": 12,
-      "sound_effect": "",
-      "speaker": "拜拉姆",
-      "subtitle": null
-    },
-    {
-      "background": "/images/slide/background/U0034.png",
-      "before_attack": true,
-      "dialogue": "這個小鎮⋯⋯吉斯爾舒古爾，現在距離前線已經很遠了。",
-      "dialogue_color": false,
-      "duration": null,
-      "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 10462,
-      "music": "/audio/music/BGM22.mp3",
-      "placement": {
-        "a": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "b": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "c": {
-          "color_filter": null,
-          "effect": null,
-          "figure": "/images/slide/actor/FRTK0400.png",
-          "shift_to": null
-        },
-        "d": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "e": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        }
-      },
-      "position": 13,
-      "sound_effect": "",
-      "speaker": "拜拉姆",
-      "subtitle": null
-    },
-    {
-      "background": "/images/slide/background/U0034.png",
-      "before_attack": true,
-      "dialogue": "抵禦<b9>庫德族</b9>的前線，在阿勒坡省的東北部。",
-      "dialogue_color": false,
-      "duration": null,
-      "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 10463,
-      "music": "/audio/music/BGM22.mp3",
-      "placement": {
-        "a": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "b": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "c": {
-          "color_filter": null,
-          "effect": null,
-          "figure": "/images/slide/actor/FRTK0400.png",
-          "shift_to": null
-        },
-        "d": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "e": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        }
-      },
-      "position": 14,
-      "sound_effect": "",
-      "speaker": "拜拉姆",
-      "subtitle": null
-    },
-    {
-      "background": "/images/slide/background/U0034.png",
-      "before_attack": true,
-      "dialogue": "嗯⋯⋯",
-      "dialogue_color": false,
-      "duration": null,
-      "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 10464,
-      "music": "/audio/music/BGM22.mp3",
-      "placement": {
-        "a": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "b": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "c": {
-          "color_filter": "black",
-          "effect": null,
-          "figure": "/images/slide/actor/FRTK0400.png",
-          "shift_to": null
-        },
-        "d": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "e": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        }
-      },
-      "position": 15,
-      "sound_effect": "",
-      "speaker": "主角",
-      "subtitle": null
-    },
-    {
-      "background": "/images/slide/background/U0034.png",
-      "before_attack": true,
-      "dialogue": "但我還是喜歡這地方。",
-      "dialogue_color": false,
-      "duration": null,
-      "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 10465,
-      "music": "/audio/music/BGM22.mp3",
-      "placement": {
-        "a": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "b": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "c": {
-          "color_filter": null,
-          "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
-          "shift_to": null
-        },
-        "d": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "e": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        }
-      },
-      "position": 16,
-      "sound_effect": "",
-      "speaker": "拜拉姆",
-      "subtitle": null
-    },
-    {
-      "background": "/images/slide/background/U0034.png",
-      "before_attack": true,
-      "dialogue": "我跟很多人⋯⋯是在這地方認識的。",
-      "dialogue_color": false,
-      "duration": null,
-      "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 10466,
-      "music": "/audio/music/BGM22.mp3",
-      "placement": {
-        "a": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "b": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "c": {
-          "color_filter": null,
-          "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
-          "shift_to": null
-        },
-        "d": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "e": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        }
-      },
-      "position": 17,
-      "sound_effect": "",
-      "speaker": "拜拉姆",
-      "subtitle": null
-    },
-    {
-      "background": "/images/slide/background/U0034.png",
+      "background": "/images/slide/background/U0038.png",
       "before_attack": true,
       "dialogue": null,
       "dialogue_color": false,
@@ -846,7 +419,7 @@
       "fade_in": false,
       "fade_out": true,
       "fast_paging": true,
-      "id": 10467,
+      "id": 10579,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -880,7 +453,7 @@
           "shift_to": null
         }
       },
-      "position": 18,
+      "position": 9,
       "sound_effect": "",
       "speaker": null,
       "subtitle": null
@@ -890,11 +463,11 @@
       "before_attack": true,
       "dialogue": null,
       "dialogue_color": false,
-      "duration": 2,
+      "duration": 1.5,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": true,
-      "id": 10468,
+      "id": 10580,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -928,13 +501,13 @@
           "shift_to": null
         }
       },
-      "position": 19,
+      "position": 10,
       "sound_effect": "/audio/sound_effect/SE22.mp3",
       "speaker": null,
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0035.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
       "dialogue": null,
       "dialogue_color": false,
@@ -942,7 +515,7 @@
       "fade_in": true,
       "fade_out": false,
       "fast_paging": true,
-      "id": 10469,
+      "id": 10581,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -976,21 +549,21 @@
           "shift_to": null
         }
       },
-      "position": 20,
+      "position": 11,
       "sound_effect": "",
       "speaker": null,
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0035.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
       "dialogue": null,
       "dialogue_color": false,
-      "duration": 1.4,
+      "duration": 1,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": true,
-      "id": 10470,
+      "id": 10582,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -1008,7 +581,439 @@
         "c": {
           "color_filter": null,
           "effect": "swift_in",
-          "figure": "/images/slide/actor/FRTK0400.png",
+          "figure": "/images/slide/actor/FRTK0401.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 12,
+      "sound_effect": "",
+      "speaker": null,
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "到了。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10583,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0401.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 13,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "這裡是⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10584,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0401.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 14,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "在距離吉斯爾舒古爾鬧區有段距離的地方，他們來到一座有點年代感的建築。",
+      "dialogue_color": true,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10585,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0401.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 15,
+      "sound_effect": "",
+      "speaker": null,
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "建築的外牆已經傾圮，屋舍裡面也一片狼藉。",
+      "dialogue_color": true,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10586,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0401.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 16,
+      "sound_effect": "",
+      "speaker": null,
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10587,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0401.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 17,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "我們來這做什麼⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10588,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0401.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 18,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "主角，猜猜看這裡是什麼地方。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10589,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0401.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 19,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "這要我怎麼猜⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10590,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0401.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 20,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "雖然嘴上這樣說著，主角還是環顧四周。",
+      "dialogue_color": true,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10591,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0401.png",
           "shift_to": null
         },
         "d": {
@@ -1030,15 +1035,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0035.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "阿拉伯語的吉斯爾舒古爾，是「舒古爾之橋」的意思。",
+      "dialogue": "⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10471,
+      "id": 10592,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -1054,9 +1059,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0400.png",
+          "figure": "/images/slide/actor/FRTK0401.png",
           "shift_to": null
         },
         "d": {
@@ -1074,19 +1079,19 @@
       },
       "position": 22,
       "sound_effect": "",
-      "speaker": "拜拉姆",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0035.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "如你所見，這地方就是奧龍特斯河上的一座安靜的農業小鎮。",
+      "dialogue": "中間有個不小的庭院。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10472,
+      "id": 10593,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -1102,9 +1107,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0400.png",
+          "figure": "/images/slide/actor/FRTK0401.png",
           "shift_to": null
         },
         "d": {
@@ -1122,19 +1127,19 @@
       },
       "position": 23,
       "sound_effect": "",
-      "speaker": "拜拉姆",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0035.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "作為激戰區已經是十多年前的事，這裡很早就脫離阿薩德政權掌控。",
+      "dialogue": "外側的牆⋯⋯挺厚的，沒看到什麼窗戶。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10473,
+      "id": 10594,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -1150,9 +1155,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0400.png",
+          "figure": "/images/slide/actor/FRTK0401.png",
           "shift_to": null
         },
         "d": {
@@ -1170,19 +1175,19 @@
       },
       "position": 24,
       "sound_effect": "",
-      "speaker": "拜拉姆",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0035.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "但吉斯爾舒古爾依然是從土耳其進入敘利亞的交通重鎮。",
+      "dialogue": "還有周遭這幾間房⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10474,
+      "id": 10595,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -1198,9 +1203,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0400.png",
+          "figure": "/images/slide/actor/FRTK0401.png",
           "shift_to": null
         },
         "d": {
@@ -1218,19 +1223,19 @@
       },
       "position": 25,
       "sound_effect": "",
-      "speaker": "拜拉姆",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0035.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "⋯⋯",
-      "dialogue_color": false,
+      "dialogue": "主角探頭看看屋內。",
+      "dialogue_color": true,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10475,
+      "id": 10596,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -1248,7 +1253,7 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0400.png",
+          "figure": "/images/slide/actor/FRTK0401.png",
           "shift_to": null
         },
         "d": {
@@ -1266,19 +1271,19 @@
       },
       "position": 26,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": null,
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0035.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "你說庫德族的勢力範圍，現在在阿勒坡省東北部對吧？",
+      "dialogue": "採光也太差了，不過通風不錯。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10476,
+      "id": 10597,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -1296,7 +1301,7 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0400.png",
+          "figure": "/images/slide/actor/FRTK0401.png",
           "shift_to": null
         },
         "d": {
@@ -1318,15 +1323,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0035.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "對⋯⋯在科巴尼州，他們稱之為「西庫德斯坦」的一部分。",
+      "dialogue": "天花板挺高的，所以感覺還算寬敞。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10477,
+      "id": 10598,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -1342,9 +1347,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0400.png",
+          "figure": "/images/slide/actor/FRTK0401.png",
           "shift_to": null
         },
         "d": {
@@ -1362,19 +1367,19 @@
       },
       "position": 28,
       "sound_effect": "",
-      "speaker": "拜拉姆",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0035.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "左翼的敘利亞庫德族武裝，是<b9>庫德斯坦工人黨</b9>的支持者。",
+      "dialogue": "地上這是⋯⋯排水溝？",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10478,
+      "id": 10599,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -1390,9 +1395,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0400.png",
+          "figure": "/images/slide/actor/FRTK0401.png",
           "shift_to": null
         },
         "d": {
@@ -1410,19 +1415,19 @@
       },
       "position": 29,
       "sound_effect": "",
-      "speaker": "拜拉姆",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0035.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "雖然庫德斯坦工人黨已經解散了，但敘利亞的庫德族左翼武裝對土耳其而言依然是必須防備的對象。",
+      "dialogue": "⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10479,
+      "id": 10600,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -1438,9 +1443,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0400.png",
+          "figure": "/images/slide/actor/FRTK0401.png",
           "shift_to": null
         },
         "d": {
@@ -1458,19 +1463,19 @@
       },
       "position": 30,
       "sound_effect": "",
-      "speaker": "拜拉姆",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0035.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "而且⋯⋯在此之前，我們和庫德族的戰爭早已持續了好多年。",
+      "dialogue": "等等，這是⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10480,
+      "id": 10601,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -1486,9 +1491,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0400.png",
+          "figure": "/images/slide/actor/FRTK0401.png",
           "shift_to": null
         },
         "d": {
@@ -1506,19 +1511,19 @@
       },
       "position": 31,
       "sound_effect": "",
-      "speaker": "拜拉姆",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0035.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "⋯⋯",
+      "dialogue": "嗯？",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10481,
+      "id": 10602,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -1534,7 +1539,7 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
           "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
@@ -1554,19 +1559,67 @@
       },
       "position": 32,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": "拜拉姆",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0035.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "⋯⋯<b9>維吾爾族</b9>也是吧？",
+      "dialogue": "不是吧，難道主角你真能猜出來⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10482,
+      "id": 10603,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0400.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 33,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "這該不會是以前的馬廄吧。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10604,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -1600,69 +1653,21 @@
           "shift_to": null
         }
       },
-      "position": 33,
+      "position": 34,
       "sound_effect": "",
       "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0035.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "嗯⋯⋯維吾爾族是我們的戰友。",
+      "dialogue": "⋯⋯啊？",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10483,
-      "music": "/audio/music/BGM22.mp3",
-      "placement": {
-        "a": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "b": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "c": {
-          "color_filter": null,
-          "effect": null,
-          "figure": "/images/slide/actor/FRTK0400.png",
-          "shift_to": null
-        },
-        "d": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "e": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        }
-      },
-      "position": 34,
-      "sound_effect": "",
-      "speaker": "拜拉姆",
-      "subtitle": null
-    },
-    {
-      "background": "/images/slide/background/U0035.png",
-      "before_attack": true,
-      "dialogue": "無論是推翻阿薩德政權，還是<b9>對抗庫德斯坦工人黨</b9>。",
-      "dialogue_color": false,
-      "duration": null,
-      "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 10484,
+      "id": 10605,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -1702,15 +1707,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0035.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": null,
+      "dialogue": "怎麼？我猜錯了嗎⋯⋯",
       "dialogue_color": false,
-      "duration": 0.3,
+      "duration": null,
       "fade_in": false,
-      "fade_out": true,
-      "fast_paging": true,
-      "id": 10485,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10606,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -1726,8 +1731,8 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
-          "effect": "half_transparent",
+          "color_filter": "black",
+          "effect": null,
           "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
@@ -1746,19 +1751,19 @@
       },
       "position": 36,
       "sound_effect": "",
-      "speaker": null,
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/BG0100.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": null,
+      "dialogue": "我不知道啊。",
       "dialogue_color": false,
-      "duration": 2,
+      "duration": null,
       "fade_in": false,
       "fade_out": false,
-      "fast_paging": true,
-      "id": 10486,
+      "fast_paging": false,
+      "id": 10607,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -1776,7 +1781,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": null,
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -1793,20 +1798,20 @@
         }
       },
       "position": 37,
-      "sound_effect": "/audio/sound_effect/SE22.mp3",
-      "speaker": null,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": null,
+      "dialogue": "你不知道啊？",
       "dialogue_color": false,
-      "duration": 1,
-      "fade_in": true,
+      "duration": null,
+      "fade_in": false,
       "fade_out": false,
-      "fast_paging": true,
-      "id": 10487,
+      "fast_paging": false,
+      "id": 10608,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -1822,9 +1827,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": null,
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -1842,19 +1847,19 @@
       },
       "position": 38,
       "sound_effect": "",
-      "speaker": null,
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": null,
+      "dialogue": "你不知道那你幹嘛裝得一副你知道的樣子⋯⋯",
       "dialogue_color": false,
-      "duration": 1.4,
+      "duration": null,
       "fade_in": false,
       "fade_out": false,
-      "fast_paging": true,
-      "id": 10488,
+      "fast_paging": false,
+      "id": 10609,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -1871,7 +1876,7 @@
         },
         "c": {
           "color_filter": "black",
-          "effect": "swift_in",
+          "effect": null,
           "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
@@ -1890,19 +1895,19 @@
       },
       "position": 39,
       "sound_effect": "",
-      "speaker": null,
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "拜拉姆⋯⋯你說你是土耳其什麼地方的人？",
+      "dialogue": "不是，我不是說我不知道這是什麼地方⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10489,
+      "id": 10610,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -1918,9 +1923,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0400.png",
+          "figure": "/images/slide/actor/FRTK0403.png",
           "shift_to": null
         },
         "d": {
@@ -1938,19 +1943,19 @@
       },
       "position": 40,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": "拜拉姆",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "⋯⋯奧斯曼尼耶。",
+      "dialogue": "可是我們就是在討論這是什麼地方，你就說你不知道。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10490,
+      "id": 10611,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -1966,9 +1971,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0400.png",
+          "figure": "/images/slide/actor/FRTK0403.png",
           "shift_to": null
         },
         "d": {
@@ -1986,19 +1991,211 @@
       },
       "position": 41,
       "sound_effect": "",
-      "speaker": "拜拉姆",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "奧斯曼尼耶⋯⋯種了很多花生的地方？",
+      "dialogue": "不是⋯⋯我雖然不知道這是什麼地方，可是我知道這是什麼地方。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10491,
+      "id": 10612,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 42,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "什麼叫作「你雖然不知道這是什麼地方，可是你知道這是什麼地方。」",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10613,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 43,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "不是，就是⋯⋯我不知道怎麼說。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10614,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 44,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "所以你為什麼覺得這裡是馬廄？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10615,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0400.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 45,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "排水做得好，因為這地方經常要用水清理。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10616,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -2017,198 +2214,6 @@
           "color_filter": "black",
           "effect": null,
           "figure": "/images/slide/actor/FRTK0400.png",
-          "shift_to": null
-        },
-        "d": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "e": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        }
-      },
-      "position": 42,
-      "sound_effect": "",
-      "speaker": "主角",
-      "subtitle": null
-    },
-    {
-      "background": "/images/slide/background/U0036.png",
-      "before_attack": true,
-      "dialogue": "⋯⋯原來你知道啊。",
-      "dialogue_color": false,
-      "duration": null,
-      "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 10492,
-      "music": "/audio/music/BGM22.mp3",
-      "placement": {
-        "a": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "b": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "c": {
-          "color_filter": null,
-          "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
-          "shift_to": null
-        },
-        "d": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "e": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        }
-      },
-      "position": 43,
-      "sound_effect": "",
-      "speaker": "拜拉姆",
-      "subtitle": null
-    },
-    {
-      "background": "/images/slide/background/U0036.png",
-      "before_attack": true,
-      "dialogue": "那地方距離這裡也不遠吧。",
-      "dialogue_color": false,
-      "duration": null,
-      "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 10493,
-      "music": "/audio/music/BGM22.mp3",
-      "placement": {
-        "a": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "b": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "c": {
-          "color_filter": "black",
-          "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
-          "shift_to": null
-        },
-        "d": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "e": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        }
-      },
-      "position": 44,
-      "sound_effect": "",
-      "speaker": "主角",
-      "subtitle": null
-    },
-    {
-      "background": "/images/slide/background/U0036.png",
-      "before_attack": true,
-      "dialogue": "說來奇怪，那地方為什麼用奧斯曼起名？",
-      "dialogue_color": false,
-      "duration": null,
-      "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 10494,
-      "music": "/audio/music/BGM22.mp3",
-      "placement": {
-        "a": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "b": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "c": {
-          "color_filter": "black",
-          "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
-          "shift_to": null
-        },
-        "d": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "e": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        }
-      },
-      "position": 45,
-      "sound_effect": "",
-      "speaker": "主角",
-      "subtitle": null
-    },
-    {
-      "background": "/images/slide/background/U0036.png",
-      "before_attack": true,
-      "dialogue": "鄂圖曼（奧斯曼）帝國的發源地是那裡嗎？",
-      "dialogue_color": false,
-      "duration": null,
-      "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 10495,
-      "music": "/audio/music/BGM22.mp3",
-      "placement": {
-        "a": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "b": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "c": {
-          "color_filter": "black",
-          "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
           "shift_to": null
         },
         "d": {
@@ -2230,15 +2235,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "⋯⋯",
+      "dialogue": "屋頂架得高，因為空間大才能散熱通風。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10496,
+      "id": 10617,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -2254,7 +2259,7 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
           "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
@@ -2274,19 +2279,19 @@
       },
       "position": 47,
       "sound_effect": "",
-      "speaker": "拜拉姆",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "應該不是⋯⋯吧？",
+      "dialogue": "至於沒什麼採光⋯⋯以前電燈沒發明，是人住的地方通常都會重視採光。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10497,
+      "id": 10618,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -2302,7 +2307,7 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
           "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
@@ -2322,19 +2327,19 @@
       },
       "position": 48,
       "sound_effect": "",
-      "speaker": "拜拉姆",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "抱歉，我以前學校裡上歷史課不認真⋯⋯我都在課本上畫畫。",
+      "dialogue": "採光搞那麼隨便，就說明了這地方不是給人住的。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10498,
+      "id": 10619,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -2350,7 +2355,7 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
           "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
@@ -2370,19 +2375,19 @@
       },
       "position": 49,
       "sound_effect": "",
-      "speaker": "拜拉姆",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "但⋯⋯主角，你應該知道古時候整個敘利亞都是土耳其統治的？",
+      "dialogue": "而且你不覺的空氣中隱隱約約還殘留了一股氨的味道？感覺殘留在石縫裡的。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10499,
+      "id": 10620,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -2398,7 +2403,7 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
           "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
@@ -2418,19 +2423,19 @@
       },
       "position": 50,
       "sound_effect": "",
-      "speaker": "拜拉姆",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "奧斯曼尼耶是從鄂圖曼帝國首都伊斯坦堡通往敘利亞一帶的要道。",
+      "dialogue": "⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10500,
+      "id": 10621,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -2448,7 +2453,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0400.png",
+          "figure": "/images/slide/actor/FRTK0403.png",
           "shift_to": null
         },
         "d": {
@@ -2470,15 +2475,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "不過那一帶距離伊斯坦堡很遠，當時是還是土庫曼族之類的遊牧民族與山區勢力控制的。",
+      "dialogue": "居然⋯⋯居然是馬廄啊。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10501,
+      "id": 10622,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -2496,7 +2501,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0400.png",
+          "figure": "/images/slide/actor/FRTK0403.png",
           "shift_to": null
         },
         "d": {
@@ -2518,15 +2523,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "後來鄂圖曼帝國推動西化改革，為了彰顯對當地的控制力，所以用國家的名字把新的行政中心取名為「奧斯曼尼耶」。",
+      "dialogue": "我在這睡過，我還很喜歡這地方⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10502,
+      "id": 10623,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -2544,7 +2549,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0400.png",
+          "figure": "/images/slide/actor/FRTK0403.png",
           "shift_to": null
         },
         "d": {
@@ -2566,15 +2571,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "⋯⋯",
+      "dialogue": "⋯⋯你是馬嗎？",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10503,
+      "id": 10624,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -2592,7 +2597,7 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0400.png",
+          "figure": "/images/slide/actor/FRTK0403.png",
           "shift_to": null
         },
         "d": {
@@ -2614,15 +2619,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "你是在一個與敘利亞命運交織的地方出生長大的呢。",
+      "dialogue": "那你本來以為這裡是什麼地方？",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10504,
+      "id": 10625,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -2640,7 +2645,7 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0400.png",
+          "figure": "/images/slide/actor/FRTK0403.png",
           "shift_to": null
         },
         "d": {
@@ -2662,15 +2667,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "是嗎？可是我的阿拉伯語一直說不好⋯⋯",
+      "dialogue": "不是我以為⋯⋯我真的知道這是什麼地方⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10505,
+      "id": 10626,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -2688,7 +2693,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
+          "figure": "/images/slide/actor/FRTK0403.png",
           "shift_to": null
         },
         "d": {
@@ -2710,15 +2715,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "希爾艾力笑我阿拉伯語說得像白癡一樣。",
+      "dialogue": "⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10506,
+      "id": 10627,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -2736,7 +2741,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
+          "figure": "/images/slide/actor/FRTK0403.png",
           "shift_to": null
         },
         "d": {
@@ -2758,15 +2763,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "希爾艾力也太壞了。",
+      "dialogue": "這裡是以前鄂圖曼帝國統治時期的<b9>驛站</b9>。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10507,
+      "id": 10628,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -2782,9 +2787,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
+          "figure": "/images/slide/actor/FRTK0403.png",
           "shift_to": null
         },
         "d": {
@@ -2802,19 +2807,19 @@
       },
       "position": 58,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": "拜拉姆",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "早知道長大以後會來敘利亞工作，當初就認真聽課了。",
+      "dialogue": "也就是商隊過夜的地方。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10508,
+      "id": 10629,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -2832,7 +2837,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
+          "figure": "/images/slide/actor/FRTK0403.png",
           "shift_to": null
         },
         "d": {
@@ -2854,15 +2859,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "我中學唸的是宗教學校，所以有阿拉伯語課⋯⋯可是上課的時候我都在課本上畫畫。",
+      "dialogue": "驛站⋯⋯怪不得有馬廄。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10509,
+      "id": 10630,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -2878,9 +2883,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
+          "figure": "/images/slide/actor/FRTK0403.png",
           "shift_to": null
         },
         "d": {
@@ -2898,19 +2903,19 @@
       },
       "position": 60,
       "sound_effect": "",
-      "speaker": "拜拉姆",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "⋯⋯你有什麼課是不畫畫的。",
+      "dialogue": "但我以為這棟建築是以前的客房⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10510,
+      "id": 10631,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -2926,9 +2931,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
+          "figure": "/images/slide/actor/FRTK0403.png",
           "shift_to": null
         },
         "d": {
@@ -2946,67 +2951,19 @@
       },
       "position": 61,
       "sound_effect": "",
-      "speaker": "主角",
-      "subtitle": null
-    },
-    {
-      "background": "/images/slide/background/U0036.png",
-      "before_attack": true,
-      "dialogue": "美術課。",
-      "dialogue_color": false,
-      "duration": null,
-      "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 10511,
-      "music": "/audio/music/BGM22.mp3",
-      "placement": {
-        "a": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "b": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "c": {
-          "color_filter": null,
-          "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
-          "shift_to": null
-        },
-        "d": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "e": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        }
-      },
-      "position": 62,
-      "sound_effect": "",
       "speaker": "拜拉姆",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "你有什麼毛病。",
+      "dialogue": "沒事，你住得開心就好。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10512,
+      "id": 10632,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -3024,7 +2981,55 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 62,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "想不到這裡居然還有這樣的地方⋯⋯挺有意思。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10633,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
           "shift_to": null
         },
         "d": {
@@ -3046,15 +3051,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "上美術課的時間接近放學了，我會直接蹺課。",
+      "dialogue": "⋯⋯你也喜歡嗎？",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10513,
+      "id": 10634,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -3072,7 +3077,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -3094,15 +3099,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "你不要面帶微笑跟我說這種事，有點羞恥心行不？",
+      "dialogue": "不錯啊，感覺就是個有故事的地方。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10514,
+      "id": 10635,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -3120,7 +3125,7 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -3142,15 +3147,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "那你怎麼會跑去防務顧問公司上班？不是該找美術相關的工作？",
+      "dialogue": "是以前沙姆解放組織的人私下告訴我的。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10515,
+      "id": 10636,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -3166,7 +3171,7 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
           "figure": "/images/slide/actor/FRTK0401.png",
           "shift_to": null
@@ -3186,19 +3191,19 @@
       },
       "position": 66,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": "拜拉姆",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "⋯⋯",
+      "dialogue": "他說這地方以前是驛站，但荒廢很久了，沒什麼人知道。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10516,
+      "id": 10637,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -3216,7 +3221,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0400.png",
+          "figure": "/images/slide/actor/FRTK0401.png",
           "shift_to": null
         },
         "d": {
@@ -3238,15 +3243,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "因為防務顧問公司給的錢比較多啊。",
+      "dialogue": "吉斯爾舒古爾曾經是交通要道，所以古羅馬時代就在這裡蓋了橋。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10517,
+      "id": 10638,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -3264,7 +3269,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0400.png",
+          "figure": "/images/slide/actor/FRTK0401.png",
           "shift_to": null
         },
         "d": {
@@ -3286,15 +3291,15 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "而且學美術除了去柏林和征服歐洲以外哪有什麼出路。",
+      "dialogue": "在鄂圖曼帝國統治底下，不論是希臘人還是亞美尼亞人的商隊。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10518,
+      "id": 10639,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -3312,7 +3317,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0400.png",
+          "figure": "/images/slide/actor/FRTK0401.png",
           "shift_to": null
         },
         "d": {
@@ -3334,15 +3339,255 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "住口⋯⋯不要一臉正經給我開這種玩笑。",
+      "dialogue": "只要是從安塔基亞往返阿勒頗，通常就會經過這裡。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10519,
+      "id": 10640,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0401.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 70,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯沙姆解放組織的人告訴你的？他懂的挺多。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10641,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0401.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 71,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "是啊，敘利亞內戰爆發以前，他在這地方教孩子們唸書。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10642,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0400.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 72,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "一位人很好的大哥，後來不知道人去哪了，希望他平安。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10643,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0400.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 73,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "對了，他還跟我說過⋯⋯吉斯爾舒古爾以前其實是庫德族領主統治的地方。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10644,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0400.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 74,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "庫德族？⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10645,
       "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
@@ -3376,22 +3621,22 @@
           "shift_to": null
         }
       },
-      "position": 70,
+      "position": 75,
       "sound_effect": "",
       "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "在市場的盡頭，幾個男孩女孩朝他們跑過來，用土耳其語大喊。",
-      "dialogue_color": true,
+      "dialogue": "⋯⋯你不是說這地方距離庫德族分布區很遠？",
+      "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10520,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10646,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -3409,246 +3654,6 @@
           "color_filter": "black",
           "effect": null,
           "figure": "/images/slide/actor/FRTK0400.png",
-          "shift_to": null
-        },
-        "d": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "e": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        }
-      },
-      "position": 71,
-      "sound_effect": "/audio/sound_effect/SE55.mp3",
-      "speaker": null,
-      "subtitle": null
-    },
-    {
-      "background": "/images/slide/background/U0036.png",
-      "before_attack": true,
-      "dialogue": "拜拉姆阿比！（拜拉姆大哥！）",
-      "dialogue_color": false,
-      "duration": null,
-      "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 10521,
-      "music": "/audio/music/BGM17.mp3",
-      "placement": {
-        "a": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "b": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "c": {
-          "color_filter": "black",
-          "effect": null,
-          "figure": "/images/slide/actor/FRTK0400.png",
-          "shift_to": null
-        },
-        "d": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "e": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        }
-      },
-      "position": 72,
-      "sound_effect": "",
-      "speaker": "孩子",
-      "subtitle": null
-    },
-    {
-      "background": "/images/slide/background/U0036.png",
-      "before_attack": true,
-      "dialogue": "⋯⋯艾汗、艾麗甫、阿斯蘭。",
-      "dialogue_color": false,
-      "duration": null,
-      "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 10522,
-      "music": "/audio/music/BGM17.mp3",
-      "placement": {
-        "a": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "b": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "c": {
-          "color_filter": null,
-          "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
-          "shift_to": null
-        },
-        "d": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "e": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        }
-      },
-      "position": 73,
-      "sound_effect": "",
-      "speaker": "拜拉姆",
-      "subtitle": null
-    },
-    {
-      "background": "/images/slide/background/U0036.png",
-      "before_attack": true,
-      "dialogue": "拜拉姆蹲低，抱住幾個孩子。",
-      "dialogue_color": true,
-      "duration": null,
-      "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 10523,
-      "music": "/audio/music/BGM17.mp3",
-      "placement": {
-        "a": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "b": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "c": {
-          "color_filter": "black",
-          "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
-          "shift_to": null
-        },
-        "d": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "e": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        }
-      },
-      "position": 74,
-      "sound_effect": "",
-      "speaker": null,
-      "subtitle": null
-    },
-    {
-      "background": "/images/slide/background/U0036.png",
-      "before_attack": true,
-      "dialogue": "孩子們不約而同地看了主角一眼。",
-      "dialogue_color": true,
-      "duration": null,
-      "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 10524,
-      "music": "/audio/music/BGM17.mp3",
-      "placement": {
-        "a": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "b": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "c": {
-          "color_filter": "black",
-          "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
-          "shift_to": null
-        },
-        "d": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "e": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        }
-      },
-      "position": 75,
-      "sound_effect": "",
-      "speaker": null,
-      "subtitle": null
-    },
-    {
-      "background": "/images/slide/background/U0036.png",
-      "before_attack": true,
-      "dialogue": "哥哥，那個人是誰？",
-      "dialogue_color": false,
-      "duration": null,
-      "fade_in": false,
-      "fade_out": false,
-      "fast_paging": false,
-      "id": 10525,
-      "music": "/audio/music/BGM17.mp3",
-      "placement": {
-        "a": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "b": {
-          "color_filter": null,
-          "effect": null,
-          "figure": null,
-          "shift_to": null
-        },
-        "c": {
-          "color_filter": "black",
-          "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
           "shift_to": null
         },
         "d": {
@@ -3666,20 +3671,20 @@
       },
       "position": 76,
       "sound_effect": "",
-      "speaker": "艾麗甫",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "⋯⋯是主角，我的朋友。",
+      "dialogue": "是啊，現在是這樣沒錯⋯⋯但古時候的情況不一樣吧。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10526,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10647,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -3696,7 +3701,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -3718,16 +3723,16 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "拜拉姆看向主角。",
-      "dialogue_color": true,
+      "dialogue": "這裡人說鄂圖曼帝國還在的時候，土耳其官員會重用庫德族來制衡阿拉伯人。",
+      "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10527,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10648,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -3744,7 +3749,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -3762,20 +3767,20 @@
       },
       "position": 78,
       "sound_effect": "",
-      "speaker": null,
+      "speaker": "拜拉姆",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "他們都是維吾爾人的孩子。",
+      "dialogue": "聽起來跟現代很不一樣，對吧？",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10528,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10649,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -3792,7 +3797,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -3814,16 +3819,16 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "這些孩子的父母都是從東突（新疆）喀什來的維吾爾人。",
+      "dialogue": "⋯⋯對敘利亞人而言，土耳其應該算是以前的殖民者和壓迫者。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10529,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10650,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -3838,9 +3843,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -3858,20 +3863,20 @@
       },
       "position": 80,
       "sound_effect": "",
-      "speaker": "拜拉姆",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "他們都是在敘利亞出生、長大的，沒到過其它地方。",
+      "dialogue": "嗯，聽說他們以前的課本好像都是這樣寫的。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10530,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10651,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -3888,7 +3893,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -3910,16 +3915,16 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "維吾爾人⋯⋯",
+      "dialogue": "敘利亞人看到你們荷槍實彈回到敘利亞的國土上，感受應該挺複雜？",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10531,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10652,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -3936,7 +3941,7 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -3958,16 +3963,16 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "敘利亞內戰爆發後，吉斯爾舒古爾很多阿拉伯居民逃走了。",
+      "dialogue": "⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10532,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10653,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -4006,16 +4011,16 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "於此同時，土耳其那側陸續有數以萬計的維吾爾人隨軍來到吉斯爾舒古爾。",
+      "dialogue": "或許吧。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10533,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10654,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -4054,16 +4059,16 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "土耳其人和敘利亞反抗軍都需要兵源，而維吾爾人想要一個能夠自己管理自己的家園。",
+      "dialogue": "內戰結束後首任敘利亞總統，以前就是以沙姆解放組織總司令的身分統治伊德利卜。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10534,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10655,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -4102,16 +4107,16 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "雖然很多人被庫德族打死，但至少以目前來看⋯⋯雙方在這小鎮都算是如願以償了。",
+      "dialogue": "戰爭時期的伊德利卜被他建設得很好，土耳其政府也經常與他合作。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10535,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10656,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -4150,16 +4155,16 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "主角沒說什麼，只是跟著蹲低身姿，雙手撐在膝蓋上看著孩子們的臉。",
-      "dialogue_color": true,
+      "dialogue": "但⋯⋯我覺得他應該也不希望土耳其人一直留在這裡。",
+      "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10536,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10657,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -4174,7 +4179,7 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
           "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
@@ -4194,20 +4199,20 @@
       },
       "position": 87,
       "sound_effect": "",
-      "speaker": null,
+      "speaker": "拜拉姆",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "⋯⋯",
+      "dialogue": "這麼說起來，沙姆解放組織能打贏內戰，維吾爾人算是有戰功吧？",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10537,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10658,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -4246,16 +4251,16 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "（維吾爾語）會說維吾爾語嗎？",
+      "dialogue": "對，一般來說，這邊的軍人對維吾爾人印象都還不錯。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10538,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10659,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -4270,9 +4275,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0400.png",
+          "figure": "/images/slide/actor/FRTK0401.png",
           "shift_to": null
         },
         "d": {
@@ -4290,20 +4295,20 @@
       },
       "position": 89,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": "拜拉姆",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "孩子們面面相覷，接著向主角點點頭。",
-      "dialogue_color": true,
+      "dialogue": "維吾爾人是攜家帶眷來的，他們比較有意願持續參戰，紀律也穩定。",
+      "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10539,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10660,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -4318,9 +4323,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0400.png",
+          "figure": "/images/slide/actor/FRTK0401.png",
           "shift_to": null
         },
         "d": {
@@ -4338,20 +4343,20 @@
       },
       "position": 90,
       "sound_effect": "",
-      "speaker": null,
+      "speaker": "拜拉姆",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "（維吾爾語）⋯⋯我會說，可是不會寫。",
+      "dialogue": "對平民來說，維吾爾人給人的感覺也較溫和，反觀車臣人就是一臉職業殺手的模樣。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10540,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10661,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -4366,9 +4371,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0400.png",
+          "figure": "/images/slide/actor/FRTK0401.png",
           "shift_to": null
         },
         "d": {
@@ -4386,20 +4391,20 @@
       },
       "position": 91,
       "sound_effect": "",
-      "speaker": "艾麗甫",
+      "speaker": "拜拉姆",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "很好，沒關係。",
+      "dialogue": "你沒看過沙姆解放組織的車臣人，他們車臣人聽到對面是俄軍的時候都是死裡打的⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10541,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10662,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -4414,9 +4419,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0400.png",
+          "figure": "/images/slide/actor/FRTK0401.png",
           "shift_to": null
         },
         "d": {
@@ -4434,20 +4439,20 @@
       },
       "position": 92,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": "拜拉姆",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "有沒有人要吃開心果軟糖？",
+      "dialogue": "⋯⋯可一般敘利亞平民也不大會看到這些戰場表現吧。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10542,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10663,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -4464,7 +4469,7 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0400.png",
+          "figure": "/images/slide/actor/FRTK0401.png",
           "shift_to": null
         },
         "d": {
@@ -4486,16 +4491,16 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "我買給你們，好不好？",
+      "dialogue": "怎麼還能產生這種印象上的區別？",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10543,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10664,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -4512,7 +4517,7 @@
         "c": {
           "color_filter": "black",
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0400.png",
+          "figure": "/images/slide/actor/FRTK0401.png",
           "shift_to": null
         },
         "d": {
@@ -4534,16 +4539,16 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "（土耳其語）可是！拜拉姆阿比說不能吃陌生人給的⋯⋯",
+      "dialogue": "⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10544,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10665,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -4558,7 +4563,7 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
           "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
@@ -4578,20 +4583,20 @@
       },
       "position": 95,
       "sound_effect": "",
-      "speaker": "阿斯蘭",
+      "speaker": "拜拉姆",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "名為阿斯蘭的男孩故意用土耳其語說。",
-      "dialogue_color": true,
+      "dialogue": "對耶，為什麼呢⋯⋯",
+      "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10545,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10666,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -4606,7 +4611,7 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
           "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
@@ -4626,20 +4631,20 @@
       },
       "position": 96,
       "sound_effect": "",
-      "speaker": null,
+      "speaker": "拜拉姆",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "男孩知道拜拉姆不懂維吾爾語，所以刻意說給拜拉姆聽見。",
-      "dialogue_color": true,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10546,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10667,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -4654,7 +4659,7 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
           "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
@@ -4674,20 +4679,20 @@
       },
       "position": 97,
       "sound_effect": "",
-      "speaker": null,
+      "speaker": "拜拉姆",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "⋯⋯",
+      "dialogue": "啊，難道是因為長相？",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10547,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10668,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -4726,16 +4731,16 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "（土耳其語）阿斯蘭，你說的對。",
-      "dialogue_color": false,
+      "dialogue": "拜拉姆把手電筒夾在腋下，取出素描簿，翻開空白的一頁。",
+      "dialogue_color": true,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10548,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10669,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -4752,7 +4757,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -4769,21 +4774,21 @@
         }
       },
       "position": 99,
-      "sound_effect": "",
-      "speaker": "拜拉姆",
+      "sound_effect": "/audio/sound_effect/SE246.mp3",
+      "speaker": null,
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "（土耳其語）不過拜拉姆阿比也跟你們說過，主角是我的朋友，不是陌生人。",
+      "dialogue": "⋯⋯你看，維吾爾人通常是長這樣。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10549,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10670,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -4800,7 +4805,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -4822,16 +4827,16 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "孩子們看了看彼此，露出笑容。",
+      "dialogue": "拜拉姆憑著印象，用短短的鉛筆在紙上迅速畫出一張人臉。",
       "dialogue_color": true,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10550,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10671,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -4846,9 +4851,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -4865,21 +4870,21 @@
         }
       },
       "position": 101,
-      "sound_effect": "",
+      "sound_effect": "/audio/sound_effect/SE301.mp3",
       "speaker": null,
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "（維吾爾語）那好⋯⋯走吧，我們去買開心果軟糖！",
+      "dialogue": "⋯⋯眉毛距離眼睛遠一點，雙眼皮沒那麼明顯。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10551,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10672,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -4894,9 +4899,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -4914,20 +4919,20 @@
       },
       "position": 102,
       "sound_effect": "",
-      "speaker": "主角",
+      "speaker": "拜拉姆",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0036.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": null,
+      "dialogue": "對阿拉伯人來說，維吾爾人看起來比較像東方人對吧？",
       "dialogue_color": false,
-      "duration": 0.3,
+      "duration": null,
       "fade_in": false,
-      "fade_out": true,
-      "fast_paging": true,
-      "id": 10552,
-      "music": "/audio/music/BGM17.mp3",
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10673,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -4942,9 +4947,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": "black",
+          "color_filter": null,
           "effect": null,
-          "figure": "/images/slide/actor/FRTK0401.png",
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -4962,20 +4967,20 @@
       },
       "position": 103,
       "sound_effect": "",
-      "speaker": null,
+      "speaker": "拜拉姆",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/BG0100.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": null,
+      "dialogue": "東方人的臉看起來年紀比較小，是不是就有種無害感？",
       "dialogue_color": false,
-      "duration": 2,
+      "duration": null,
       "fade_in": false,
       "fade_out": false,
-      "fast_paging": true,
-      "id": 10553,
-      "music": "/audio/music/BGM17.mp3",
+      "fast_paging": false,
+      "id": 10674,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -4992,7 +4997,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": null,
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -5010,20 +5015,20 @@
       },
       "position": 104,
       "sound_effect": "",
-      "speaker": null,
+      "speaker": "拜拉姆",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0037.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": null,
+      "dialogue": "⋯⋯",
       "dialogue_color": false,
-      "duration": 1,
-      "fade_in": true,
+      "duration": null,
+      "fade_in": false,
       "fade_out": false,
-      "fast_paging": true,
-      "id": 10554,
-      "music": "/audio/music/BGM17.mp3",
+      "fast_paging": false,
+      "id": 10675,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -5038,9 +5043,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": null,
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -5058,20 +5063,20 @@
       },
       "position": 105,
       "sound_effect": "",
-      "speaker": null,
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0037.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "拜拉姆阿比！說故事！",
+      "dialogue": "先不說這個，你畫得也未免太快了。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10555,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10676,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -5086,9 +5091,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": null,
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -5106,20 +5111,20 @@
       },
       "position": 106,
       "sound_effect": "",
-      "speaker": "阿斯蘭",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0037.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "想聽什麼故事？",
+      "dialogue": "還沒完，你接著看，車臣人是長這樣⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10556,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10677,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -5136,7 +5141,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": null,
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -5158,16 +5163,16 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0037.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "想聽柯魯奧盧劫富濟貧、對抗暴君的故事嗎？",
-      "dialogue_color": false,
+      "dialogue": "拜拉姆迅速畫出另一張人臉。",
+      "dialogue_color": true,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10557,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10678,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -5184,7 +5189,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": null,
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -5201,21 +5206,21 @@
         }
       },
       "position": 108,
-      "sound_effect": "",
-      "speaker": "拜拉姆",
+      "sound_effect": "/audio/sound_effect/SE301.mp3",
+      "speaker": null,
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0037.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "還是要聽騎驢老人納斯雷丁把整座湖變成優格的故事？",
+      "dialogue": "⋯⋯眉壓眼，眉毛淺淺的，鼻子又直又挺。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10558,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10679,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -5232,7 +5237,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": null,
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -5254,16 +5259,16 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0037.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "不是，不是那個⋯⋯我要上次那個故事！",
+      "dialogue": "⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10559,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10680,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -5280,7 +5285,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": null,
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -5298,20 +5303,20 @@
       },
       "position": 110,
       "sound_effect": "",
-      "speaker": "阿斯蘭",
+      "speaker": "拜拉姆",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0037.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "上次那個故事？說過好幾次了，還要再聽嗎？",
+      "dialogue": "喔對，還有這個！車臣人很多紅鬍子⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10560,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10681,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -5328,7 +5333,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": null,
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -5350,16 +5355,16 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0037.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "⋯⋯",
-      "dialogue_color": false,
+      "dialogue": "拜拉姆拿出一支紅色的色鉛筆，替紙上那人像的濃密長鬍子迅速添上顏色。",
+      "dialogue_color": true,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10561,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10682,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -5376,7 +5381,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": null,
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -5393,21 +5398,21 @@
         }
       },
       "position": 112,
-      "sound_effect": "",
-      "speaker": "拜拉姆",
+      "sound_effect": "/audio/sound_effect/SE301.mp3",
+      "speaker": null,
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0037.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "⋯⋯好吧",
+      "dialogue": "⋯⋯",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10562,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10683,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -5422,9 +5427,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": null,
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -5442,20 +5447,20 @@
       },
       "position": 113,
       "sound_effect": "",
-      "speaker": "拜拉姆",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0037.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "在很久很久以前⋯⋯我們突厥民族的祖先經歷了一場大戰，幾乎要滅族。",
+      "dialogue": "⋯⋯你這畫的還像人嗎？這什麼大鬍子版本的吸血鬼。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10563,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10684,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -5470,9 +5475,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": null,
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -5490,20 +5495,20 @@
       },
       "position": 114,
       "sound_effect": "",
-      "speaker": "拜拉姆",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0037.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "就在這絕望的時候，出現了一頭灰狼，引領他們走進一座名為「額爾古納昆」的山谷。",
+      "dialogue": "你看吧！怎麼看都是車臣人長得比較兇。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10564,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10685,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -5520,7 +5525,7 @@
         "c": {
           "color_filter": null,
           "effect": null,
-          "figure": null,
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -5542,16 +5547,16 @@
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0037.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "那是一座外人找不到的、被神所祝福的山谷，倖存的人在山谷裡獲得喘息。",
+      "dialogue": "⋯⋯我們先撇開鬍子不討論，我們就只看鼻子以上的部分。",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10565,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10686,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -5566,9 +5571,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": null,
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -5586,20 +5591,20 @@
       },
       "position": 116,
       "sound_effect": "",
-      "speaker": "拜拉姆",
+      "speaker": "主角",
       "subtitle": null
     },
     {
-      "background": "/images/slide/background/U0037.png",
+      "background": "/images/slide/background/U0039a.png",
       "before_attack": true,
-      "dialogue": "聽說，那座山谷在遙遠的東方⋯⋯就是你們父母的故鄉，<b9>東突厥斯坦</b9>。",
+      "dialogue": "為什麼畫維吾爾人的時候是寫實畫風，畫車臣人就變成JoJo畫風？",
       "dialogue_color": false,
       "duration": null,
       "fade_in": false,
-      "fade_out": true,
+      "fade_out": false,
       "fast_paging": false,
-      "id": 10566,
-      "music": "/audio/music/BGM17.mp3",
+      "id": 10687,
+      "music": "/audio/music/BGM22.mp3",
       "placement": {
         "a": {
           "color_filter": null,
@@ -5614,9 +5619,9 @@
           "shift_to": null
         },
         "c": {
-          "color_filter": null,
+          "color_filter": "black",
           "effect": null,
-          "figure": null,
+          "figure": "/images/slide/actor/FRTK0400.png",
           "shift_to": null
         },
         "d": {
@@ -5634,7 +5639,2359 @@
       },
       "position": 117,
       "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10688,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0400.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 118,
+      "sound_effect": "",
       "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯會嗎？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10689,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0400.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 119,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "要不要我在你畫的這車臣人的臉旁邊加上ゴゴゴゴゴ？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10690,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0400.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 120,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "可是⋯⋯可是我記憶裡的車臣人就真的是長這樣⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10691,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 121,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "你記憶裡的車臣人打俄軍的時候，會不會使出替身攻擊？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10692,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 122,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯沒看清楚，好像沒有。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10693,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 123,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "為什麼要認真回答我。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10694,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 124,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "不過，你特地帶我來看這座廢棄的驛站做什麼？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10695,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 125,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "喔對，差點忘了這事。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10696,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0401.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 126,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "這裡的地主在戰爭發生不久後就逃去德國了，一直沒回來。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10697,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0401.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 127,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "軍隊徵用了這幾間屋子，但吉斯爾舒古爾戰役結束後，這地方就沒人管理了。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10698,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0401.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 128,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "我休假過來時，如果想一個人獨處，就會跑來這地方。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10699,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0401.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 129,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯你是什麼文藝小青年嗎？居然會幹這種事。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10700,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0401.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 130,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "你該不會還自己一個人在這靜坐冥想之類的？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10701,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0401.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 131,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "我又不是阿列維派⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10702,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0401.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 132,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10703,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 133,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "抱歉，我還是太幼稚了對吧⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10704,
+      "music": "/audio/music/BGM22.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 134,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "我是你的話，我也會經常待在這裡。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10705,
+      "music": "/audio/music/音樂停.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 135,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯咦？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10706,
+      "music": "",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 136,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "主角接過拜拉姆的手電筒。",
+      "dialogue_color": true,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10707,
+      "music": "/audio/music/BGM17.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 137,
+      "sound_effect": "",
+      "speaker": null,
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯你想像這是火把。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10708,
+      "music": "/audio/music/BGM17.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 138,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "手電筒照在中庭的大石拱上，產生不規則的陰組織。",
+      "dialogue_color": true,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10709,
+      "music": "/audio/music/BGM17.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 139,
+      "sound_effect": "",
+      "speaker": null,
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "隨著主角的腳步，光在古老的驛站裡緩移。",
+      "dialogue_color": true,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10710,
+      "music": "/audio/music/BGM17.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 140,
+      "sound_effect": "/audio/sound_effect/SE22.mp3",
+      "speaker": null,
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10711,
+      "music": "/audio/music/BGM17.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 141,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "幾百年前，夜裡到訪的商隊，看到的也是這副景象吧？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10712,
+      "music": "/audio/music/BGM17.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 142,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10713,
+      "music": "/audio/music/BGM17.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 143,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "穿越安納托利亞、穿越美索不達米亞、穿越黎凡特⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10714,
+      "music": "/audio/music/BGM17.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 144,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "遙遠的路程隨時可能遇到劫匪，對商隊而言，這旅程或許就像戰爭一樣。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10715,
+      "music": "/audio/music/BGM17.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 145,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "遠道而來的商旅走進這裡時，心裡會不會覺得鬆了一口氣？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10716,
+      "music": "/audio/music/BGM17.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 146,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "你只是碰巧在不同的時空、相同的地點，體會到某種與他們相似的心情。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10717,
+      "music": "/audio/music/BGM17.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 147,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10718,
+      "music": "/audio/music/BGM17.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0404.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 148,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯我想畫下來。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10719,
+      "music": "/audio/music/BGM17.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0404.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 149,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "嗯？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10720,
+      "music": "/audio/music/BGM17.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0404.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 150,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "我想畫下來⋯⋯你說的那個畫面。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10721,
+      "music": "/audio/music/BGM17.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0404.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 151,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "你別動，我現在就畫⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10722,
+      "music": "/audio/music/BGM17.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0404.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 152,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯不是，為什麼叫我別動？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10723,
+      "music": "/audio/music/BGM17.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0404.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 153,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "我說的是假想的古代的畫面，你叫我別動是什麼意思⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10724,
+      "music": "/audio/music/BGM17.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0404.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 154,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯不行嗎？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10725,
+      "music": "/audio/music/BGM17.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 155,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "我想連你一起畫下來⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10726,
+      "music": "/audio/music/BGM17.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 156,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "？⋯⋯假想的古代畫面為什麼要把我也畫進去？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10727,
+      "music": "/audio/music/BGM17.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 157,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "因⋯⋯因為⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10728,
+      "music": "/audio/music/BGM17.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 158,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "再說了天色那麼黑，你要我站在這多久？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10729,
+      "music": "/audio/music/BGM17.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 159,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "我畫畫很快的！你剛剛不是才見識到⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10730,
+      "music": "/audio/music/BGM17.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 160,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10731,
+      "music": "/audio/music/BGM17.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 161,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "⋯⋯真的不行嗎？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10732,
+      "music": "/audio/music/BGM17.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 162,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "不行，畫很快也不行。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10733,
+      "music": "/audio/music/BGM17.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 163,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "為什麼？",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10734,
+      "music": "/audio/music/BGM17.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": null,
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 164,
+      "sound_effect": "",
+      "speaker": "拜拉姆",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": "我不想被你畫成JoJo畫風。",
+      "dialogue_color": false,
+      "duration": null,
+      "fade_in": false,
+      "fade_out": false,
+      "fast_paging": false,
+      "id": 10735,
+      "music": "/audio/music/BGM17.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": null,
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 165,
+      "sound_effect": "",
+      "speaker": "主角",
+      "subtitle": null
+    },
+    {
+      "background": "/images/slide/background/U0039a.png",
+      "before_attack": true,
+      "dialogue": null,
+      "dialogue_color": false,
+      "duration": 0.3,
+      "fade_in": false,
+      "fade_out": true,
+      "fast_paging": true,
+      "id": 10736,
+      "music": "/audio/music/BGM17.mp3",
+      "placement": {
+        "a": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "b": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "c": {
+          "color_filter": "black",
+          "effect": "half_transparent",
+          "figure": "/images/slide/actor/FRTK0403.png",
+          "shift_to": null
+        },
+        "d": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        },
+        "e": {
+          "color_filter": null,
+          "effect": null,
+          "figure": null,
+          "shift_to": null
+        }
+      },
+      "position": 166,
+      "sound_effect": "",
+      "speaker": null,
       "subtitle": null
     },
     {
@@ -5642,11 +7999,11 @@
       "before_attack": true,
       "dialogue": null,
       "dialogue_color": false,
-      "duration": 1,
+      "duration": 0.7,
       "fade_in": true,
       "fade_out": false,
       "fast_paging": true,
-      "id": 10567,
+      "id": 10737,
       "music": "/audio/music/BGM17.mp3",
       "placement": {
         "a": {
@@ -5680,7 +8037,7 @@
           "shift_to": null
         }
       },
-      "position": 118,
+      "position": 167,
       "sound_effect": "",
       "speaker": null,
       "subtitle": null
@@ -5694,7 +8051,7 @@
       "fade_in": false,
       "fade_out": false,
       "fast_paging": true,
-      "id": 10568,
+      "id": 10738,
       "music": "",
       "placement": {
         "a": {
@@ -5728,7 +8085,7 @@
           "shift_to": null
         }
       },
-      "position": 119,
+      "position": 168,
       "sound_effect": "",
       "speaker": null,
       "subtitle": null
@@ -5736,13 +8093,13 @@
     {
       "background": "/images/slide/background/BG0100.png",
       "before_attack": true,
-      "dialogue": "下一階段邂逅將於拜拉姆關係等級到達II時解鎖",
+      "dialogue": "下一階段邂逅尚未開放 敬請期待",
       "dialogue_color": true,
       "duration": null,
       "fade_in": false,
       "fade_out": false,
       "fast_paging": false,
-      "id": 10569,
+      "id": 10739,
       "music": "",
       "placement": {
         "a": {
@@ -5776,8 +8133,8 @@
           "shift_to": null
         }
       },
-      "position": 120,
-      "sound_effect": "/audio/sound_effect/SE153.mp3",
+      "position": 169,
+      "sound_effect": "/audio/sound_effect/SE147.mp3",
       "speaker": null,
       "subtitle": null
     },
@@ -5790,7 +8147,7 @@
       "fade_in": true,
       "fade_out": false,
       "fast_paging": true,
-      "id": 10570,
+      "id": 10740,
       "music": "",
       "placement": {
         "a": {
@@ -5829,6 +8186,5 @@
       "speaker": null,
       "subtitle": null
     }
-  ],
-  "anonymized_placeholder": "主角"
+  ]
 }
