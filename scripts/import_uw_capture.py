@@ -29,6 +29,8 @@ from rf_stories.anonymize import count_occurrences, scrub_slides  # noqa: E402
 
 
 TEXT_FIELDS = {"speaker", "dialogue"}
+# 這些欄位由側錄流程產生，不屬於劇情內容本身。
+CAPTURE_ONLY_FIELDS = {"anonymization", "fetched_at", "anonymized_placeholder"}
 # Captures of the same plot can differ only because an earlier export did not
 # know the player nickname (or substituted a short organization name into
 # ordinary prose).  Keep genuinely different plot outcomes, but collapse these
@@ -66,10 +68,34 @@ def slides_signature(slides: list[dict]) -> str:
 
 
 def slide_layout_signature(slides: list[dict]) -> str:
-    """Hash the non-text portion of a plot's slides."""
-    layout = [{key: value for key, value in slide.items() if key not in TEXT_FIELDS} for slide in slides]
+    """計算不含文字與伺服器投影片 ID 的版面指紋。"""
+    layout = [
+        {key: value for key, value in slide.items() if key not in TEXT_FIELDS | {"id"}}
+        for slide in slides
+    ]
     payload = json.dumps(layout, ensure_ascii=False, sort_keys=True).encode("utf-8")
     return hashlib.sha256(payload).hexdigest()
+
+
+def differs_only_by_anonymization(existing: dict, incoming: dict) -> bool:
+    """判斷劇情資料相同，僅匿名化資訊或側錄欄位不同。"""
+    def comparable(record: dict) -> dict:
+        normalized = {
+            key: value
+            for key, value in record.items()
+            if key not in CAPTURE_ONLY_FIELDS | {"slides"}
+        }
+        normalized["slides"] = [
+            {key: value for key, value in slide.items() if key != "id"}
+            for slide in record.get("slides") or []
+        ]
+        return normalized
+
+    return (
+        existing.get("anonymization") != incoming.get("anonymization")
+        and incoming.get("anonymization") is not None
+        and comparable(existing) == comparable(incoming)
+    )
 
 
 def protagonist_aliases(left: list[dict], right: list[dict]) -> set[str]:
@@ -242,9 +268,10 @@ def main() -> int:
     out = Path(args.out) if args.out else ROOT / "data" / "uw_plots"
     print(f"{dump}：{len(records)} 段，目標 {out}")
 
-    added = skipped = 0
+    added = replaced = skipped = 0
     dirty: list[str] = []
     to_write: list[tuple[Path, dict]] = []
+    replacement_paths: set[Path] = set()
     # 頂層 anonymization 是舊格式的後備聲明（新格式每筆 record 各自帶）。
     top_anon = raw.get("anonymization") if isinstance(raw, dict) else None
 
@@ -279,7 +306,21 @@ def main() -> int:
             dirty.append(f"{plot_filename(rec)}（未驗證玩家暱稱已去識別化）")
             continue
 
-        path = existing_plot_path(out, rec) or out / plot_filename(rec)
+        path = existing_plot_path(out, rec)
+        if path and not args.force:
+            try:
+                existing = json.loads(path.read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError):
+                existing = None
+            if existing and differs_only_by_anonymization(existing, rec):
+                replaced += 1
+                to_write.append((path, rec))
+                replacement_paths.add(path)
+            else:
+                skipped += 1
+            continue
+
+        path = path or out / plot_filename(rec)
         if path.exists() and not args.force:
             skipped += 1
             continue
@@ -296,10 +337,11 @@ def main() -> int:
         )
         return 1
 
-    print(f"新增 {added} 段，已存在略過 {skipped} 段")
+    print(f"新增 {added} 段，更新 {replaced} 段，已存在略過 {skipped} 段")
     if args.check:
         for path, _ in to_write:
-            print(f"  會寫入 {path.name}")
+            action = "會更新" if path in replacement_paths else "會寫入"
+            print(f"  {action} {path.name}")
         return 0
 
     for path, rec in to_write:
