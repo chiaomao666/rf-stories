@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-12T09:20:41.710Z",
+  "fetched_at": "2026-10-09T06:26:35.967Z",
   "site_id": 683,
   "site_name": "六福公園",
   "site_plot_id": 45,
@@ -7,6 +7,11 @@
   "city_id": 6,
   "city_name": "臺中",
   "anonymized": true,
+  "anonymization": {
+    "nickname": true,
+    "organization": true,
+    "organization_source": "replaced"
+  },
   "counts": {
     "total": 52,
     "with_dialogue": 41
