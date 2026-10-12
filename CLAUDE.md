@@ -140,3 +140,6 @@ site/tools/       rf_story_capture.js，貼進遊戲 console 側錄 [Story] log
   `b9{font-weight:900}`（沒有顏色）、`filter_black{brightness(50%)}`、`dialogue_color{color:#ccc}`、
   轉場一律 `opacity 1000ms ease-out`（文件裡的 100/1000ms 是 CSSTransition 的 timeout，不是動畫長度）。
   站台 CSS 把遊戲的 `vw` 換成 `cqw`（舞台是 container），比例才跟遊戲一致。
+- **舞台寬 < 800px 時刻意偏離遊戲版面**（`story.css` 末段的 container query）：原版對白框只容得下
+  約 2.8 行 1.64cqw 的字，手機上字小到要拉下限，一拉就掉出舞台被裁掉。窄舞台改用自己的字幕排版——
+  橫向疊在舞台底部往上長、直向移到舞台下方。≥ 800px 才是對齊遊戲的原版排版，校正樣式時只看那一段。

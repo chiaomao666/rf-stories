@@ -30,6 +30,8 @@
 .player-frame {
   display: grid;
   grid-template-rows: auto 1fr auto;
+  /* 欄寬鎖在視窗寬，工具列再擠也不能把整個播放器撐出橫向捲動。 */
+  grid-template-columns: minmax(0, 1fr);
   height: 100%;
   min-height: 0;
 }
@@ -134,7 +136,7 @@
   min-height: 0;
   overflow: hidden;
   background: #000;
-  container-type: size;
+  container: stagefit / size;
 }
 
 /* 寬高取 min(容器寬, 容器高 × 1.75)，維持 7:4 且不溢出。 */
@@ -144,7 +146,9 @@
   aspect-ratio: 7 / 4;
   overflow: hidden;
   cursor: pointer;
-  container-type: size;
+  container: stage / size;
+  /* 手機上連點翻頁不要觸發雙擊縮放。 */
+  touch-action: manipulation;
   background: #05070a;
   text-align: center;
   --transition-ms: 1000ms;
@@ -407,18 +411,119 @@
   font-family: 'Noto Sans TC', sans-serif;
 }
 
-/* 舞台很窄時 cqw 會讓字小到看不清，給一個下限。 */
-@media (max-width: 900px) {
-  .speaker,
-  .dialogue,
-  .log-item b,
-  .log-item span {
-    font-size: max(13px, 1.6428571429cqw);
+
+/* ---- 小尺寸裝置 ----------------------------------------------------------
+ * 遊戲版面的對白框是照 2800×1600 用 cqw 排的，對白區只容得下約 2.8 行
+ * 1.64cqw 的字。舞台寬不到 800px 時字會小於 13px，硬拉下限又會讓第二、
+ * 三行掉出舞台底部被 overflow 裁掉（手機回報的「字幕被切掉」）。
+ * 所以窄舞台改用自己的字幕排版，不再對齊 bgStoryPanel 的金線：
+ *   - 橫向（手機橫放、矮視窗）：字幕疊在舞台底部，高度隨內容往上長。
+ *   - 直向（手機直拿、平板直放）：舞台下方本來就是大片黑邊，字幕移到舞台外面。
+ * 寬度 ≥ 800px 的舞台維持與遊戲一致的原版排版。 */
+
+@container stage (width < 800px) {
+  .panel-box {
+    top: auto;
+    bottom: 0;
+    transform: none;
+    padding: 6cqw 4.5% 3cqw;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.62) 4.5cqw, rgba(0, 0, 0, 0.82));
+    text-align: left;
   }
 
+  .panel-bg {
+    display: none;
+  }
+
+  .panel-bar,
+  .panel-cont,
+  .speaker,
+  .dialogue {
+    position: static;
+    width: auto;
+    height: auto;
+    transform: none;
+  }
+
+  .speaker {
+    min-height: 1em;
+    margin-bottom: 0.25em;
+    color: #e2c28f;
+  }
+
+  .speaker:empty {
+    display: none;
+  }
+
+  .speaker,
+  .dialogue {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .log-cont {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+
+  .log-item b,
+  .log-item span {
+    font-size: 13px;
+  }
+}
+
+/* 直向：舞台靠上，字幕接在舞台下方。點字幕同樣是翻頁（事件冒泡回 .stage）。
+ * LOG 面板拉長到容器底，才不會只擠在一個矮舞台裡。 */
+@container stagefit (orientation: portrait) and (width < 800px) {
+  .stage {
+    --stage-top: min(6cqh, 48px);
+    align-self: start;
+    margin-top: var(--stage-top);
+    overflow: visible;
+    /* 改成 inline-size，LOG 的 cqh 才會以 stagefit 為準。 */
+    container-type: inline-size;
+  }
+
+  .bg-layer,
+  .actors {
+    overflow: hidden;
+  }
+
+  .panel-box {
+    top: 100%;
+    bottom: auto;
+    padding: 14px 16px 24px;
+    background: none;
+    pointer-events: auto;
+    max-height: calc(100cqh - var(--stage-top) - 57.142857cqw);
+    overflow-y: auto;
+  }
+
+  .speaker,
+  .dialogue {
+    font-size: 15px;
+  }
+
+  .log-panel {
+    bottom: auto;
+    height: calc(100cqh - var(--stage-top));
+    background: rgba(0, 0, 0, 0.94);
+    padding: 16px 0;
+  }
+
+  .log-item b,
+  .log-item span {
+    font-size: 14px;
+  }
+}
+
+/* ---- 重播器工具列的小螢幕調整 ------------------------------------------- */
+
+@media (max-width: 900px) {
   .player-top,
   .player-bottom {
-    padding: 10px 12px;
+    padding: 8px 12px;
+    gap: 8px;
   }
 
   .player-tools {
@@ -428,5 +533,96 @@
 
   #volume {
     width: 64px;
+  }
+}
+
+/* 直向手機：標題一列、工具一列，避免標題被擠成好幾行。 */
+@media (max-width: 620px) {
+  .player-top {
+    flex-wrap: wrap;
+  }
+
+  .player-top > div:first-child {
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+
+  .player-title {
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .player-tools {
+    flex: 1 1 100%;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .player-tools .icon-btn {
+    white-space: nowrap;
+    padding: 8px 10px;
+  }
+
+  .player-tools #phase {
+    flex: 0 1 auto;
+    min-width: 0;
+    padding: 0 6px;
+  }
+
+  /* 手機用實體音量鍵就好（iOS Safari 本來就不理會 audio.volume），
+   * 省下的寬度讓關閉鈕不會被擠出畫面。 */
+  .player-tools #volume {
+    display: none;
+  }
+
+  #closePlayer {
+    margin-left: auto;
+  }
+
+  .player-bottom .ctrl {
+    flex: 1 1 0;
+    white-space: nowrap;
+  }
+
+  .player-bottom #typeSpeed {
+    flex: 1 1 100%;
+  }
+}
+
+/* 矮視窗（手機橫放）：工具列壓成各一列細條，把高度留給舞台。 */
+@media (max-height: 500px) and (orientation: landscape) {
+  .player-top,
+  .player-bottom {
+    padding: 4px 10px;
+    gap: 6px;
+    flex-wrap: nowrap;
+  }
+
+  .player-title {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .player-top small {
+    display: none;
+  }
+
+  .player-tools {
+    flex-wrap: nowrap;
+  }
+
+  .icon-btn,
+  .ctrl {
+    padding: 6px 10px;
+  }
+
+  .field.small {
+    height: 28px;
+  }
+
+  .progress {
+    min-width: 60px;
   }
 }
